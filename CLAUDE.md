@@ -21,6 +21,21 @@ from 0.0 s, characters already moving) -> how (labelled cutaway) -> why -> payof
 "DID YOU KNOW? COMMENT BELOW" -> visual loop back to the hook. One idea per 3-4 s beat, each with its
 own visual + SFX. No on-screen host: Style 5 object characters + painted sets.
 
+## 80% playbook ("stayed to watch" is decided in the first second)
+
+`python3 -m timesketch.qa episodes/<slug>` enforces the measurable ones; the publisher refuses a FAIL.
+1. **Frame 1 sells it:** bright, colourful set (QA: brightness >= 140, saturation >= 90; never open on a dark
+   scene), the big title fully on screen at 0.0 s (the engine pre-lands the hook title), characters already
+   moving and in frame (slam starts inside the frame). Picture first, words second.
+2. **One text at a time in the hook:** no caption under the hook title.
+3. **Hook <= 2 s, spoken at 0.0 s, aimed at the viewer** ("You say guys because of Guy Fawkes."): a surprising
+   claim about something they use or know every day.
+4. **Something changes every 2-4 s:** new beat, camera move, label pop or SFX. No beat over 5.6 s.
+5. **Open loop:** the hook's question is only fully paid off at the end.
+6. **Seamless loop:** the last frame looks like the first (QA checks it), so replays count.
+7. **Test ONE change per video** and log it in the results table below; keep what moves the number.
+   80% is top-tier for Shorts, so expect to climb towards it over several videos, not in one jump.
+
 ## Who does what
 
 The /yt-* skills (`.claude/skills/yt-*`, from github.com/Jakeschincariol/youtube-agent-skill, MIT)
@@ -35,7 +50,7 @@ replace the planning, writing, packaging and analytics agents. The video/animati
 | 5. Voice | ours | `python3 audio/voice_kokoro.py episodes/<slug>` |
 | 6. Animation | ours | `python3 -m timesketch.timing`, `node render.mjs <ep> still`, then `video` |
 | 7. Sound | ours | `python3 audio/mix.py episodes/<slug>`, then ffmpeg mux |
-| 8. QA | ours | separate reviewer; full decode, no black edges, text not over faces, levels |
+| 8. QA | `python3 -m timesketch.qa <ep>` + a look at the stills | full decode, format, length, frame-1 gates, motion, hook timing, beat length, SFX, loop, black edges, levels, clipping -> qa.json |
 | 9. Title / thumbnail / description | `/yt-package` + `/yt-seo` | `title.py` lint; thumbnail = a frame from the hook, <= 3 words, different from the title. No chapters (Shorts). |
 | 10. Upload + publish | `publisher` agent -> on the Mac: Claude in Chrome fills YouTube Studio from `--manual`'s upload pack and schedules it (confirm first), or `python3 -m timesketch.publish <ep> --make` (Make.com scenario via a Google-Drive-synced `MAKE_OUTBOX`, see docs/MAKE.md); `--sync` records video IDs; `--manual` = Studio upload pack | No Google Cloud. Preflight, next free 07:00 / 17:00 UK slot, Education, not made for kids. Always confirm with Rakesh before queueing. |
 | 11. Analytics | YouTube Studio CSV exports in `analytics/` -> `/yt-retention` + `/yt-audit` | Feed the Studio retention CSV after 48 h, update the results log, ONE change per video. |
@@ -51,6 +66,7 @@ python3 audio/voice_kokoro.py $E          # script.json -> narration.wav + caps_
 python3 -m timesketch.timing $E           # storyboard.json -> beats.json
 node render.mjs $E still                  # QA stills, inspect every scene
 node render.mjs $E video                  # video_noaudio.mp4
+python3 -m timesketch.qa $E               # after mux: technical + retention gates -> qa.json
 python3 audio/mix.py $E                   # mix.wav
 scripts/mux.sh $E                         # final.mp4 (video untouched, 384k audio) + decode check
 ffmpeg -v error -i $E/final.mp4 -f null -   # full decode check
@@ -59,14 +75,15 @@ python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to q
 
 ## Results log
 
-| # | Video | Format | Length | Stayed to watch |
-|---|---|---|---|---|
-| 1 | Why a Week Has 7 Days | Host Tempo, slow opening | 26 s | 27.6% |
-| 2 | Oxford Is Older Than the Aztec Empire | Host Clio, split screen | 17.6 s | 47% (~1.2k views) |
-| 3 | Mammoths Saw the Pyramids | Host Clio | 17.8 s | 38% (~1.1k views) |
-| 4 | Sharks Are Older Than Trees | Host Clio, split screen | 14.4 s | n/a |
-| 5 | Fax (old style) | Host Clio | - | n/a |
-| 6 | Lighters Came Before Matches | No host, hook -> how -> why | 28.8 s | 46%, +2 subs |
+| # | Video | Format | Length | Stayed to watch | Change tested |
+|---|---|---|---|---|---|
+| 1 | Why a Week Has 7 Days | Host Tempo, slow opening | 26 s | 27.6% | |
+| 2 | Oxford Is Older Than the Aztec Empire | Host Clio, split screen | 17.6 s | 47% (~1.2k views) | |
+| 3 | Mammoths Saw the Pyramids | Host Clio | 17.8 s | 38% (~1.1k views) | |
+| 4 | Sharks Are Older Than Trees | Host Clio, split screen | 14.4 s | n/a | |
+| 5 | Fax (old style) | Host Clio | - | n/a | |
+| 6 | Lighters Came Before Matches | No host, hook -> how -> why | 28.8 s | 46%, +2 subs | first no-host explainer |
+| 7 | 'Guys' Comes From a 1605 Gunpowder Plot (5 Nov 07:00) | No host, hook -> how -> why | 24.4 s | (fill in after 48 h) | bright frame 1 + title at 0.0 s + 'you' hook + no hook caption |
 
 Lessons: a slow first frame kills retention; a bright picture-first hook helps; the explainer format
 earned the first subscribers. Retired: hosts Tempo and Clio, voices Michael and Tock.

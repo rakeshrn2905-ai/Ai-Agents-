@@ -57,6 +57,20 @@ const night = () => once('night', (c) => {
   c.strokeStyle = INK; c.lineWidth = 8; c.beginPath(); c.moveTo(0, GROUND); c.lineTo(W, GROUND); c.stroke();
 });
 
+const dusk = () => once('dusk', (c) => { // bright Bonfire Night dusk: picture-first, high brightness hook
+  const g = c.createLinearGradient(0, 0, 0, GROUND); g.addColorStop(0, '#F6C26B'); g.addColorStop(0.55, '#F29A6B'); g.addColorStop(1, '#E7769A');
+  c.fillStyle = g; c.fillRect(0, 0, W, GROUND);
+  ell(c, 820, 760, 120, 120, '#FFE9A8', { lw: 0, k: 0 }); // low sun
+  const roofs = [[0, 1000, 260, '#5AA9A0'], [240, 930, 220, '#2D3E5C'], [440, 1030, 260, '#8FA889'], [680, 950, 200, '#D9604C'], [860, 1010, 220, '#5AA9A0']];
+  for (const [x, y, w, col] of roofs) {
+    box(c, x, y, w, GROUND - y, col, { r: 0 });
+    cel(c, (c) => { c.moveTo(x - 10, y); c.lineTo(x + w / 2, y - 90); c.lineTo(x + w + 10, y); c.closePath(); }, '#5B4636', [x, y - 90, w, 90]);
+    for (let wy = y + 50; wy < GROUND - 120; wy += 150) { box(c, x + 40, wy, 50, 70, '#FFF1C1', { r: 4, lw: 4, k: 0 }); box(c, x + w - 90, wy, 50, 70, '#FFF1C1', { r: 4, lw: 4, k: 0 }); }
+  }
+  c.fillStyle = '#9C8466'; c.fillRect(0, GROUND, W, H - GROUND);
+  c.strokeStyle = INK; c.lineWidth = 8; c.beginPath(); c.moveTo(0, GROUND); c.lineTo(W, GROUND); c.stroke();
+});
+
 function firework(c, x, y, t, col) {
   const p = (t % 1.6) / 1.6; if (p > 0.85) return;
   const r = 40 + 170 * easeOut(p / 0.85);
@@ -76,13 +90,12 @@ const guyCard = { costume: { coat: '#8FA889', trim: '#C9A043', trousers: '#B07A4
 // ---------- scenes ----------
 export const SCENES = {
   // 0: frame-1 hook: barrel slams in, Fawkes already sneaking with a lantern glow
-  guyhook(c, t, beat, ctx) {
-    c.drawImage(cellar(), 0, 0);
-    const glow = c.createRadialGradient(760, 1050, 30, 760, 1050, 520); glow.addColorStop(0, 'rgba(255,214,120,0.45)'); glow.addColorStop(1, 'rgba(255,214,120,0)');
-    c.fillStyle = glow; c.fillRect(0, 0, W, H);
-    actor(c, { who: 'barrel', mood: 'worried', action: 'slam', armPose: 'shrug', s: 1.25 }, t, ctx, 300);
-    human(c, { ...fawkesCard, x: 760, y: GROUND, s: 1.45, t: ctx.T, mood: 'smug', armPose: 'hold', legPose: t < 0.9 ? 'walk' : 'stand', flip: true });
-    flame(c, 760 - 150, GROUND - 600, 46, ctx.T); // lantern flame in his hand
+  guyhook(c, t, beat, ctx) { // frame 1: bright dusk, fireworks already bursting, barrel already falling
+    c.drawImage(dusk(), 0, 0);
+    firework(c, 250, 520, ctx.T + 0.5, PAL.coral); firework(c, 840, 460, ctx.T + 0.9, PAL.navy); firework(c, 560, 640, ctx.T + 0.2, '#FFFFFF');
+    actor(c, { who: 'barrel', mood: 'shock', action: 'slam', armPose: 'shrug', s: 1.3 }, t, ctx, 300);
+    human(c, { ...fawkesCard, x: 760, y: GROUND, s: 1.5, t: ctx.T, mood: 'grin', armPose: 'hold', flip: true });
+    flame(c, 760 - 155, GROUND - 620, 50, ctx.T);
   },
 
   // 1-2: x-ray cross-section of Parliament: Lords above, barrels below; king appears for phrase 2
@@ -150,7 +163,7 @@ export const SCENES = {
 
   // 6: payoff: everyone is a "guy" now
   payoff(c, t, beat, ctx) { // named payoff so the engine adds DID YOU KNOW? COMMENT BELOW
-    c.drawImage(night(), 0, 0);
+    c.drawImage(dusk(), 0, 0); // same set as the hook, so the loop back is seamless
     firework(c, 300, 360, ctx.T, PAL.gold); firework(c, 800, 420, ctx.T + 0.8, PAL.coral);
     bonfire(c, 540, GROUND - 120, ctx.T, 0.55);
     actor(c, { who: 'barrel', mood: 'grin', action: 'bounce', armPose: 'wave', s: 0.8 }, t, ctx, 170);

@@ -1,7 +1,7 @@
 # Upload pack - guy-fawkes-guys
 
 Open studio.youtube.com (Time Sketch channel) -> Create -> Upload videos -> pick:
-  final.mp4 (sent with this pack; in the repo: episodes/guy-fawkes-guys/final.mp4)
+  /home/user/Ai-Agents-/episodes/guy-fawkes-guys/final.mp4
 
 ## Title
 'Guys' Comes From a 1605 Gunpowder Plot
