@@ -12,8 +12,10 @@ Claude Code ◄── python3 -m timesketch.publish --sync  (reads the receipts 
 ```
 
 Free plan check: 2 runs a day plus about 10 operations per upload comes to roughly 700 of Make's
-1,000 free operations a month at 2 Shorts a day. Make's free plan also caps files at 5 MB, so the
-publisher re-encodes the upload copy to fit (cartoon art compresses with no visible loss).
+1,000 free operations a month at 2 Shorts a day. **File size:** Make's free plan caps files at 5 MB and a best-quality master is
+about 14 MB, so the publisher **refuses** to queue it rather than quietly shrinking it. To keep full quality
+on Make, upgrade to a paid Make plan with a bigger file limit and set `MAKE_MAX_MB` to that limit. To accept a
+smaller copy instead, set `MAKE_SHRINK=1`. The Chrome route always uploads the original file.
 
 ## 1. Google Drive for desktop (free)
 

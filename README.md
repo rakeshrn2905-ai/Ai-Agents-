@@ -28,6 +28,6 @@ python3 -m timesketch.timing $E       # storyboard.json -> beats.json
 node render.mjs $E still              # QA stills
 node render.mjs $E video              # video_noaudio.mp4
 python3 audio/mix.py $E               # mix.wav
-ffmpeg -i $E/video_noaudio.mp4 -i $E/mix.wav -c:v copy -c:a aac -b:a 192k -shortest $E/final.mp4
+scripts/mux.sh $E                         # final.mp4 (video untouched, 384k audio) + decode check
 ```
 

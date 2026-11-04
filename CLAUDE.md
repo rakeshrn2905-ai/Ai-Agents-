@@ -52,7 +52,7 @@ python3 -m timesketch.timing $E           # storyboard.json -> beats.json
 node render.mjs $E still                  # QA stills, inspect every scene
 node render.mjs $E video                  # video_noaudio.mp4
 python3 audio/mix.py $E                   # mix.wav
-ffmpeg -i $E/video_noaudio.mp4 -i $E/mix.wav -c:v copy -c:a aac -b:a 192k -shortest $E/final.mp4
+scripts/mux.sh $E                         # final.mp4 (video untouched, 384k audio) + decode check
 ffmpeg -v error -i $E/final.mp4 -f null -   # full decode check
 python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to queue it for Make
 ```

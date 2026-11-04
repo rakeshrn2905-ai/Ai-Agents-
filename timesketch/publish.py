@@ -254,19 +254,27 @@ def book(ep: Path, pkg: dict, slot: datetime, via: str):
 
 
 def fit_for_make(src: Path, dst: Path):
-    """Make's free plan caps files at 5 MB. Flat cartoon art compresses well, so re-encode if needed."""
-    limit = float(os.environ.get("MAKE_MAX_MB", "4.8")) * 1024 * 1024
-    if src.stat().st_size <= limit:
+    """Copy the master untouched. Make's free plan caps files at 5 MB; shrinking costs quality, so it only
+    happens if the user opts in with MAKE_SHRINK=1. Otherwise: raise MAKE_MAX_MB after upgrading the Make
+    plan, or use the Chrome route (uploads the original)."""
+    limit_mb = float(os.environ.get("MAKE_MAX_MB", "4.8"))
+    size_mb = src.stat().st_size / 1048576
+    if size_mb <= limit_mb:
         shutil.copyfile(src, dst)
         return
-    for crf in (23, 26, 29):
+    if os.environ.get("MAKE_SHRINK") != "1":
+        sys.exit(f"[publish] final.mp4 is {size_mb:.1f} MB, over the Make file limit ({limit_mb} MB).\n"
+                 "  Not shrinking it (that lowers quality). Options: use the Chrome route (original file),\n"
+                 "  upgrade the Make plan and set MAKE_MAX_MB, or set MAKE_SHRINK=1 to accept a smaller copy.")
+    for crf in (20, 23, 26):
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), "-c:v", "libx264", "-preset", "slow",
-                        "-crf", str(crf), "-pix_fmt", "yuv420p", "-r", "30", "-c:a", "aac", "-b:a", "128k",
+                        "-tune", "animation", "-crf", str(crf), "-pix_fmt", "yuv420p", "-colorspace", "bt709",
+                        "-color_primaries", "bt709", "-color_trc", "bt709", "-c:a", "copy",
                         "-movflags", "+faststart", str(dst)], check=True)
-        if dst.stat().st_size <= limit:
-            print(f"[publish] re-encoded for Make: {dst.stat().st_size / 1048576:.1f} MB (crf {crf})")
+        if dst.stat().st_size / 1048576 <= limit_mb:
+            print(f"[publish] MAKE_SHRINK=1: smaller copy for Make, {dst.stat().st_size / 1048576:.1f} MB (crf {crf})")
             return
-    sys.exit(f"[publish] {dst.name} is still over {limit / 1048576:.1f} MB - raise MAKE_MAX_MB if your Make plan allows bigger files")
+    sys.exit(f"[publish] could not get under {limit_mb} MB")
 
 
 def make_job(ep: Path, pkg: dict, slot: datetime) -> Path:

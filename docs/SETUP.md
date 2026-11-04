@@ -39,7 +39,7 @@ cd ../..
 E=episodes/lighters-before-matches
 python3 audio/voice_kokoro.py $E && python3 -m timesketch.timing $E
 node render.mjs $E video && python3 audio/mix.py $E
-ffmpeg -y -i $E/video_noaudio.mp4 -i $E/mix.wav -c:v copy -c:a aac -b:a 192k -shortest $E/final.mp4
+scripts/mux.sh $E                         # final.mp4 (video untouched, 384k audio) + decode check
 ```
 
 ## 4. Uploads: pick one
