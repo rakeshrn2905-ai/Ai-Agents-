@@ -14,6 +14,8 @@ Planning, scripting, packaging, SEO, comments and analytics use the `/yt-*` skil
 Uploading: `python3 -m timesketch.publish episodes/<slug>` (or ask Claude Code to use the `publisher` agent).
 Still to build: fact-check researcher, storyboarder and QA reviewer.
 
+**New machine? Follow [docs/SETUP.md](docs/SETUP.md) step by step.**
+
 ## Build one episode
 ```bash
 npm install
