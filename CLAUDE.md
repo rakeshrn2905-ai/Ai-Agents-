@@ -37,7 +37,7 @@ replace the planning, writing, packaging and analytics agents. The video/animati
 | 7. Sound | ours | `python3 audio/mix.py episodes/<slug>`, then ffmpeg mux |
 | 8. QA | ours | separate reviewer; full decode, no black edges, text not over faces, levels |
 | 9. Title / thumbnail / description | `/yt-package` + `/yt-seo` | `title.py` lint; thumbnail = a frame from the hook, <= 3 words, different from the title. No chapters (Shorts). |
-| 10. Upload + publish | `publisher` agent -> `python3 -m timesketch.publish <ep> --make` (Make.com scenario via a Google-Drive-synced `MAKE_OUTBOX`, see docs/MAKE.md); `--sync` records video IDs; `--manual` = Studio upload pack | No Google Cloud. Preflight, next free 07:00 / 17:00 UK slot, Education, not made for kids. Always confirm with Rakesh before queueing. |
+| 10. Upload + publish | `publisher` agent -> on the Mac: Claude in Chrome fills YouTube Studio from `--manual`'s upload pack and schedules it (confirm first), or `python3 -m timesketch.publish <ep> --make` (Make.com scenario via a Google-Drive-synced `MAKE_OUTBOX`, see docs/MAKE.md); `--sync` records video IDs; `--manual` = Studio upload pack | No Google Cloud. Preflight, next free 07:00 / 17:00 UK slot, Education, not made for kids. Always confirm with Rakesh before queueing. |
 | 11. Analytics | YouTube Studio CSV exports in `analytics/` -> `/yt-retention` + `/yt-audit` | Feed the Studio retention CSV after 48 h, update the results log, ONE change per video. |
 | Comments | `/yt-comment` | Under 30 words, pin the most-asked question. |
 

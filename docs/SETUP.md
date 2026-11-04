@@ -42,7 +42,15 @@ node render.mjs $E video && python3 audio/mix.py $E
 ffmpeg -y -i $E/video_noaudio.mp4 -i $E/mix.wav -c:v copy -c:a aac -b:a 192k -shortest $E/final.mp4
 ```
 
-## 4. Automatic uploads: Make.com + Google Drive for desktop
+## 4. Uploads: pick one
+
+**A. Claude in Chrome on your Mac (simplest):** install the **Claude in Chrome** extension (Chrome Web Store),
+sign in with your Claude account, and make sure Chrome is signed in to the Google account that owns Time Sketch.
+Run Claude Code **on the Mac** in this project folder (`claude` in Terminal, or the Claude desktop app). Say
+"upload it": the publisher agent opens YouTube Studio in a new Chrome tab, fills everything in, shows you the
+form, and schedules it after you say yes. Studio does the scheduling, so the Mac can be off at 07:00 / 17:00.
+
+**B. Make.com + Google Drive for desktop (fully hands-off):**
 
 Follow **[docs/MAKE.md](MAKE.md)**, about 20 minutes: install Drive for desktop, make the outbox folder,
 build the Make scenario, run one private test.
