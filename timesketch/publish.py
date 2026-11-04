@@ -360,6 +360,9 @@ def main():
         return link(ep, pkg, a.link)
     mode = "now" if a.now else "private" if a.private else "schedule"
     slot = parse_slot(a.slot) if a.slot else (next_slot() if mode == "schedule" else None)
+    mine = [k for k, v in booked().items() if v.get("episode") == ep.name]
+    if mine and mode == "schedule" and not a.slot:  # re-running keeps the slot already booked for this episode
+        slot = datetime.fromisoformat(mine[0])
     if slot and slot.isoformat() in booked() and booked()[slot.isoformat()].get("episode") != ep.name:
         sys.exit(f"[publish] slot {slot:%a %d %b %H:%M} is already booked by {booked()[slot.isoformat()]['episode']}")
 
@@ -373,9 +376,6 @@ def main():
     when = f"scheduled for {slot:%a %d %b %Y %H:%M} UK" if slot else ("public now" if mode == "now" else "private")
     print(f"[publish] '{pkg['title']}' -> {when} | Education | not made for kids")
     if a.manual or a.make:
-        mine = [k for k, v in booked().items() if v.get("episode") == ep.name]
-        if mine and not a.slot:  # re-running keeps the slot already booked for this episode
-            slot = datetime.fromisoformat(mine[0])
         if mode != "schedule":
             sys.exit("[publish] --manual/--make only work with scheduling (default or --slot)")
         if a.dry_run:
