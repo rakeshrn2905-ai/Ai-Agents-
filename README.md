@@ -9,7 +9,9 @@ Working: drawing library (`lib/`), object characters + Style 5 humans, painted s
 loop ending, Kokoro voice (`audio/voice_kokoro.py`), SFX + ducked lo-fi mix (`audio/mix.py`),
 timing resolver (`timesketch/timing.py`). Demo episode: `episodes/lighters-before-matches/`.
 
-Still to build: QA reviewer, scout/research/script/storyboard agents, publisher (07:00/17:00 UK), analyst.
+Planning, scripting, packaging, SEO, comments and analytics use the `/yt-*` skills in `.claude/skills/`
+(from Jakeschincariol/youtube-agent-skill, MIT). See CLAUDE.md for the stage-by-stage mapping.
+Still to build: fact-check researcher, storyboarder and QA reviewer.
 
 ## Build one episode
 ```bash
