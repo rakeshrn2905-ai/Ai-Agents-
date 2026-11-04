@@ -15,6 +15,8 @@ Time Sketch Brand Account. Token saved to token.json.
 """
 import argparse
 import json
+import os
+import shutil
 import subprocess
 import sys
 from datetime import datetime, timedelta
@@ -31,7 +33,8 @@ TOKEN = ROOT / "token.json"
 SCOPES = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube",
           "https://www.googleapis.com/auth/yt-analytics.readonly"]  # analytics.py shares this login
 CATEGORY_EDUCATION = "27"
-MIN_LEAD = timedelta(minutes=30)  # don't book a slot that starts within 30 min
+MIN_LEAD = timedelta(minutes=30)
+UPLOAD_EARLY = timedelta(minutes=30)  # job becomes due 30 min early so a Make run at the slot time always catches it  # don't book a slot that starts within 30 min
 
 
 # ---------- checks ----------
@@ -228,14 +231,86 @@ After publishing, paste the Short's link here so analytics can track it:
 """
     out = ep / "upload_pack.md"
     out.write_text(text)
-    sched = booked()
-    sched[slot.isoformat()] = {"episode": ep.name, "video_id": None, "title": pkg["title"], "manual": True}
-    SCHEDULE.parent.mkdir(exist_ok=True)
-    SCHEDULE.write_text(json.dumps(dict(sorted(sched.items())), indent=2))
+    book(ep, pkg, slot, "manual")
     return out
 
 
-def link(ep: Path, pkg: dict, url: str):
+def outbox() -> Path:
+    """The Make.com outbox: a folder synced by Google Drive for desktop (or Dropbox)."""
+    p = os.environ.get("MAKE_OUTBOX")
+    if not p:
+        sys.exit("[publish] set MAKE_OUTBOX to your synced outbox folder, e.g.\n"
+                 '  export MAKE_OUTBOX="$HOME/Google Drive/My Drive/TimeSketch/outbox"   (see docs/MAKE.md)')
+    path = Path(p).expanduser()
+    (path / "done").mkdir(parents=True, exist_ok=True)
+    return path
+
+
+def book(ep: Path, pkg: dict, slot: datetime, via: str):
+    sched = booked()
+    sched[slot.isoformat()] = {"episode": ep.name, "video_id": None, "title": pkg["title"], "via": via}
+    SCHEDULE.parent.mkdir(exist_ok=True)
+    SCHEDULE.write_text(json.dumps(dict(sorted(sched.items())), indent=2))
+
+
+def fit_for_make(src: Path, dst: Path):
+    """Make's free plan caps files at 5 MB. Flat cartoon art compresses well, so re-encode if needed."""
+    limit = float(os.environ.get("MAKE_MAX_MB", "4.8")) * 1024 * 1024
+    if src.stat().st_size <= limit:
+        shutil.copyfile(src, dst)
+        return
+    for crf in (23, 26, 29):
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), "-c:v", "libx264", "-preset", "slow",
+                        "-crf", str(crf), "-pix_fmt", "yuv420p", "-r", "30", "-c:a", "aac", "-b:a", "128k",
+                        "-movflags", "+faststart", str(dst)], check=True)
+        if dst.stat().st_size <= limit:
+            print(f"[publish] re-encoded for Make: {dst.stat().st_size / 1048576:.1f} MB (crf {crf})")
+            return
+    sys.exit(f"[publish] {dst.name} is still over {limit / 1048576:.1f} MB - raise MAKE_MAX_MB if your Make plan allows bigger files")
+
+
+def make_job(ep: Path, pkg: dict, slot: datetime) -> Path:
+    """Drop final.mp4 + a flat job file in the outbox; the Make scenario uploads it when it is due."""
+    box = outbox()
+    slug = ep.name
+    fit_for_make(ep / "final.mp4", box / f"{slug}.mp4")
+    utc = ZoneInfo("UTC")
+    job = {
+        "slug": slug, "video_file": f"{slug}.mp4",
+        "title": pkg["title"], "description": pkg.get("description", ""),
+        "tags_csv": ",".join(pkg.get("tags", [])), "category_id": CATEGORY_EDUCATION,
+        "made_for_kids": False, "privacy": "public",
+        "publish_at_utc": slot.astimezone(utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "upload_after_utc": (slot - UPLOAD_EARLY).astimezone(utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "publish_at_uk": slot.strftime("%a %d %b %Y %H:%M"),
+    }
+    # write the JSON last, so Make never sees a job whose video is still copying
+    tmp = box / f".{slug}.json.tmp"
+    tmp.write_text(json.dumps(job, indent=2))
+    tmp.replace(box / f"{slug}.json")
+    book(ep, pkg, slot, "make")
+    return box / f"{slug}.json"
+
+
+def sync_make():
+    """Read Make's receipts (done/<slug>.txt containing the new video ID) and record them."""
+    box = outbox()
+    n = 0
+    for rec in sorted((box / "done").glob("*.txt")):
+        slug, vid = rec.stem, rec.read_text().strip().split()[0]
+        ep = ROOT / "episodes" / slug
+        if not (ep / "package.json").exists():
+            print(f"[publish] receipt {rec.name}: no episodes/{slug} here, skipped")
+            continue
+        if (ep / "upload.json").exists():
+            continue
+        link(ep, json.loads((ep / "package.json").read_text()), vid, via="make")
+        n += 1
+    pending = [j.stem for j in box.glob("*.json")]
+    print(f"[publish] synced {n} new upload(s); still waiting in outbox: {', '.join(pending) or 'none'}")
+
+
+def link(ep: Path, pkg: dict, url: str, via: str = "manual"):
     """Record a manually uploaded video's ID so analytics can find it."""
     vid = url.rstrip("/").split("/")[-1].split("v=")[-1].split("?")[0]
     sched = booked()
@@ -243,23 +318,28 @@ def link(ep: Path, pkg: dict, url: str):
     if slot:
         sched[slot.isoformat()]["video_id"] = vid
         SCHEDULE.write_text(json.dumps(dict(sorted(sched.items())), indent=2))
-    record(ep, pkg, vid, "manual", None if slot is None else slot)
+    record(ep, pkg, vid, via, None if slot is None else slot)
     print(f"[publish] linked {ep.name} -> https://youtube.com/shorts/{vid}")
 
 
 def main():
     ap = argparse.ArgumentParser(prog="timesketch.publish", description="Upload + schedule a Time Sketch Short")
-    ap.add_argument("episode", type=Path)
+    ap.add_argument("episode", type=Path, nargs="?")
     g = ap.add_mutually_exclusive_group()
     g.add_argument("--now", action="store_true", help="publish publicly right away")
     g.add_argument("--private", action="store_true", help="upload as private, don't schedule")
     g.add_argument("--slot", help="schedule for this UK time, e.g. 2026-11-06T17:00")
-    ap.add_argument("--manual", action="store_true", help="no Google Cloud: write upload_pack.md for YouTube Studio")
+    ap.add_argument("--make", action="store_true", help="queue for the Make.com scenario (MAKE_OUTBOX folder)")
+    ap.add_argument("--sync", action="store_true", help="read Make.com upload receipts into the results log")
+    ap.add_argument("--manual", action="store_true", help="no automation: write upload_pack.md for YouTube Studio")
     ap.add_argument("--link", metavar="URL", help="after a manual upload: record the Short's URL")
     ap.add_argument("--dry-run", action="store_true", help="run every check, upload nothing")
     ap.add_argument("--force", action="store_true", help="upload even if a preflight check fails")
     a = ap.parse_args()
-
+    if a.sync:
+        return sync_make()
+    if not a.episode:
+        ap.error("episode folder required")
     ep = a.episode.resolve()
     pkg_path = ep / "package.json"
     if not pkg_path.exists():
@@ -284,15 +364,18 @@ def main():
 
     when = f"scheduled for {slot:%a %d %b %Y %H:%M} UK" if slot else ("public now" if mode == "now" else "private")
     print(f"[publish] '{pkg['title']}' -> {when} | Education | not made for kids")
-    if a.manual:
+    if a.manual or a.make:
         mine = [k for k, v in booked().items() if v.get("episode") == ep.name]
         if mine and not a.slot:  # re-running keeps the slot already booked for this episode
             slot = datetime.fromisoformat(mine[0])
         if mode != "schedule":
-            sys.exit("[publish] --manual only works with scheduling (default or --slot)")
+            sys.exit("[publish] --manual/--make only work with scheduling (default or --slot)")
         if a.dry_run:
-            print("[publish] dry run - no pack written."); return
-        print(f"[publish] upload pack -> {manual_pack(ep, pkg, slot)}")
+            print("[publish] dry run - nothing queued."); return
+        if a.make:
+            print(f"[publish] queued for Make -> {make_job(ep, pkg, slot)} (Make uploads it at its {slot:%H:%M} UK run)")
+        else:
+            print(f"[publish] upload pack -> {manual_pack(ep, pkg, slot)}")
         return
     if a.dry_run:
         print("[publish] dry run - nothing uploaded.")

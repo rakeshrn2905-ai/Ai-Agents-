@@ -14,7 +14,7 @@ Target: 60%+ "stayed to watch" (baseline 46%, #6 Lighters Came Before Matches), 
 5. No countdowns, no name tags in captions, no "illustration" labels.
 6. Captions at y ~ 1500, never at the bottom.
 7. vidIQ is on the free plan: never spend vidIQ credits (only 0-credit calls: balance, user_channels, list_competitors).
-   Supermetrics trial expired 2026-11-03 - use the free Google APIs instead.
+   No Google Cloud and no Supermetrics (trial expired 2026-11-03). Setup: docs/SETUP.md.
 
 Shorts format: 20-30 s, 9:16 1080x1920 30 fps, ~55-65 words, hook (surprise in ~2 s, title on screen
 from 0.0 s, characters already moving) -> how (labelled cutaway) -> why -> payoff ->
@@ -28,7 +28,7 @@ replace the planning, writing, packaging and analytics agents. The video/animati
 
 | Stage | Done by | Notes for Time Sketch |
 |---|---|---|
-| 1. Topic scout | `python3 -m timesketch.competitors` (free YouTube Data API, needs `YOUTUBE_API_KEY`) -> `/yt-viral` + `/yt-plan` | Rank by outlier multiple (`swipe.py`). Plan = 14 Shorts/week, not their long-form "anchor" shape. Skip topics already made (results log). |
+| 1. Topic scout | `yt-dlp --flat-playlist -J` on public channel pages -> `/yt-viral` + `/yt-plan` | Rank by outlier multiple (`swipe.py`). Plan = 14 Shorts/week, not their long-form "anchor" shape. Skip topics already made (results log). |
 | 2. Research / fact-check | ours | `facts.json`, 2+ sources per claim, reject hedged claims. |
 | 3. Script | `/yt-script` | Use its 21 formulas + `hookscore.py`, but compress to the Shorts shape above: hook <= 2 s, 55-65 words, `[ON SCREEN]` on every beat. Write `script.json` phrases. Its hook score is long-form tuned (it rates the 46% lighters hook WEAK) - one signal, real results win. |
 | 4. Storyboard | ours | `storyboard.json`, beats tied to phrase numbers, scenes from `lib/scenes.mjs`. |
@@ -37,8 +37,8 @@ replace the planning, writing, packaging and analytics agents. The video/animati
 | 7. Sound | ours | `python3 audio/mix.py episodes/<slug>`, then ffmpeg mux |
 | 8. QA | ours | separate reviewer; full decode, no black edges, text not over faces, levels |
 | 9. Title / thumbnail / description | `/yt-package` + `/yt-seo` | `title.py` lint; thumbnail = a frame from the hook, <= 3 words, different from the title. No chapters (Shorts). |
-| 10. Upload + publish | `publisher` agent (`.claude/agents/publisher.md`) -> `python3 -m timesketch.publish` | Preflight (decode, 1080x1920, 30 fps, 20-30 s, facts verified, QA), then schedules the next free 07:00 / 17:00 UK slot. Education, not made for kids. Always confirm with Rakesh before a real upload. |
-| 11. Analytics | `python3 -m timesketch.analytics` (free YouTube Analytics API, publisher's OAuth login) -> `/yt-retention` + `/yt-audit` | Feed the Studio retention CSV after 48 h, update the results log, ONE change per video. |
+| 10. Upload + publish | `publisher` agent -> `python3 -m timesketch.publish <ep> --make` (Make.com scenario via a Google-Drive-synced `MAKE_OUTBOX`, see docs/MAKE.md); `--sync` records video IDs; `--manual` = Studio upload pack | No Google Cloud. Preflight, next free 07:00 / 17:00 UK slot, Education, not made for kids. Always confirm with Rakesh before queueing. |
+| 11. Analytics | YouTube Studio CSV exports in `analytics/` -> `/yt-retention` + `/yt-audit` | Feed the Studio retention CSV after 48 h, update the results log, ONE change per video. |
 | Comments | `/yt-comment` | Under 30 words, pin the most-asked question. |
 
 Not used: `/yt-edit`, `/yt-shorts`, `/yt-chapters` - they are for recorded long videos.
@@ -54,7 +54,7 @@ node render.mjs $E video                  # video_noaudio.mp4
 python3 audio/mix.py $E                   # mix.wav
 ffmpeg -i $E/video_noaudio.mp4 -i $E/mix.wav -c:v copy -c:a aac -b:a 192k -shortest $E/final.mp4
 ffmpeg -v error -i $E/final.mp4 -f null -   # full decode check
-python3 -m timesketch.publish $E --dry-run  # then without --dry-run to upload + schedule
+python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to queue it for Make
 ```
 
 ## Results log
@@ -73,6 +73,4 @@ earned the first subscribers. Retired: hosts Tempo and Clio, voices Michael and 
 
 ## Setup (fresh machine)
 
-`npm install`; `pip install kokoro-onnx soundfile numpy`; Kokoro `kokoro-v1.0.onnx` + `voices-v1.0.bin`
-from the thewh1teagle/kokoro-onnx GitHub release `model-files-v1.0` into `models/kokoro/`;
-ffmpeg; `pip install google-api-python-client google-auth-oauthlib` + `client_secret.json` for uploads (README); `scripts/install_skills.sh` to install the /yt-* skills globally + the voice profile.
+See docs/SETUP.md (tools, Kokoro model, skills) and docs/MAKE.md (uploads).
