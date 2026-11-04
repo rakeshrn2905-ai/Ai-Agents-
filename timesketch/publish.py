@@ -28,7 +28,8 @@ SCHEDULE = ROOT / "analytics" / "schedule.json"
 RESULTS = ROOT / "analytics" / "results.csv"
 CLIENT_SECRETS = ROOT / "client_secret.json"
 TOKEN = ROOT / "token.json"
-SCOPES = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube"]
+SCOPES = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube",
+          "https://www.googleapis.com/auth/yt-analytics.readonly"]  # analytics.py shares this login
 CATEGORY_EDUCATION = "27"
 MIN_LEAD = timedelta(minutes=30)  # don't book a slot that starts within 30 min
 
