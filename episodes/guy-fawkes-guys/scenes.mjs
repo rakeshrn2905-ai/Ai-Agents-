@@ -39,10 +39,11 @@ function smallBarrel(c, x, y, s = 0.35) { c.save(); c.translate(x, y); c.scale(s
 const cellar = () => once('cellar', (c) => {
   stoneWall(c, '#4A4038', '#6B5B4B');
   for (const ax of [270, 810]) { // arches
-    c.fillStyle = '#2E2722'; c.beginPath(); c.moveTo(ax - 190, GROUND); c.lineTo(ax - 190, 560); c.arc(ax, 560, 190, Math.PI, 0); c.lineTo(ax + 190, GROUND); c.closePath(); c.fill();
+    c.fillStyle = '#7E6A58'; c.beginPath(); c.moveTo(ax - 190, GROUND); c.lineTo(ax - 190, 560); c.arc(ax, 560, 190, Math.PI, 0); c.lineTo(ax + 190, GROUND); c.closePath(); c.fill();
     c.strokeStyle = INK; c.lineWidth = 8; c.stroke();
   }
-  for (let r = 0; r < 3; r++) for (let i = 0; i < 6 - r; i++) smallBarrel(c, 140 + i * 160 + r * 80, GROUND - 10 - r * 105, 0.33); // stacked barrels
+  for (const [x0, n] of [[70, 2], [930, 2]]) for (let r = 0; r < 3; r++) for (let i = 0; i < n - (r > 1 ? 1 : 0); i++) // stacks at the edges only, so legs stay readable
+    smallBarrel(c, x0 + i * 110 + (r > 1 ? 55 : 0), GROUND - 10 - r * 105, 0.33);
   c.fillStyle = '#5A4A3A'; c.fillRect(0, GROUND, W, H - GROUND);
   c.strokeStyle = INK; c.lineWidth = 8; c.beginPath(); c.moveTo(0, GROUND); c.lineTo(W, GROUND); c.stroke();
 });
@@ -71,6 +72,27 @@ const dusk = () => once('dusk', (c) => { // bright Bonfire Night dusk: picture-f
   c.strokeStyle = INK; c.lineWidth = 8; c.beginPath(); c.moveTo(0, GROUND); c.lineTo(W, GROUND); c.stroke();
 });
 
+function lantern(c, x, y, t) {
+  seg2(c, x, y - 70, x, y - 40);
+  box(c, x - 26, y - 40, 52, 70, 'rgba(255,230,160,0.9)', { r: 8, lw: 6, k: 0 });
+  box(c, x - 32, y - 48, 64, 14, PAL.brass, { r: 4, lw: 5, k: 0 }); box(c, x - 32, y + 26, 64, 14, PAL.brass, { r: 4, lw: 5, k: 0 });
+  flame(c, x, y + 18, 34, t);
+}
+function seg2(c, x1, y1, x2, y2) { c.beginPath(); c.moveTo(x1, y1); c.lineTo(x2, y2); c.lineWidth = 5; c.strokeStyle = INK; c.stroke(); }
+// the "guy": a stuffed straw dummy - stitched sack head, button eyes, straw tufts. Clearly an object, not a person.
+function strawGuy(c, x, y, s) {
+  c.save(); c.translate(x, y); c.scale(s, s);
+  box(c, -70, -300, 140, 210, '#8FA889', { r: 18 });                       // stuffed coat
+  for (const [dx, dy, a] of [[-70, -230, -2.2], [70, -230, -0.9], [-70, -110, 2.4], [70, -110, 0.7], [-20, -90, 1.7], [20, -90, 1.4]])
+    for (let k = -1; k <= 1; k++) { c.save(); c.translate(dx, dy); c.rotate(a + k * 0.25); seg2(c, 0, 0, 34, 0); c.strokeStyle = '#E0B84A'; c.lineWidth = 7; c.beginPath(); c.moveTo(0, 0); c.lineTo(30, 0); c.stroke(); c.restore(); }
+  ell(c, 0, -360, 62, 66, '#D8B98A', { k: 0.12 });                         // sack head
+  c.strokeStyle = INK; c.lineWidth = 4; c.beginPath(); c.moveTo(-58, -330); for (let i = 0; i <= 8; i++) c.lineTo(-58 + i * 14.5, -330 + (i % 2 ? 6 : -6)); c.stroke(); // stitching
+  for (const ex of [-22, 22]) { ell(c, ex, -372, 12, 12, INK, { lw: 0, k: 0 }); c.strokeStyle = '#D8B98A'; c.lineWidth = 3; c.beginPath(); c.moveTo(ex - 6, -378); c.lineTo(ex + 6, -366); c.moveTo(ex + 6, -378); c.lineTo(ex - 6, -366); c.stroke(); }
+  c.strokeStyle = INK; c.lineWidth = 5; c.beginPath(); c.moveTo(-24, -342); c.lineTo(24, -342); for (let i = -2; i <= 2; i++) { c.moveTo(i * 10, -348); c.lineTo(i * 10, -336); } c.stroke();
+  box(c, -40, -470, 80, 60, '#5B4636', { r: 6 }); box(c, -66, -418, 132, 16, '#5B4636', { r: 6 }); // hat
+  c.restore();
+}
+
 function firework(c, x, y, t, col) {
   const p = (t % 1.6) / 1.6; if (p > 0.85) return;
   const r = 40 + 170 * easeOut(p / 0.85);
@@ -94,8 +116,10 @@ export const SCENES = {
     c.drawImage(dusk(), 0, 0);
     firework(c, 250, 520, ctx.T + 0.5, PAL.coral); firework(c, 840, 460, ctx.T + 0.9, PAL.navy); firework(c, 560, 640, ctx.T + 0.2, '#FFFFFF');
     actor(c, { who: 'barrel', mood: 'shock', action: 'slam', armPose: 'shrug', s: 1.3 }, t, ctx, 300);
-    human(c, { ...fawkesCard, x: 760, y: GROUND, s: 1.5, t: ctx.T, mood: 'grin', armPose: 'hold', flip: true });
-    flame(c, 760 - 155, GROUND - 620, 50, ctx.T);
+    human(c, { ...fawkesCard, x: 700, y: GROUND, s: 1.36, t: ctx.T, mood: 'grin', armPose: 'hold' }); // lantern hand on the open (right) side // smaller: hat clears the title during the push-in
+    // 'hold' puts his right hand at local (195, -347); hang the lantern's handle from that point
+    const hs = 1.36, hx = 700 + 195 * hs, hy = GROUND - 347 * hs;
+    lantern(c, hx, hy + 70, ctx.T);
   },
 
   // 1-2: x-ray cross-section of Parliament: Lords above, barrels below; king appears for phrase 2
@@ -128,7 +152,7 @@ export const SCENES = {
     const p = easeOut(t / 0.7);
     objChar(c, { body: 'letter', x: lerp(-200, 300, p), y: lerp(700, GROUND - 150, p) - Math.sin(p * Math.PI) * 300, s: 1.1, t: ctx.T, mood: 'grin', armPose: 'point', legPose: 'jump' });
     const at = beat.caughtAt ?? 1.4, caught = t > at;
-    human(c, { ...fawkesCard, x: 760, y: GROUND, s: 1.45, t: ctx.T, mood: caught ? 'shock' : 'worried', armPose: caught ? 'cheer' : 'down' });
+    human(c, { ...fawkesCard, x: 760, y: GROUND, s: 1.36, t: ctx.T, mood: caught ? 'shock' : 'worried', armPose: caught ? 'cheer' : 'down' });
     if (caught) { burst(c, 760, 760, 260, t - at, 12, PAL.gold); }
   },
 
@@ -137,16 +161,16 @@ export const SCENES = {
     c.drawImage(night(), 0, 0);
     firework(c, 260, 380, ctx.T, PAL.gold); firework(c, 820, 300, ctx.T + 0.7, PAL.coral); firework(c, 560, 520, ctx.T + 1.2, PAL.teal);
     const guyAt = beat.guyAt ?? 2.2;
-    if (t > guyAt) human(c, { ...guyCard, x: 540, y: GROUND - 230 + (1 - easeOutBack((t - guyAt) / 0.4)) * 400, s: 0.8, t: ctx.T, mood: 'worried', armPose: 'shrug' });
+    if (t > guyAt) strawGuy(c, 540, GROUND - 190 + (1 - easeOutBack((t - guyAt) / 0.4)) * 400, 0.9);
     bonfire(c, 540, GROUND + 10, ctx.T, clamp(t / 0.3));
-    actor(c, { who: 'barrel', mood: 'grin', action: 'bounce', armPose: 'cheer', s: 0.7 }, t, ctx, 150);
+    actor(c, { who: 'barrel', mood: 'grin', action: 'bounce', armPose: 'cheer', s: 0.7 }, t, ctx, 200);
     actor(c, { who: 'letter', mood: 'grin', action: 'bounce', armPose: 'cheer', s: 0.7 }, t + 0.3, ctx, 930);
   },
 
   // 5: dictionary card: the meaning changes over time
   dictionary(c, t, beat, ctx) {
     c.drawImage(setCanvas('paper'), 0, 0);
-    box(c, 90, 520, 900, 900, '#FFFDF6', { r: 30, k: 0.04 });
+    box(c, 90, 520, 900, 820, '#FFFDF6', { r: 30, k: 0 });
     c.font = '900 96px "Noto Sans"'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillStyle = INK; c.fillText('guy', 540, 640);
     c.font = 'italic 700 40px "Noto Sans"'; c.fillStyle = '#6B635B'; c.fillText('noun', 540, 715);
     const rows = beat.rows || [];

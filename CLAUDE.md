@@ -36,6 +36,16 @@ own visual + SFX. No on-screen host: Style 5 object characters + painted sets.
 7. **Test ONE change per video** and log it in the results table below; keep what moves the number.
    80% is top-tier for Shorts, so expect to climb towards it over several videos, not in one jump.
 
+## Detail check (look at full-size frames from final.mp4, every beat, before handing over)
+
+- Limbs: legs never crossed (X), knees and elbows bend outward, elbows hang down; walking feet stay on their own side.
+- Hands: a held prop touches the hand (lantern handle in the palm), nothing floats.
+- Contrast: thin black limbs never sit on a dark background (light the arches/doorways behind characters).
+- Text: titles never cover faces or hats, including during camera push-ins; labels stay attached to their boxes.
+- Framing: nothing important cut at the frame edge after the camera zoom.
+- Taste: effigies, injuries or danger read clearly as cartoon objects (stitched dummy, not a person).
+- Props and sets: no clutter overlapping a character's face or the main prop.
+
 ## Who does what
 
 The /yt-* skills (`.claude/skills/yt-*`, from github.com/Jakeschincariol/youtube-agent-skill, MIT)
@@ -50,7 +60,7 @@ replace the planning, writing, packaging and analytics agents. The video/animati
 | 5. Voice | ours | `python3 audio/voice_kokoro.py episodes/<slug>` |
 | 6. Animation | ours | `python3 -m timesketch.timing`, `node render.mjs <ep> still`, then `video` |
 | 7. Sound | ours | `python3 audio/mix.py episodes/<slug>`, then ffmpeg mux |
-| 8. QA | `python3 -m timesketch.qa <ep>` + a look at the stills | full decode, format, length, frame-1 gates, motion, hook timing, beat length, SFX, loop, black edges, levels, clipping -> qa.json |
+| 8. QA | `python3 -m timesketch.qa <ep>` + `node scripts/cast_sheet.mjs <ep> cast.png` + the detail check below | full decode, format, length, frame-1 gates, motion, hook timing, beat length, SFX, loop, black edges, levels, clipping -> qa.json |
 | 9. Title / thumbnail / description | `/yt-package` + `/yt-seo` | `title.py` lint; thumbnail = a frame from the hook, <= 3 words, different from the title. No chapters (Shorts). |
 | 10. Upload + publish | `publisher` agent -> on the Mac: Claude in Chrome fills YouTube Studio from `--manual`'s upload pack and schedules it (confirm first), or `python3 -m timesketch.publish <ep> --make` (Make.com scenario via a Google-Drive-synced `MAKE_OUTBOX`, see docs/MAKE.md); `--sync` records video IDs; `--manual` = Studio upload pack | No Google Cloud. Preflight, next free 07:00 / 17:00 UK slot, Education, not made for kids. Always confirm with Rakesh before queueing. |
 | 11. Analytics | YouTube Studio CSV exports in `analytics/` -> `/yt-retention` + `/yt-audit` | Feed the Studio retention CSV after 48 h, update the results log, ONE change per video. |

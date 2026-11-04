@@ -53,25 +53,25 @@
       "check": "frame 1 bright (>= 140)",
       "pass": true,
       "hard": true,
-      "detail": "brightness 168"
+      "detail": "brightness 170"
     },
     {
       "check": "frame 1 colourful (>= 90)",
       "pass": true,
       "hard": true,
-      "detail": "saturation 106"
+      "detail": "saturation 107"
     },
     {
       "check": "motion in the first 0.5 s",
       "pass": true,
       "hard": true,
-      "detail": "change 20.1"
+      "detail": "change 19.9"
     },
     {
       "check": "ending loops back to the hook",
       "pass": true,
       "hard": false,
-      "detail": "first/last difference 21.5"
+      "detail": "first/last difference 21.0"
     },
     {
       "check": "no black edges",
