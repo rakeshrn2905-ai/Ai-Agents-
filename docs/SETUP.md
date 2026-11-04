@@ -48,6 +48,10 @@ ffmpeg -y -i $E/video_noaudio.mp4 -i $E/mix.wav -c:v copy -c:a aac -b:a 192k -sh
 
 ## 4. Google Cloud: one project for uploads, analytics and competitor research (free)
 
+> **Asked for a card?** The YouTube APIs are free and need no billing account. The card prompt is Google Cloud's
+> $300 free trial for paid products: close it / choose "Skip" and never click "Activate". If it still blocks you,
+> skip part 4-5 and use **No Google Cloud mode** (part 6b).
+
 Sign in to console.cloud.google.com with the Google account that **manages the Time Sketch Brand Account**.
 
 1. **Create a project:** project picker (top bar) -> New project -> name it `Time Sketch` -> Create -> select it.
@@ -97,6 +101,23 @@ everything and asks you before uploading.
 Until the audit is approved, open YouTube Studio after each upload and press Schedule / Publish yourself.
 To remove the lock: search "YouTube API Services Audit and Quota Extension Form", fill it in for project
 `Time Sketch` (purpose: uploading your own channel's videos). Approval can take a few weeks.
+
+## 6b. No Google Cloud mode (manual upload, free)
+
+```bash
+python3 -m timesketch.publish episodes/<slug> --manual
+```
+Runs the same checks, books the next 07:00 / 17:00 slot and writes `episodes/<slug>/upload_pack.md`: title,
+description, tags and every Studio setting to copy, plus the thumbnail frame. Upload in YouTube Studio and press
+Schedule (no private lock this way). Then record the link:
+```bash
+python3 -m timesketch.publish episodes/<slug> --link https://youtube.com/shorts/VIDEO_ID
+```
+- **Analytics without Google Cloud:** Studio -> Analytics -> Advanced mode -> export (CSV), and each Short's
+  retention chart -> download. Drop the files in `analytics/` and ask Claude for `/yt-retention` + `/yt-audit`.
+- **Competitors without Google Cloud:** on your computer `pip install yt-dlp`, then for each channel
+  `yt-dlp --flat-playlist -J "https://www.youtube.com/@CHANNEL/shorts" > analytics/CHANNEL.json` and ask Claude
+  for `/yt-viral` on those files.
 
 ## 7. Claude Code cloud sessions (claude.ai/code)
 

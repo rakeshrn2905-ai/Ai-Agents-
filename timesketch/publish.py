@@ -198,6 +198,55 @@ def record(ep: Path, pkg: dict, vid: str, mode: str, slot: datetime | None):
         f.write(f'{ep.name},{vid},"{title}",{when},{length:.1f},,,,\n')
 
 
+def manual_pack(ep: Path, pkg: dict, slot: datetime) -> Path:
+    """No Google Cloud: write a copy-paste upload pack for YouTube Studio and book the slot."""
+    thumb = make_thumbnail(ep, pkg.get("thumb_time", 0.6))
+    tags = ", ".join(pkg.get("tags", []))
+    text = f"""# Upload pack - {ep.name}
+
+Open studio.youtube.com (Time Sketch channel) -> Create -> Upload videos -> pick:
+  {ep / 'final.mp4'}
+
+## Title
+{pkg['title']}
+
+## Description
+{pkg.get('description', '')}
+
+## Tags (Show more -> Tags)
+{tags}
+
+## Settings
+- Thumbnail: {thumb.name} (Shorts may ignore custom thumbnails)
+- Audience: No, it's not made for kids
+- Altered or synthetic content: No (clearly cartoon)
+- Category (Show more): Education
+- Visibility: Schedule -> {slot:%d %b %Y}, {slot:%H:%M}, time zone United Kingdom (London)
+
+After publishing, paste the Short's link here so analytics can track it:
+  python3 -m timesketch.publish {ep.relative_to(ROOT) if ep.is_relative_to(ROOT) else ep} --link https://youtube.com/shorts/VIDEO_ID
+"""
+    out = ep / "upload_pack.md"
+    out.write_text(text)
+    sched = booked()
+    sched[slot.isoformat()] = {"episode": ep.name, "video_id": None, "title": pkg["title"], "manual": True}
+    SCHEDULE.parent.mkdir(exist_ok=True)
+    SCHEDULE.write_text(json.dumps(dict(sorted(sched.items())), indent=2))
+    return out
+
+
+def link(ep: Path, pkg: dict, url: str):
+    """Record a manually uploaded video's ID so analytics can find it."""
+    vid = url.rstrip("/").split("/")[-1].split("v=")[-1].split("?")[0]
+    sched = booked()
+    slot = next((datetime.fromisoformat(k) for k, v in sched.items() if v.get("episode") == ep.name), None)
+    if slot:
+        sched[slot.isoformat()]["video_id"] = vid
+        SCHEDULE.write_text(json.dumps(dict(sorted(sched.items())), indent=2))
+    record(ep, pkg, vid, "manual", None if slot is None else slot)
+    print(f"[publish] linked {ep.name} -> https://youtube.com/shorts/{vid}")
+
+
 def main():
     ap = argparse.ArgumentParser(prog="timesketch.publish", description="Upload + schedule a Time Sketch Short")
     ap.add_argument("episode", type=Path)
@@ -205,6 +254,8 @@ def main():
     g.add_argument("--now", action="store_true", help="publish publicly right away")
     g.add_argument("--private", action="store_true", help="upload as private, don't schedule")
     g.add_argument("--slot", help="schedule for this UK time, e.g. 2026-11-06T17:00")
+    ap.add_argument("--manual", action="store_true", help="no Google Cloud: write upload_pack.md for YouTube Studio")
+    ap.add_argument("--link", metavar="URL", help="after a manual upload: record the Short's URL")
     ap.add_argument("--dry-run", action="store_true", help="run every check, upload nothing")
     ap.add_argument("--force", action="store_true", help="upload even if a preflight check fails")
     a = ap.parse_args()
@@ -217,9 +268,11 @@ def main():
     if (ep / "upload.json").exists() and not a.force:
         sys.exit(f"[publish] already uploaded: {json.loads((ep / 'upload.json').read_text())['url']} (use --force to re-upload)")
 
+    if a.link:
+        return link(ep, pkg, a.link)
     mode = "now" if a.now else "private" if a.private else "schedule"
     slot = parse_slot(a.slot) if a.slot else (next_slot() if mode == "schedule" else None)
-    if slot and slot.isoformat() in booked():
+    if slot and slot.isoformat() in booked() and booked()[slot.isoformat()].get("episode") != ep.name:
         sys.exit(f"[publish] slot {slot:%a %d %b %H:%M} is already booked by {booked()[slot.isoformat()]['episode']}")
 
     errs = preflight(ep, pkg)
@@ -231,6 +284,16 @@ def main():
 
     when = f"scheduled for {slot:%a %d %b %Y %H:%M} UK" if slot else ("public now" if mode == "now" else "private")
     print(f"[publish] '{pkg['title']}' -> {when} | Education | not made for kids")
+    if a.manual:
+        mine = [k for k, v in booked().items() if v.get("episode") == ep.name]
+        if mine and not a.slot:  # re-running keeps the slot already booked for this episode
+            slot = datetime.fromisoformat(mine[0])
+        if mode != "schedule":
+            sys.exit("[publish] --manual only works with scheduling (default or --slot)")
+        if a.dry_run:
+            print("[publish] dry run - no pack written."); return
+        print(f"[publish] upload pack -> {manual_pack(ep, pkg, slot)}")
+        return
     if a.dry_run:
         print("[publish] dry run - nothing uploaded.")
         return

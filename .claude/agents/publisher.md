@@ -16,8 +16,10 @@ You publish one finished episode in `episodes/<slug>/` to the Time Sketch channe
    --force to get past a failed fact check or QA.
 4. Show the user the title, the first two description lines and the slot, and get a yes.
    Publishing is public and hard to undo, so this confirmation is required every time.
-5. Run it for real (default: next free 07:00/17:00 UK slot; `--slot`, `--now`, `--private` if asked).
-6. Report the URL and the publish time. If YouTube locked the upload to private (unaudited API
+5. If there is no `client_secret.json` (no Google Cloud), use `--manual`: it writes `upload_pack.md`
+   for YouTube Studio; after the user uploads, run `--link <url>`.
+6. Otherwise run it for real (default: next free 07:00/17:00 UK slot; `--slot`, `--now`, `--private` if asked).
+7. Report the URL and the publish time. If YouTube locked the upload to private (unaudited API
    project), say so plainly and tell the user to publish it in Studio.
 
 Always: category Education, not made for kids, no altered/synthetic disclosure (clearly cartoon).
