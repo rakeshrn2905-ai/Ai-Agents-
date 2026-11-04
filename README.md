@@ -11,6 +11,7 @@ timing resolver (`timesketch/timing.py`). Demo episode: `episodes/lighters-befor
 
 Planning, scripting, packaging, SEO, comments and analytics use the `/yt-*` skills in `.claude/skills/`
 (from Jakeschincariol/youtube-agent-skill, MIT). See CLAUDE.md for the stage-by-stage mapping.
+Uploading: `python3 -m timesketch.publish episodes/<slug>` (or ask Claude Code to use the `publisher` agent).
 Still to build: fact-check researcher, storyboarder and QA reviewer.
 
 ## Build one episode
@@ -27,3 +28,18 @@ node render.mjs $E video              # video_noaudio.mp4
 python3 audio/mix.py $E               # mix.wav
 ffmpeg -i $E/video_noaudio.mp4 -i $E/mix.wav -c:v copy -c:a aac -b:a 192k -shortest $E/final.mp4
 ```
+
+## Upload setup (one time)
+
+1. Google Cloud Console -> new project -> enable **YouTube Data API v3**.
+2. OAuth consent screen -> External -> add your Google account as a test user.
+3. Credentials -> Create OAuth client ID -> **Desktop app** -> download JSON -> save as `client_secret.json`
+   in the repo root (it is git-ignored).
+4. `pip install google-api-python-client google-auth-oauthlib`
+5. `python3 -m timesketch.publish episodes/<slug> --dry-run`, then run it without `--dry-run`. The first
+   run opens a browser: sign in and **choose the Time Sketch Brand Account**. The token is saved to `token.json`.
+
+YouTube locks uploads from unaudited API projects to **private**. Until Google approves your project in the
+YouTube API audit (Console -> YouTube Data API -> "API compliance audit" form), each upload arrives
+private and you press Publish/Schedule in Studio. After approval, the scheduled 07:00/17:00 slots go out on their own.
+Quota: the default 10,000 units/day covers about 6 uploads (1,600 each), enough for 2 a day.

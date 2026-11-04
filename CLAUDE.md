@@ -36,7 +36,7 @@ replace the planning, writing, packaging and analytics agents. The video/animati
 | 7. Sound | ours | `python3 audio/mix.py episodes/<slug>`, then ffmpeg mux |
 | 8. QA | ours | separate reviewer; full decode, no black edges, text not over faces, levels |
 | 9. Title / thumbnail / description | `/yt-package` + `/yt-seo` | `title.py` lint; thumbnail = a frame from the hook, <= 3 words, different from the title. No chapters (Shorts). |
-| 10. Upload | Rakesh, manually (the skills' gate: "nothing publishes until you do it") | 07:00 / 17:00 UK, Not made for kids, Education. |
+| 10. Upload + publish | `publisher` agent (`.claude/agents/publisher.md`) -> `python3 -m timesketch.publish` | Preflight (decode, 1080x1920, 30 fps, 20-30 s, facts verified, QA), then schedules the next free 07:00 / 17:00 UK slot. Education, not made for kids. Always confirm with Rakesh before a real upload. |
 | 11. Analytics | `/yt-retention` + `/yt-audit` | Feed the Studio retention CSV after 48 h, update the results log, ONE change per video. |
 | Comments | `/yt-comment` | Under 30 words, pin the most-asked question. |
 
@@ -53,6 +53,7 @@ node render.mjs $E video                  # video_noaudio.mp4
 python3 audio/mix.py $E                   # mix.wav
 ffmpeg -i $E/video_noaudio.mp4 -i $E/mix.wav -c:v copy -c:a aac -b:a 192k -shortest $E/final.mp4
 ffmpeg -v error -i $E/final.mp4 -f null -   # full decode check
+python3 -m timesketch.publish $E --dry-run  # then without --dry-run to upload + schedule
 ```
 
 ## Results log
@@ -73,4 +74,4 @@ earned the first subscribers. Retired: hosts Tempo and Clio, voices Michael and 
 
 `npm install`; `pip install kokoro-onnx soundfile numpy`; Kokoro `kokoro-v1.0.onnx` + `voices-v1.0.bin`
 from the thewh1teagle/kokoro-onnx GitHub release `model-files-v1.0` into `models/kokoro/`;
-ffmpeg; `scripts/install_skills.sh` to install the /yt-* skills globally + the voice profile.
+ffmpeg; `pip install google-api-python-client google-auth-oauthlib` + `client_secret.json` for uploads (README); `scripts/install_skills.sh` to install the /yt-* skills globally + the voice profile.
