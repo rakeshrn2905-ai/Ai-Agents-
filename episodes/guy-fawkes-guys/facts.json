@@ -1,0 +1,25 @@
+{
+  "topic": "The word 'guy' comes from Guy Fawkes",
+  "pillar": "Present: how things got this way (timely: Bonfire Night, 5 Nov)",
+  "claims": [
+    {"claim": "In 1605 Guy Fawkes guarded the gunpowder (commonly given as 36 barrels) hidden in the undercroft beneath the House of Lords.",
+     "sources": ["https://kingscollections.org/exhibitions/specialcollections/the-very-age-and-body-of-the-time-shakespeares-world/a-plot-against-my-life,-my-crown-religion-and-politics/chronicle-of-english-history", "https://simplestudy.com/gb/gcse/edexcel/history/revision-notes/crime-and-punishment-in-britain-c1000present/c1500-c1700-early-modern-england/the-gunpowder-plotters-1605"],
+     "status": "verified", "note": "Most sources give 36; a few say 'about 30'. 36 is the standard figure."},
+    {"claim": "The plot aimed to blow up Parliament and King James I.",
+     "sources": ["https://kingscollections.org/exhibitions/specialcollections/the-very-age-and-body-of-the-time-shakespeares-world/a-plot-against-my-life,-my-crown-religion-and-politics/chronicle-of-english-history", "https://www.britannica.com/video/187587/James-I-Gunpowder-Plot-installment-series-son-November-5-1605"],
+     "status": "verified"},
+    {"claim": "An anonymous warning letter (to Lord Monteagle) exposed the plot and Fawkes was caught with the gunpowder on the night of 4-5 November 1605.",
+     "sources": ["https://www.adamsmith.org/blog/an-anonymous-letter-saved-king-and-parliament", "https://www.britannica.com/video/187587/James-I-Gunpowder-Plot-installment-series-son-November-5-1605"],
+     "status": "verified"},
+    {"claim": "Londoners lit bonfires in 1605 to celebrate the king's survival; burning effigies of Fawkes came later.",
+     "sources": ["https://en.wikipedia.org/wiki/Guy_Fawkes_Night", "https://www.examiner.co.uk/whats-on/family-kids-news/gunpowder-treason-plot-15-things-7945459"],
+     "status": "verified"},
+    {"claim": "'Guy' meant an effigy of Guy Fawkes (OED first citation 1806), then a grotesquely/poorly dressed person (1836), then any man/fellow (1847).",
+     "sources": ["https://www.etymonline.com/word/guy", "https://wordhistories.net/2016/11/04/guy/", "https://grammarphobia.com/blog/2008/08/its-a-guy-thing.html", "https://www.smithsonianmag.com/smart-news/guy-fawkes-may-be-root-word-guys-180953250/"],
+     "status": "verified", "note": "OED says the earliest 'man' examples 'may be influenced' by the effigy sense; etymonline and Ayto state the link. Script describes the chain, does not claim certainty beyond it."}
+  ],
+  "rejected": [
+    {"claim": "'Guy' was an 18th-century insult.", "reason": "Only a forum post."},
+    {"claim": "The first 1605 bonfires burned Guy Fawkes effigies.", "reason": "Wrong - they celebrated the king; effigies came later."}
+  ]
+}

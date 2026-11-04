@@ -12,8 +12,8 @@ import soundfile as sf
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from sfx import SR, make  # noqa: E402
 
-BED_DB = -18.0      # bed level relative to voice peak
-DUCK_DB = -6.0      # extra reduction while speech is playing
+BED_DB = -13.0      # bed level vs voice peak; lands ~18 dB under the voice during speech
+DUCK_DB = -4.0      # extra reduction while speech is playing
 BPM = 78
 rng = np.random.default_rng(3)
 

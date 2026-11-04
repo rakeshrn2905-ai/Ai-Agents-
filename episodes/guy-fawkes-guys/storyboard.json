@@ -1,0 +1,206 @@
+{
+ "loop": true,
+ "cast": {
+  "barrel": {
+   "body": "barrel"
+  },
+  "letter": {
+   "body": "letter"
+  }
+ },
+ "beats": [
+  {
+   "phrase": 0,
+   "scene": "guyhook",
+   "camera": "push",
+   "title": "'GUYS' CAME FROM *GUY FAWKES*",
+   "shake": 0.3,
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "thud",
+     "at": 0.3,
+     "db": -4
+    },
+    {
+     "type": "flame",
+     "at": 0.1,
+     "db": -12
+    }
+   ]
+  },
+  {
+   "phrase": 1,
+   "scene": "parliament",
+   "camera": "xray",
+   "countBarrels": true,
+   "title": "*1605*: UNDER PARLIAMENT",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "tick",
+     "at": 0.4
+    },
+    {
+     "type": "tick",
+     "at": 0.8
+    },
+    {
+     "type": "tick",
+     "at": 1.2
+    },
+    {
+     "type": "pop",
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "phrase": 2,
+   "scene": "parliament",
+   "king": true,
+   "camera": "pushfast",
+   "transition": "cut",
+   "title": "BLOW UP *THE KING*",
+   "shake": 0.35,
+   "sfx": [
+    {
+     "type": "pop",
+     "at": 0.1
+    },
+    {
+     "type": "thud",
+     "at": 0.35,
+     "db": -6
+    }
+   ],
+   "titleY": 1180
+  },
+  {
+   "phrase": 3,
+   "scene": "caught",
+   "camera": "push",
+   "title": "*CAUGHT*",
+   "titleAt": 1.5,
+   "shake": 1.5,
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "scratch",
+     "at": 0.6
+    },
+    {
+     "type": "snare",
+     "at": 1.5
+    },
+    {
+     "type": "thud",
+     "at": 1.5,
+     "db": -6
+    }
+   ],
+   "caughtAt": 1.5
+  },
+  {
+   "phrase": 4,
+   "scene": "bonfire",
+   "camera": "drift",
+   "title": "BONFIRE *NIGHT*",
+   "guyAt": 2.3,
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "flame",
+     "at": 0.1,
+     "db": -6
+    },
+    {
+     "type": "pop",
+     "at": 0.8
+    },
+    {
+     "type": "pop",
+     "at": 1.6
+    },
+    {
+     "type": "pop",
+     "at": 2.3,
+     "db": -4
+    }
+   ]
+  },
+  {
+   "phrase": 5,
+   "scene": "dictionary",
+   "camera": "push",
+   "title": "WHAT *GUY* MEANT",
+   "rows": [
+    {
+     "year": "1806",
+     "text": "a Fawkes dummy",
+     "at": 0.0
+    },
+    {
+     "year": "1836",
+     "text": "an odd dresser",
+     "at": 0.6
+    },
+    {
+     "year": "1847",
+     "text": "any man",
+     "at": 2.0
+    }
+   ],
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "pop",
+     "at": 0.05
+    },
+    {
+     "type": "pop",
+     "at": 0.65
+    },
+    {
+     "type": "chime",
+     "at": 2.0
+    }
+   ]
+  },
+  {
+   "phrase": 6,
+   "scene": "payoff",
+   "camera": "pull",
+   "title": "ALL OF *YOU GUYS*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "chime",
+     "at": 0.4
+    },
+    {
+     "type": "pop",
+     "at": 2.0
+    }
+   ]
+  }
+ ]
+}
