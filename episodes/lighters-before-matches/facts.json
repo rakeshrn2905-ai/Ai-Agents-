@@ -1,0 +1,19 @@
+{
+  "topic": "Lighters came before matches",
+  "pillar": "Which came first?",
+  "claims": [
+    {"claim": "Johann Wolfgang Döbereiner, a German chemist, invented a lighter (Döbereiner's lamp) in 1823.",
+     "sources": ["https://en.wikipedia.org/wiki/D%C3%B6bereiner%27s_lamp", "https://www.chm.bris.ac.uk/~paulmay/webprojects2001/osullivan/doblamp.htm"], "status": "verified"},
+    {"claim": "Inside the jar, zinc reacts with dilute sulfuric acid to make hydrogen gas.",
+     "sources": ["https://en.wikipedia.org/wiki/D%C3%B6bereiner%27s_lamp", "https://www.americanscientist.org/node/2336"], "status": "verified"},
+    {"claim": "Opening the valve sends hydrogen onto a platinum sponge, which heats up and ignites the gas (no spark needed).",
+     "sources": ["https://en.wikipedia.org/wiki/D%C3%B6bereiner%27s_lamp", "https://www.chm.bris.ac.uk/~paulmay/webprojects2001/osullivan/doblamp.htm"], "status": "verified"},
+    {"claim": "John Walker, a chemist in Stockton-on-Tees, invented the friction match in 1826; first recorded sale 7 April 1827.",
+     "sources": ["https://phillumeny.com/johnwalker/biography/", "https://ctlhs.co.uk/golden-jubilee/fifty-interesting-events/john-walker-sells-friction-matches-1827/"], "status": "verified"},
+    {"claim": "Neither Döbereiner nor Walker patented their invention.",
+     "sources": ["https://www.americanscientist.org/node/2336", "https://phillumeny.com/johnwalker/biography/"], "status": "verified"}
+  ],
+  "rejected": [
+    {"claim": "Over a million Döbereiner lamps were sold in the 1820s.", "reason": "Only hedged sources ('it is said'); not used."}
+  ]
+}

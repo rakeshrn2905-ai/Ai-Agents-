@@ -1,0 +1,34 @@
+{
+  "loop": true,
+  "cast": {
+    "lamp":  {"body": "lamp", "flame": 0, "s": 0.95},
+    "match": {"body": "match", "s": 1.0},
+    "walker": {"human": {"costume": {"coat": "#5A6B4F", "trim": "#E0A63A", "trousers": "#E9E2D2"}, "hair": {"style": "short", "color": "#8A8A8A"}, "hat": {"style": "top", "color": "#2A2622"}}, "s": 1.0}
+  },
+  "beats": [
+    {"phrase": 0, "scene": "hook", "set": "workshop", "camera": "push", "title": "LIGHTERS CAME *FIRST*", "shake": 0.3,
+     "chars": [{"who": "lamp", "mood": "smug", "action": "flame", "armPose": "hips"}, {"who": "match", "mood": "shock", "action": "slam", "armPose": "shrug"}],
+     "sfx": [{"type": "whoosh", "at": 0.0}, {"type": "thud", "at": 0.3, "db": -4}, {"type": "flame", "at": 0.05, "db": -10}]},
+    {"phrase": 1, "scene": "timeline", "camera": "drift", "title": "*1823*: A LIGHTER IN A JAR", "winner": 0,
+     "items": [{"who": "lamp", "year": "1823"}, {"who": "match", "year": "1826", "delay": 1.4}],
+     "sfx": [{"type": "whoosh", "at": 0.0}, {"type": "pop", "at": 0.4}, {"type": "pop", "at": 1.8}]},
+    {"phrase": 2, "scene": "cutaway", "who": "lamp", "camera": "xray", "title": "HOW IT WORKED",
+     "labels": [{"text": "ZINC", "part": "zinc", "side": -1}, {"text": "ACID", "part": "acid", "side": 1}, {"text": "HYDROGEN", "part": "hydrogen", "side": -1}],
+     "sfx": [{"type": "whoosh", "at": 0.0}, {"type": "tick", "at": 0.4}, {"type": "tick", "at": 1.1}, {"type": "tick", "at": 1.8}]},
+    {"phrase": 3, "scene": "cutaway", "who": "lamp", "camera": "pushfast", "transition": "cut", "flame": true,
+     "labels": [{"text": "VALVE", "part": "valve", "side": -1}, {"text": "PLATINUM", "part": "platinum", "side": 1}],
+     "sfx": [{"type": "tick", "at": 0.3}, {"type": "tick", "at": 1.0}, {"type": "flame", "at": 1.2}]},
+    {"phrase": 4, "scene": "reveal", "set": "workshop", "camera": "pushfast", "title": "NO SPARK *NEEDED*", "shake": 0.1,
+     "chars": [{"who": "lamp", "mood": "proud", "action": "flame", "armPose": "cheer"}],
+     "sfx": [{"type": "flame", "at": 0.0, "db": -4}, {"type": "chime", "at": 0.2}]},
+    {"phrase": 5, "scene": "explain", "set": "street", "camera": "push", "title": "*1826*: THE FRICTION MATCH",
+     "chars": [{"who": "walker", "mood": "grin", "action": "walkin", "from": "left", "armPose": "present"}, {"who": "match", "mood": "grin", "action": "bounce", "armPose": "wave"}],
+     "sfx": [{"type": "whoosh", "at": 0.0}, {"type": "pop", "at": 0.9}]},
+    {"phrase": 6, "scene": "reveal", "set": "street", "camera": "pushfast", "title": "ONE *SCRAPE*", "shake": 0.5,
+     "chars": [{"who": "match", "mood": "grin", "action": "strike"}],
+     "sfx": [{"type": "strike", "at": 0.35, "db": -2}, {"type": "thud", "at": 0.5, "db": -8}]},
+    {"phrase": 7, "scene": "payoff", "set": "workshop", "camera": "pull", "title": "CAME SECOND, BUT *WON*",
+     "chars": [{"who": "lamp", "mood": "worried", "action": "sad"}, {"who": "match", "mood": "proud", "action": "flame", "armPose": "cheer"}],
+     "sfx": [{"type": "whoosh", "at": 0.0}, {"type": "chime", "at": 0.6}, {"type": "pop", "at": 2.4}]}
+  ]
+}

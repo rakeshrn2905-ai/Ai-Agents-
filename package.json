@@ -1,0 +1,13 @@
+{
+  "name": "time-sketch",
+  "private": true,
+  "type": "module",
+  "description": "Time Sketch Shorts pipeline: Style 5 cartoon drawn in code, rendered with ffmpeg",
+  "scripts": {
+    "still": "node render.mjs",
+    "video": "node render.mjs"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.65"
+  }
+}

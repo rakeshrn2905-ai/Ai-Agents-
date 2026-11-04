@@ -1,7 +1,14 @@
 .env
 client_secret*.json
 token.json
-runs/
 __pycache__/
 *.pyc
 .venv/
+node_modules/
+models/
+# episode build outputs (keep facts/script/storyboard in git)
+episodes/*/stills/
+episodes/*/*.wav
+episodes/*/*.mp4
+episodes/*/caps_raw.json
+episodes/*/beats.json
