@@ -23,6 +23,8 @@ pip install -r requirements.txt
 pip install yt-dlp            # competitor research (reads public YouTube pages, no key)
 ```
 
+**Shortcut:** `scripts/setup.sh` does steps 2-3 (npm, pip, Kokoro model, skills) in one go.
+
 ## 3. Download the Kokoro voice model (about 350 MB, one time)
 
 ```bash

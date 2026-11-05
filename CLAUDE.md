@@ -98,6 +98,6 @@ python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to q
 Lessons: a slow first frame kills retention; a bright picture-first hook helps; the explainer format
 earned the first subscribers. Retired: hosts Tempo and Clio, voices Michael and Tock.
 
-## Setup (fresh machine)
+## Setup (fresh machine or new session)
 
-See docs/SETUP.md (tools, Kokoro model, skills) and docs/MAKE.md (uploads).
+`scripts/setup.sh`, then read docs/NEXT.md (where we left off; update it at the end of each session). Details: docs/SETUP.md (tools, Kokoro model, skills) and docs/MAKE.md (uploads).
