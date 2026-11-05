@@ -1,0 +1,211 @@
+{
+ "loop": true,
+ "cast": {
+  "tincan": {
+   "body": "tincan"
+  },
+  "hammer": {
+   "body": "hammer"
+  },
+  "opener": {
+   "body": "opener"
+  }
+ },
+ "beats": [
+  {
+   "phrase": 0,
+   "scene": "canhook",
+   "camera": "push",
+   "title": "CANS CAME *40 YEARS* FIRST",
+   "shake": 0.25,
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "thud",
+     "at": 0.25,
+     "db": -4
+    },
+    {
+     "type": "pop",
+     "at": 0.6
+    }
+   ]
+  },
+  {
+   "phrase": 1,
+   "scene": "timeline",
+   "set": "paper",
+   "camera": "drift",
+   "title": "*1810*: THE TIN CAN",
+   "winner": 0,
+   "items": [
+    {
+     "who": "tincan",
+     "year": "1810"
+    },
+    {
+     "who": "opener",
+     "year": "1850s",
+     "delay": 1.3,
+     "label": "+40 YEARS"
+    }
+   ],
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "pop",
+     "at": 0.4
+    },
+    {
+     "type": "pop",
+     "at": 1.7
+    }
+   ]
+  },
+  {
+   "phrase": 2,
+   "scene": "thickwall",
+   "camera": "xray",
+   "title": "*THICK* IRON",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "tick",
+     "at": 0.5
+    },
+    {
+     "type": "tick",
+     "at": 1.1
+    },
+    {
+     "type": "tick",
+     "at": 1.7
+    }
+   ]
+  },
+  {
+   "phrase": 3,
+   "scene": "scales",
+   "camera": "push",
+   "title": "HEAVIER THAN THE *FOOD*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "thud",
+     "at": 0.5,
+     "db": -6
+    },
+    {
+     "type": "pop",
+     "at": 0.9
+    }
+   ]
+  },
+  {
+   "phrase": 4,
+   "scene": "hammering",
+   "camera": "pushfast",
+   "title": "HAMMER + *CHISEL*",
+   "hitAt": 1.45,
+   "shake": 1.45,
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.3
+    },
+    {
+     "type": "thud",
+     "at": 1.45,
+     "db": -2
+    },
+    {
+     "type": "snare",
+     "at": 1.45
+    },
+    {
+     "type": "tick",
+     "at": 1.7
+    }
+   ]
+  },
+  {
+   "phrase": 5,
+   "scene": "thinwall",
+   "camera": "xray",
+   "title": "*1850s*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "scratch",
+     "at": 0.3
+    },
+    {
+     "type": "tick",
+     "at": 0.8
+    }
+   ]
+  },
+  {
+   "phrase": 6,
+   "scene": "opening",
+   "camera": "push",
+   "title": "FINALLY: *CAN OPENERS*",
+   "popAt": 1.6,
+   "shake": 1.6,
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "scratch",
+     "at": 1.1
+    },
+    {
+     "type": "pop",
+     "at": 1.6,
+     "db": -2
+    },
+    {
+     "type": "chime",
+     "at": 1.7
+    }
+   ]
+  },
+  {
+   "phrase": 7,
+   "scene": "payoff",
+   "camera": "pull",
+   "title": "THE OPENER HAD TO *WAIT*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "chime",
+     "at": 0.5
+    },
+    {
+     "type": "pop",
+     "at": 2.2
+    }
+   ]
+  }
+ ]
+}

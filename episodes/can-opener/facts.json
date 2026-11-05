@@ -1,0 +1,25 @@
+{
+  "topic": "Cans came 40+ years before can openers",
+  "pillar": "Which came first?",
+  "claims": [
+    {"claim": "Peter Durand received a British patent in 1810 for preserving food in tin(-plated) containers - the tin can.",
+     "sources": ["https://en.wikipedia.org/wiki/Can_opener", "https://familytreemagazine.com/history/history-of-the-can-opener", "https://www.smithsonianmag.com/smart-news/why-can-opener-wasnt-invented-until-almost-50-years-after-can-180964590/"],
+     "status": "verified", "note": "One source says 1811; 1810 is far better supported."},
+    {"claim": "The first can-opener patents came in the 1850s (UK: F. G. Yates 1852 / R. Yates 1855; US: Ezra Warner 1858) - at least 40 years after 1810.",
+     "sources": ["https://en.wikipedia.org/wiki/Can_opener", "https://www.taths.org.uk/images/TTArticles/Canopener/CanOpenerMayRevised2.pdf", "https://todayincthistory.com/2019/01/05/january-5-ezra-warner-invents-the-can-opener/"],
+     "status": "verified", "note": "Exact first patent is disputed, so the script says '40 years' (true for every candidate date)."},
+    {"claim": "Early cans were thick and heavy (wrought iron lined with tin); some weighed more than the food inside.",
+     "sources": ["https://storyplace.org.au/story/getting-to-the-goods/", "https://familytreemagazine.com/history/history-of-the-can-opener"],
+     "status": "verified"},
+    {"claim": "People opened early cans with a hammer and chisel.",
+     "sources": ["https://storyplace.org.au/story/getting-to-the-goods/", "https://civilwarnews.com/issues/2023/october/tin-cans/", "https://en.wikipedia.org/wiki/Can_opener"],
+     "status": "verified"},
+    {"claim": "By the 1850s cans were made thinner (thin steel sheet).",
+     "sources": ["https://storyplace.org.au/story/getting-to-the-goods/", "https://www.mitchellcooper.co.uk/blogs/the-history-of-the-can-opener-from-early-invention-to-the-bonzer-legacy.html"],
+     "status": "verified", "note": "Sources differ on exact timing. Script states it alongside the openers appearing; it does NOT claim thinner cans caused the invention."}
+  ],
+  "rejected": [
+    {"claim": "Thinner cans are why the can opener was invented.", "reason": "No source establishes the cause."},
+    {"claim": "Exactly 45 / 48 years.", "reason": "First opener patent disputed (1852/1855/1858)."}
+  ]
+}

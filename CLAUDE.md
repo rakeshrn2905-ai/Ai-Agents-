@@ -94,6 +94,7 @@ python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to q
 | 5 | Fax (old style) | Host Clio | - | n/a | |
 | 6 | Lighters Came Before Matches | No host, hook -> how -> why | 28.8 s | 46%, +2 subs | first no-host explainer |
 | 7 | 'Guys' Comes From a 1605 Gunpowder Plot (5 Nov 07:00) | No host, hook -> how -> why | 24.4 s | (fill in after 48 h) | bright frame 1 + title at 0.0 s + 'you' hook + no hook caption |
+| 8 | Cans Came 40 Years Before Can Openers (5 Nov 17:00) | No host, hook -> how -> why | 23.3 s | (fill in after 48 h) | same frame-1 rules; 'which came first' topic (pairs with #6) |
 
 Lessons: a slow first frame kills retention; a bright picture-first hook helps; the explainer format
 earned the first subscribers. Retired: hosts Tempo and Clio, voices Michael and Tock.
