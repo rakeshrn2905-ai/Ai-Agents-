@@ -15,6 +15,7 @@ Last updated: 5 Nov 2026
 - After 48 h (Sat 7 Nov): Studio exports (Advanced mode CSV, retention CSV, stayed-to-watch %) into `analytics/` -> /yt-retention + /yt-audit, fill row 7 of the results log in CLAUDE.md.
 
 ## Next
+0. Waiting for Rakesh to pick topics from docs/TOPICS.md (workflow: Claude proposes, Rakesh picks, Claude builds).
 1. Build agents: fact-checker, storyboarder, independent QA reviewer (+ scout, scriptwriter, analyst wrappers) in `.claude/agents/`.
 2. Next Short: the 2,000-year-old vending machine (Hero of Alexandria).
 4. vidIQ free credits reset 15 Nov: competitor scan with free (0-credit) calls only.

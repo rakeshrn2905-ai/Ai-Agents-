@@ -4,6 +4,15 @@ Owner: Rakesh (UK, Europe/London). Channel: Time Sketch (@TimeSketch), Past · P
 UK/US teens and adults, not made for kids, category Education. 2 Shorts a day at 07:00 and 17:00 UK.
 Target: 60%+ "stayed to watch" (baseline 46%, #6 Lighters Came Before Matches), 80% long-term.
 
+## Workflow (always)
+
+1. **Claude proposes topics** in `docs/TOPICS.md` (5+ options across the pillars, each with a hook and a fact-confidence note).
+2. **Rakesh picks.** Never build a video he hasn't picked.
+3. **Claude builds it:** fact-check (2+ sources) -> script -> storyboard -> voice -> animation -> sound -> QA + detail check
+   -> title/description/tags -> `--manual` upload pack. Sends final.mp4 + upload_pack.md + thumbnail.
+4. **Rakesh uploads** in YouTube Studio at the booked slot and sends the link.
+5. **After 48 h** Rakesh sends the Studio numbers; Claude logs them and picks ONE change for the next video.
+
 ## Hard rules (these override anything a /yt-* skill says)
 
 1. No Gemini, no external video AI. Every frame is drawn and animated in code (`lib/`, `render.mjs`),
