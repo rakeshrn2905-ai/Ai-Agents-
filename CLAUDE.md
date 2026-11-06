@@ -33,7 +33,9 @@ own visual + SFX. No on-screen host: Style 5 object characters + painted sets.
 4. **Something changes every 2-4 s:** new beat, camera move, label pop or SFX. No beat over 5.6 s.
 5. **Open loop:** the hook's question is only fully paid off at the end.
 6. **Seamless loop:** the last frame looks like the first (QA checks it), so replays count.
-7. **Test ONE change per video** and log it in the results table below; keep what moves the number.
+7. **Stop-the-scroll extras (from #9):** camera `punchout` (frame 1 starts tight and pulls back), an odd pairing in
+   frame 1, a split hook whose sentence finishes after the swipe decision, and a closing question the hook answers.
+8. **Test ONE change per video** and log it in the results table below; keep what moves the number.
    80% is top-tier for Shorts, so expect to climb towards it over several videos, not in one jump.
 
 ## Detail check (look at full-size frames from final.mp4, every beat, before handing over)
@@ -95,6 +97,7 @@ python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to q
 | 6 | Lighters Came Before Matches | No host, hook -> how -> why | 28.8 s | 46%, +2 subs | first no-host explainer |
 | 7 | 'Guys' Comes From a 1605 Gunpowder Plot (5 Nov 07:00) | No host, hook -> how -> why | 24.4 s | (fill in after 48 h) | bright frame 1 + title at 0.0 s + 'you' hook + no hook caption |
 | 8 | Cans Came 40 Years Before Can Openers (5 Nov 17:00) | No host, hook -> how -> why | 23.3 s | (fill in after 48 h) | same frame-1 rules; 'which came first' topic (pairs with #6) |
+| 9 | Cleopatra Was Closer to 1969 Than the Pyramids (6 Nov 17:00) | No host, time gap | 26.4 s | (fill in after 48 h) | 90% push: punch-out frame 1, odd pair (Cleopatra + astronaut), split hook, question loop |
 
 Lessons: a slow first frame kills retention; a bright picture-first hook helps; the explainer format
 earned the first subscribers. Retired: hosts Tempo and Clio, voices Michael and Tock.

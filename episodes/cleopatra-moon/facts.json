@@ -1,0 +1,19 @@
+{
+  "topic": "Cleopatra lived closer to the Moon landing than to the building of the Great Pyramid",
+  "pillar": "Which came first? / time gap",
+  "claims": [
+    {"claim": "The Great Pyramid of Giza was completed around 2560 BC (estimates c. 2580-2510 BC).",
+     "sources": ["https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza", "https://www.worldatlas.com/articles/so-cleopatra-lived-closer-in-time-to-the-first-lunar-landing-than-the-great-pyramids.html", "https://lenz.io/c/cleopatra-moon-landing-great-pyramid-timeline-3a1e5240"],
+     "status": "verified"},
+    {"claim": "Cleopatra VII died in 30 BC (12 August), about 2,500 years after the pyramid was finished.",
+     "sources": ["https://en.wikipedia.org/wiki/Cleopatra", "https://www.worldatlas.com/articles/so-cleopatra-lived-closer-in-time-to-the-first-lunar-landing-than-the-great-pyramids.html"],
+     "status": "verified", "note": "2560 BC -> 30 BC = 2,530 years; with the latest pyramid estimate (2510 BC) still 2,480. Script says 'about 2,500'."},
+    {"claim": "The Apollo 11 Moon landing was on 20 July 1969, about 2,000 years after Cleopatra's death.",
+     "sources": ["https://en.wikipedia.org/wiki/Apollo_11", "https://www.farmersalmanac.com/how-did-that-man-get-in-the-moon"],
+     "status": "verified", "note": "30 BC -> 1969 = 1,998 years (no year 0)."},
+    {"claim": "So she lived closer in time to the Moon landing than to the Great Pyramid's construction (margin ~500 years, larger than the dating uncertainty).",
+     "sources": ["https://www.worldatlas.com/articles/so-cleopatra-lived-closer-in-time-to-the-first-lunar-landing-than-the-great-pyramids.html", "https://lenz.io/c/cleopatra-moon-landing-great-pyramid-timeline-3a1e5240"],
+     "status": "verified"}
+  ],
+  "rejected": [{"claim": "Cleopatra lived closer to Pizza Hut / the iPhone.", "reason": "True-ish but off-brand and sources are sloppy."}]
+}
