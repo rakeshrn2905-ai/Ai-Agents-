@@ -1,0 +1,28 @@
+{
+ "phrases": [
+  {
+   "text": "Some clocks will hit 1901,"
+  },
+  {
+   "text": "in 2038."
+  },
+  {
+   "text": "Many computers count time in seconds since 1970."
+  },
+  {
+   "text": "Older ones store it in a 32-bit number,"
+  },
+  {
+   "text": "which tops out at just over 2 billion."
+  },
+  {
+   "text": "On the 19th of January 2038, it runs out."
+  },
+  {
+   "text": "The number flips negative, and the clock jumps back to 1901."
+  },
+  {
+   "text": "The fix? 64-bit time. It lasts 292 billion years."
+  }
+ ]
+}

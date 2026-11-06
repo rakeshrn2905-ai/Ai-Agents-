@@ -1,0 +1,23 @@
+{
+ "title": "Some Clocks Will Hit 1901 in 2038",
+ "thumbnail_text": "Y2K, PART 2",
+ "thumb_time": 0.8,
+ "description": "On 19 January 2038, some computers will think it's 1901. It's called the Year 2038 problem - here's why it happens and how it's being fixed.\n\nMany computers count time as seconds since 1 January 1970. Older systems store that count in a 32-bit number, which tops out at 2,147,483,647 - reached at 03:14:07 UTC on 19 January 2038. One second later the number flips negative and those clocks read 13 December 1901. The fix is 64-bit time, which lasts about 292 billion years. Most modern devices already use it; older and embedded systems are the ones at risk.\n\nSources:\n- Year 2038 problem: https://en.wikipedia.org/wiki/Year_2038_problem\n- EpochConverter, The Year 2038 Problem: https://www.epochconverter.com/year-2038-problem\n- Microsoft, Year 2038 problem: https://learn.microsoft.com/en-us/archive/blogs/7/year-2038-problem\n\nWhat's the oldest device you still use? Tell me below.\n\n#future #tech #shorts #didyouknow",
+ "tags": [
+  "time sketch",
+  "year 2038 problem",
+  "y2k38",
+  "2038",
+  "unix time",
+  "epochalypse",
+  "32-bit",
+  "64-bit",
+  "computer history",
+  "future tech",
+  "tech facts",
+  "did you know",
+  "animated explainer",
+  "history shorts",
+  "y2k"
+ ]
+}

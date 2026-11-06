@@ -1,0 +1,197 @@
+{
+ "loop": true,
+ "cast": {},
+ "beats": [
+  {
+   "phrase": 0,
+   "scene": "y2038hook",
+   "camera": "punchout",
+   "focus": [
+    500,
+    1000
+   ],
+   "zoom0": 1.12,
+   "title": "SOME CLOCKS WILL HIT *1901*",
+   "shake": 0.25,
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "thud",
+     "at": 0.25,
+     "db": -4
+    },
+    {
+     "type": "scratch",
+     "at": 0.5,
+     "db": -10
+    }
+   ]
+  },
+  {
+   "phrase": 1,
+   "scene": "calendar2038",
+   "camera": "push",
+   "title": "IN *2038*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "thud",
+     "at": 0.3,
+     "db": -6
+    }
+   ]
+  },
+  {
+   "phrase": 2,
+   "scene": "seconds",
+   "camera": "drift",
+   "title": "COUNTING *SECONDS*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "tick",
+     "at": 0.5
+    },
+    {
+     "type": "tick",
+     "at": 1.0
+    },
+    {
+     "type": "tick",
+     "at": 1.5
+    },
+    {
+     "type": "tick",
+     "at": 2.0
+    },
+    {
+     "type": "tick",
+     "at": 2.5
+    }
+   ]
+  },
+  {
+   "phrase": 3,
+   "scene": "bits",
+   "camera": "xray",
+   "title": "A *32-BIT* NUMBER",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "pop",
+     "at": 0.5
+    },
+    {
+     "type": "pop",
+     "at": 1.0
+    },
+    {
+     "type": "pop",
+     "at": 1.5
+    }
+   ]
+  },
+  {
+   "phrase": 4,
+   "scene": "maxvalue",
+   "camera": "pushfast",
+   "title": "JUST OVER *2 BILLION*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "chime",
+     "at": 0.4
+    }
+   ]
+  },
+  {
+   "phrase": 5,
+   "scene": "countdown",
+   "camera": "push",
+   "title": "19 JAN *2038*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "tick",
+     "at": 0.8
+    },
+    {
+     "type": "tick",
+     "at": 1.6
+    },
+    {
+     "type": "tick",
+     "at": 2.4
+    }
+   ],
+   "titleY": 210
+  },
+  {
+   "phrase": 6,
+   "scene": "overflow",
+   "camera": "push",
+   "flipAt": 0.5,
+   "shake": 0.5,
+   "title": "BACK TO *1901*",
+   "titleAt": 0.5,
+   "sfx": [
+    {
+     "type": "snare",
+     "at": 0.5
+    },
+    {
+     "type": "thud",
+     "at": 0.5,
+     "db": -2
+    },
+    {
+     "type": "scratch",
+     "at": 0.6
+    },
+    {
+     "type": "pop",
+     "at": 1.1
+    }
+   ],
+   "titleY": 210
+  },
+  {
+   "phrase": 7,
+   "scene": "payoff",
+   "camera": "pull",
+   "title": "64-BIT: *292 BILLION YEARS*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "chime",
+     "at": 0.9
+    },
+    {
+     "type": "pop",
+     "at": 3.0
+    }
+   ]
+  }
+ ]
+}

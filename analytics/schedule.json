@@ -16,5 +16,11 @@
     "video_id": null,
     "title": "Cleopatra Was Closer to 1969 Than the Pyramids",
     "via": "manual"
+  },
+  "2026-11-07T07:00:00+00:00": {
+    "episode": "year-2038",
+    "video_id": null,
+    "title": "Some Clocks Will Hit 1901 in 2038",
+    "via": "manual"
   }
 }
