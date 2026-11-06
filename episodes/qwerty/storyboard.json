@@ -1,0 +1,183 @@
+{
+ "loop": true,
+ "cast": {},
+ "beats": [
+  {
+   "phrase": 0,
+   "scene": "qhook",
+   "camera": "punchout",
+   "focus": [
+    540,
+    1000
+   ],
+   "zoom0": 1.08,
+   "title": "YOUR KEYBOARD IS *150 YEARS* OLD",
+   "shake": 0.25,
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "thud",
+     "at": 0.25,
+     "db": -4
+    },
+    {
+     "type": "tick",
+     "at": 0.5
+    },
+    {
+     "type": "tick",
+     "at": 0.65
+    }
+   ]
+  },
+  {
+   "phrase": 1,
+   "scene": "typewriter1874",
+   "camera": "push",
+   "title": "*1874*: A TYPEWRITER",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "pop",
+     "at": 0.3
+    },
+    {
+     "type": "chime",
+     "at": 0.9
+    }
+   ]
+  },
+  {
+   "phrase": 2,
+   "scene": "shuffle",
+   "camera": "drift",
+   "title": "MOVING THE *KEYS*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "pop",
+     "at": 0.35
+    },
+    {
+     "type": "pop",
+     "at": 1.05
+    },
+    {
+     "type": "pop",
+     "at": 1.75
+    },
+    {
+     "type": "pop",
+     "at": 2.45
+    }
+   ]
+  },
+  {
+   "phrase": 3,
+   "scene": "jam",
+   "camera": "xray",
+   "title": "HISTORIANS STILL *ARGUE*",
+   "shake": 0.7,
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "tick",
+     "at": 0.45
+    },
+    {
+     "type": "snare",
+     "at": 0.7
+    },
+    {
+     "type": "pop",
+     "at": 0.95
+    }
+   ]
+  },
+  {
+   "phrase": 4,
+   "scene": "merge",
+   "camera": "push",
+   "title": "*1893*: THEY MERGED",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "thud",
+     "at": 1.6,
+     "db": -6
+    },
+    {
+     "type": "chime",
+     "at": 1.7
+    }
+   ]
+  },
+  {
+   "phrase": 5,
+   "scene": "standard",
+   "camera": "pushfast",
+   "title": "QWERTY *WINS*",
+   "sfx": [
+    {
+     "type": "pop",
+     "at": 0.0
+    },
+    {
+     "type": "pop",
+     "at": 0.12
+    },
+    {
+     "type": "pop",
+     "at": 0.24
+    },
+    {
+     "type": "pop",
+     "at": 0.36
+    },
+    {
+     "type": "pop",
+     "at": 0.48
+    },
+    {
+     "type": "pop",
+     "at": 0.6
+    }
+   ]
+  },
+  {
+   "phrase": 6,
+   "scene": "payoff",
+   "camera": "pull",
+   "title": "WE NEVER *SWITCHED*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.0
+    },
+    {
+     "type": "chime",
+     "at": 0.5
+    },
+    {
+     "type": "pop",
+     "at": 2.2
+    }
+   ]
+  }
+ ]
+}

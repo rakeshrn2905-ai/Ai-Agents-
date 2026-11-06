@@ -1,0 +1,68 @@
+{
+ "topic": "Your keyboard layout (QWERTY) is over 150 years old",
+ "pillar": "Present: how things got this way",
+ "claims": [
+  {
+   "claim": "1874 falls within the Victorian era (Queen Victoria's reign, 1837-1901), so the layout is literally Victorian.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Victorian_era",
+    "https://www.britannica.com/event/Victorian-era"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "QWERTY is named after the first six letters on the top letter row.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/QWERTY",
+    "https://www.smithsonianmag.com/arts-culture/fact-of-fiction-the-legend-of-the-qwerty-keyboard-49863249/"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "The layout comes from the Sholes & Glidden Type-Writer, released by E. Remington & Sons in 1874 (over 150 years ago).",
+   "sources": [
+    "https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/139379/1/42_161.pdf",
+    "https://www.smithsonianmag.com/arts-culture/fact-of-fiction-the-legend-of-the-qwerty-keyboard-49863249/",
+    "https://hackaday.com/2016/03/15/the-origin-of-qwerty"
+   ],
+   "status": "verified",
+   "note": "1874 -> 2026 = 152 years."
+  },
+  {
+   "claim": "Christopher Latham Sholes and colleagues changed the key arrangement many times over several years of prototypes.",
+   "sources": [
+    "https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/139379/1/42_161.pdf",
+    "https://www.smithsonianmag.com/arts-culture/fact-of-fiction-the-legend-of-the-qwerty-keyboard-49863249/"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Why the layout ended up this way is debated: the popular typebar-jamming explanation is contested (one study links it to telegraph operators).",
+   "sources": [
+    "https://www.smithsonianmag.com/arts-culture/fact-of-fiction-the-legend-of-the-qwerty-keyboard-49863249/",
+    "https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/139379/1/42_161.pdf",
+    "https://www.todayifoundout.com/index.php/2019/12/who-invented-the-keyboard-and-is-the-dvorak-really-better-than-the-qwerty/"
+   ],
+   "status": "verified",
+   "note": "Script says 'historians still argue' - no causal claim either way."
+  },
+  {
+   "claim": "In 1893 major typewriter makers including Remington merged into the Union Typewriter Company, which made QWERTY the standard.",
+   "sources": [
+    "https://www.smithsonianmag.com/arts-culture/fact-of-fiction-the-legend-of-the-qwerty-keyboard-49863249/",
+    "https://en.wikipedia.org/wiki/QWERTY"
+   ],
+   "status": "verified"
+  }
+ ],
+ "rejected": [
+  {
+   "claim": "QWERTY was designed to slow typists down.",
+   "reason": "Contested / largely rejected."
+  },
+  {
+   "claim": "'TYPEWRITER' can be typed on the top row as a sales trick.",
+   "reason": "Popular but anecdotal - not used."
+  }
+ ]
+}

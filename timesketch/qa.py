@@ -23,10 +23,14 @@ LOOP_MAX_DIFF = 40.0          # last frame should resemble the first (visual loo
 
 
 def frame(video: Path, t: float, from_end: bool = False) -> np.ndarray:
-    seek = ["-sseof", f"-{t:.3f}"] if from_end else ["-ss", f"{t:.3f}"]
-    with tempfile.NamedTemporaryFile(suffix=".png") as f:
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *seek, "-i", str(video), "-frames:v", "1", f.name], check=True)
-        return np.asarray(Image.open(f.name).convert("RGB")).astype(float)
+    # Seeking right at the end can land after the last video frame (empty output), so step back and retry.
+    for back in ((t, t + 0.2, t + 0.5, t + 1.0) if from_end else (t,)):
+        seek = ["-sseof", f"-{back:.3f}"] if from_end else ["-ss", f"{back:.3f}"]
+        with tempfile.NamedTemporaryFile(suffix=".png") as f:
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *seek, "-i", str(video), "-frames:v", "1", f.name], check=True)
+            if Path(f.name).stat().st_size > 0:
+                return np.asarray(Image.open(f.name).convert("RGB")).astype(float)
+    raise RuntimeError(f"could not read a frame at {t}s ({'from end' if from_end else 'from start'})")
 
 
 def hsv_stats(a: np.ndarray):
