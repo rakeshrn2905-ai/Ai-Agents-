@@ -19,5 +19,12 @@ Status: `proposed` -> `picked` -> `built` -> `uploaded`. Facts are checked (2+ s
 | T12 | Voyager 1 will pass another star | Future | "In 40,000 years, Voyager meets a star." | high (NASA/JPL) | proposed |
 | T13 | The Moon is drifting away | Future | "The Moon is leaving us." | high (about 3.8 cm a year) | proposed |
 
+| T14 | Pluto hasn't finished one orbit since we found it | Future / time gap | "Pluto hasn't done one lap since we found it." | high (found 1930, 248-year orbit -> first lap in 2178) | proposed |
+| T15 | The first webcam watched a coffee pot | Present: how things got this way | "The first webcam watched coffee." | high (Cambridge 'Trojan Room' pot, 1991) | proposed |
+| T16 | Bubble wrap was meant to be wallpaper | Past: wild true story | "Bubble wrap was meant to be wallpaper." | high (1957, Fielding and Chavannes) | proposed |
+| T17 | Carrots used to be purple | Past: myth busted | "Carrots used to be purple." | medium-high (orange bred later; the 'William of Orange' link is a myth - leave it out) | proposed |
+| T18 | The sandwich is named after a real earl | Present: how things got this way | "A sandwich is named after a real earl." | high (Earl of Sandwich, recorded 1762) | proposed |
+| T19 | Clocks will stop adding leap seconds by 2035 | Future | "Your clock has extra seconds. Not for long." | high (international vote, 2022) | proposed |
+
 Done (don't repeat): 7-day week, Oxford vs Aztecs, mammoths and pyramids, sharks vs trees, fax (old host
 version), lighters vs matches, 'guys' / Guy Fawkes, can opener, Cleopatra vs 1969, Year 2038, QWERTY.
