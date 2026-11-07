@@ -4,7 +4,7 @@ Open studio.youtube.com (Time Sketch channel) -> Create -> Upload videos -> pick
   final.mp4 (sent with this pack; in the repo: episodes/pee-tax/final.mp4)
 
 ## Title
-Ancient Rome Had a Pee Tax (AD 70)
+Ancient Rome Had a Pee Tax, 2,000 Years Ago
 
 ## Description
 Ancient Rome really had a pee tax. Here's why - and why France named its urinals after an emperor.
