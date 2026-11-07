@@ -1,0 +1,278 @@
+{
+ "loop": true,
+ "cast": {},
+ "beats": [
+  {
+   "phrase": 0,
+   "scene": "peehook",
+   "title": "ROME HAD A *PEE TAX*",
+   "shake": 0.35,
+   "camera": "punchout",
+   "focus": [
+    540,
+    1000
+   ],
+   "zoom0": 1.22,
+   "punchDur": 0.35,
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "thud",
+     "at": 0.2,
+     "db": -4
+    },
+    {
+     "type": "snare",
+     "at": 0.35
+    }
+   ]
+  },
+  {
+   "phrase": 1,
+   "scene": "laundry",
+   "title": "TOGAS IN *PEE*",
+   "shake": 0.1,
+   "camera": "punchout",
+   "focus": [
+    540,
+    1000
+   ],
+   "zoom0": 1.22,
+   "punchDur": 0.35,
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "pop",
+     "at": 0.3
+    },
+    {
+     "type": "pop",
+     "at": 0.7
+    },
+    {
+     "type": "pop",
+     "at": 1.1
+    }
+   ]
+  },
+  {
+   "phrase": 2,
+   "scene": "laundry",
+   "clean": true,
+   "title": "SPARKLING *CLEAN*",
+   "transition": "cut",
+   "shake": 0.05,
+   "camera": "punchout",
+   "focus": [
+    540,
+    1000
+   ],
+   "zoom0": 1.22,
+   "punchDur": 0.35,
+   "sfx": [
+    {
+     "type": "chime",
+     "at": 0.05
+    },
+    {
+     "type": "tick",
+     "at": 0.6
+    }
+   ]
+  },
+  {
+   "phrase": 3,
+   "scene": "emperor",
+   "title": "EMPEROR *VESPASIAN*",
+   "shake": 0.2,
+   "camera": "punchout",
+   "focus": [
+    540,
+    1000
+   ],
+   "zoom0": 1.22,
+   "punchDur": 0.35,
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "thud",
+     "at": 0.2,
+     "db": -4
+    }
+   ]
+  },
+  {
+   "phrase": 3,
+   "offset": 1.4,
+   "scene": "taxed",
+   "title": "TAXED THE *TOILETS*",
+   "shake": 0.35,
+   "camera": "punchout",
+   "focus": [
+    540,
+    1000
+   ],
+   "zoom0": 1.22,
+   "punchDur": 0.35,
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "snare",
+     "at": 0.35
+    },
+    {
+     "type": "thud",
+     "at": 0.35,
+     "db": -6
+    }
+   ]
+  },
+  {
+   "phrase": 4,
+   "scene": "titus",
+   "title": "TITUS *COMPLAINED*",
+   "shake": 0.1,
+   "camera": "punchout",
+   "focus": [
+    540,
+    1000
+   ],
+   "zoom0": 1.22,
+   "punchDur": 0.35,
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "scratch",
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "phrase": 5,
+   "scene": "coinnose",
+   "title": "DOES IT *SMELL*?",
+   "camera": "punchout",
+   "focus": [
+    540,
+    900
+   ],
+   "zoom0": 1.22,
+   "punchDur": 0.35,
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "pop",
+     "at": 0.6
+    },
+    {
+     "type": "tick",
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "phrase": 5,
+   "offset": 2.9,
+   "scene": "coinnose",
+   "no": true,
+   "title": "*NO.*",
+   "transition": "cut",
+   "shake": 0.05,
+   "camera": "punchout",
+   "focus": [
+    540,
+    900
+   ],
+   "zoom0": 1.22,
+   "punchDur": 0.35,
+   "sfx": [
+    {
+     "type": "thud",
+     "at": 0.0,
+     "db": -8
+    },
+    {
+     "type": "pop",
+     "at": 0.15
+    }
+   ]
+  },
+  {
+   "phrase": 6,
+   "scene": "coinrain",
+   "title": "MONEY DOESN'T *STINK*",
+   "shake": 0.1,
+   "camera": "punchout",
+   "focus": [
+    540,
+    1000
+   ],
+   "zoom0": 1.22,
+   "punchDur": 0.35,
+   "sfx": [
+    {
+     "type": "chime",
+     "at": 0
+    },
+    {
+     "type": "pop",
+     "at": 0.3
+    },
+    {
+     "type": "pop",
+     "at": 0.6
+    },
+    {
+     "type": "pop",
+     "at": 0.9
+    }
+   ]
+  },
+  {
+   "phrase": 7,
+   "scene": "payoff",
+   "title": "NAMED *AFTER HIM*",
+   "shake": 0.2,
+   "camera": "punchout",
+   "focus": [
+    700,
+    1000
+   ],
+   "zoom0": 1.22,
+   "punchDur": 0.35,
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "thud",
+     "at": 0.2,
+     "db": -6
+    },
+    {
+     "type": "pop",
+     "at": 2.0
+    }
+   ]
+  }
+ ]
+}

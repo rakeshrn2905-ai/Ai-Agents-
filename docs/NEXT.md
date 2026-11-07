@@ -10,9 +10,10 @@ Last updated: 5 Nov 2026
 - #9 "Cleopatra Was Closer to 1969 Than the Pyramids" built and QA-passed (episodes/cleopatra-moon); for Fri 6 Nov 17:00 UK.
 - #10 "Some Clocks Will Hit 1901 in 2038" built and QA-passed (episodes/year-2038); for Sat 7 Nov 07:00 UK.
 - #11 "Your Keyboard Is 150 Years Old" (T10, picked by Rakesh) built and QA-passed (episodes/qwerty); for Sat 7 Nov 17:00 UK.
+- #12 "Ancient Rome Had a Pee Tax" (B5, brain-rot format test) built and QA-passed (episodes/pee-tax); for Sun 8 Nov 07:00 UK.
 
 ## Waiting on Rakesh
-- The #7-#11 video links -> `python3 -m timesketch.publish episodes/guy-fawkes-guys --link <url>`
+- The #7-#12 video links -> `python3 -m timesketch.publish episodes/guy-fawkes-guys --link <url>`
 - After 48 h (Sat 7 Nov): Studio exports (Advanced mode CSV, retention CSV, stayed-to-watch %) into `analytics/` -> /yt-retention + /yt-audit, fill row 7 of the results log in CLAUDE.md.
 
 ## Next

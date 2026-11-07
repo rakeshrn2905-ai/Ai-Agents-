@@ -26,5 +26,17 @@ Status: `proposed` -> `picked` -> `built` -> `uploaded`. Facts are checked (2+ s
 | T18 | The sandwich is named after a real earl | Present: how things got this way | "A sandwich is named after a real earl." | high (Earl of Sandwich, recorded 1762) | proposed |
 | T19 | Clocks will stop adding leap seconds by 2035 | Future | "Your clock has extra seconds. Not for long." | high (international vote, 2022) | proposed |
 
-Done (don't repeat): 7-day week, Oxford vs Aztecs, mammoths and pyramids, sharks vs trees, fax (old host
-version), lighters vs matches, 'guys' / Guy Fawkes, can opener, Cleopatra vs 1969, Year 2038, QWERTY.
+## Brain-rot format (test): 12-20 s, a cut/punch-in/shake/SFX every 1-2 s, one absurd but TRUE fact, instant loop
+
+| # | Topic | Hook | Confidence | Status |
+|---|---|---|---|---|
+| B1 | Napoleon was attacked by rabbits | "Napoleon lost a fight to rabbits." | medium (memoir anecdote - check sourcing) | proposed |
+| B2 | A cat was a town's mayor for 20 years | "This town's mayor was a cat." | high (Stubbs, Talkeetna, Alaska) | proposed |
+| B3 | The shortest war lasted under 45 minutes | "This war was shorter than your lunch break." | high (Anglo-Zanzibar War, 1896) | proposed |
+| B4 | Lord Byron kept a bear at university | "He brought a bear to uni." | high (Cambridge banned dogs) | proposed |
+| B5 | Rome had a pee tax | "Rome had a pee tax." | high | built (episodes/pee-tax, 8 Nov 07:00) |
+| B6 | A pig was put on trial | "A pig went to court." | high (medieval animal trials, France 1386) | proposed |
+| B7 | Russia had a beard tax | "Russia charged you for your beard." | high (Peter the Great, 1698) | proposed |
+| B8 | The Great Emu War, brain-rot cut | "Australia lost a war to emus." | high | proposed |
+ 7-day week, Oxford vs Aztecs, mammoths and pyramids, sharks vs trees, fax (old host
+version), lighters vs matches, 'guys' / Guy Fawkes, can opener, Cleopatra vs 1969, Year 2038, QWERTY, Rome pee tax.

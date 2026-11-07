@@ -1,0 +1,19 @@
+{
+  "topic": "Rome had a pee tax (Vespasian's urine tax)",
+  "pillar": "Past: wild true story (brain-rot format test)",
+  "claims": [
+    {"claim": "Roman fullers (launderers) used urine, rich in ammonia, to clean and bleach wool clothing such as togas.",
+     "sources": ["https://en.wikipedia.org/wiki/Urine_tax", "https://www.amusingplanet.com/2025/07/pecunia-non-olet-urine-tax-of-ancient.html", "https://allthatsinteresting.com/pecunia-non-olet"], "status": "verified"},
+    {"claim": "Emperor Vespasian (AD 69-79) taxed urine collected from Rome's public toilets; the buyers (fullers, tanners) paid it.",
+     "sources": ["https://en.wikipedia.org/wiki/Urine_tax", "https://www.amusingplanet.com/2025/07/pecunia-non-olet-urine-tax-of-ancient.html"], "status": "verified",
+     "note": "Script says he taxed the public toilets' pee - not 'everyone's pee'."},
+    {"claim": "Suetonius (Vespasian 23): his son Titus objected; Vespasian held a coin from the first payment to Titus's nose and asked if it smelled; Titus said no; Vespasian replied that it came from urine.",
+     "sources": ["https://en.wikipedia.org/wiki/Urine_tax", "https://www.amusingplanet.com/2025/07/pecunia-non-olet-urine-tax-of-ancient.html", "https://allthatsinteresting.com/pecunia-non-olet"], "status": "verified",
+     "note": "Told as reported speech, no invented quotes."},
+    {"claim": "The saying 'pecunia non olet' - 'money doesn't stink' - comes from this story.",
+     "sources": ["https://en.wikipedia.org/wiki/Urine_tax", "https://zan-bennett.super.site/resources/50-latin-phrases/pecunia-non-olet"], "status": "verified"},
+    {"claim": "Public urinals in France were called 'vespasiennes' (and 'vespasiani' in Italy) after him.",
+     "sources": ["https://en.wikipedia.org/wiki/Urine_tax", "https://www.amusingplanet.com/2025/07/pecunia-non-olet-urine-tax-of-ancient.html"], "status": "verified"}
+  ],
+  "rejected": [{"claim": "The tax started under Nero.", "reason": "Single low-reliability source."}, {"claim": "Everyone paid per pee.", "reason": "The collectors/buyers paid."}]
+}

@@ -109,6 +109,7 @@ python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to q
 | 9 | Cleopatra Was Closer to 1969 Than the Pyramids (6 Nov 17:00) | No host, time gap | 26.4 s | (fill in after 48 h) | 90% push: punch-out frame 1, odd pair (Cleopatra + astronaut), split hook, question loop |
 | 10 | Some Clocks Will Hit 1901 in 2038 (7 Nov 07:00) | No host, Future pillar explainer | 27.8 s | (fill in after 48 h) | first Future-pillar video; same 90% push (punch-out, split hook, odd visual: computer in a 1901 top hat) |
 | 11 | Your Keyboard Is 150 Years Old (7 Nov 17:00) | No host, Present pillar explainer | 24.4 s | (fill in after 48 h) | first topic Rakesh picked (T10); 1.6 s 'Victorian' hook; odd pair keyboard + monocled typewriter |
+| 12 | Ancient Rome Had a Pee Tax (8 Nov 07:00) | BRAIN-ROT TEST: 10 beats in 20 s, punch-in + shake + SFX every beat | 20.1 s | (fill in after 48 h) | brain-rot pacing vs normal explainers (B5, picked by Rakesh) |
 
 Lessons: a slow first frame kills retention; a bright picture-first hook helps; the explainer format
 earned the first subscribers. Retired: hosts Tempo and Clio, voices Michael and Tock.
