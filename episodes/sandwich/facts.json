@@ -1,0 +1,18 @@
+{
+  "topic": "The sandwich is named after a real earl",
+  "pillar": "Present: how things got this way",
+  "claims": [
+    {"claim": "The sandwich is named after John Montagu, 4th Earl of Sandwich (1718-1792).",
+     "sources": ["https://www.history.com/news/sandwich-inventor-john-montagu-earl-of-sandwich", "https://www.rmg.co.uk/collections/objects/rmgc-object-14482", "https://wordhistories.net/2017/03/23/sandwich/"], "status": "verified"},
+    {"claim": "The popular story that he ate meat between bread so he could keep gambling is unproven: it comes from Grosley's travel book (1770), which doesn't name him.",
+     "sources": ["https://www.historyhit.com/did-the-4t", "https://www.rmg.co.uk/collections/objects/rmgc-object-14482", "https://www.wordorigins.org/big-list-entries/sandwich"], "status": "verified",
+     "note": "Script: 'Legend says...'"},
+    {"claim": "His biographer (N.A.M. Rodger) and Royal Museums Greenwich suggest he ate that way at his desk while working (Admiralty).",
+     "sources": ["https://www.rmg.co.uk/collections/objects/rmgc-object-14482", "https://www.historyhit.com/did-the-4t", "https://www.history.com/news/sandwich-inventor-john-montagu-earl-of-sandwich"], "status": "verified"},
+    {"claim": "He didn't invent eating meat between bread; the word 'sandwich' was already in use by 1762 (Edward Gibbon's journal).",
+     "sources": ["https://wordhistories.net/2017/03/23/sandwich/", "https://www.historyhit.com/did-the-4t", "https://www.wordorigins.org/big-list-entries/sandwich"], "status": "verified"},
+    {"claim": "Captain Cook, whose voyages he supported, named the Hawaiian islands the 'Sandwich Islands' after him (1778).",
+     "sources": ["https://www.rmg.co.uk/collections/objects/rmgc-object-14482", "https://en.wikipedia.org/wiki/Earl_of_Sandwich", "https://encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/john-montagu-fourth-earl-sandwich"], "status": "verified"}
+  ],
+  "rejected": [{"claim": "He invented the sandwich.", "reason": "He popularised the name; eating meat in bread is much older."}, {"claim": "He played cards for 24 hours straight.", "reason": "Unproven anecdote."}]
+}
