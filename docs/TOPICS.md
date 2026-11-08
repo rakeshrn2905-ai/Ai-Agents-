@@ -61,3 +61,16 @@ version), lighters vs matches, 'guys' / Guy Fawkes, can opener, Cleopatra vs 196
 | M1 | Mary Celeste, 1872 | "This ship had no one on board." | high | built (#16, 9 Nov 07:00) |
 | M2 | Flannan Isles lighthouse keepers vanished, 1900 | "Three men vanished from this lighthouse." | high (re-verify details; many myths) | proposed |
 | M3 | Roanoke lost colony, 'CROATOAN' carved on a post (1590) | "100 people vanished and left one word." | high | proposed |
+
+## Explainers: everyday thing -> hook -> how it works (cutaway) -> why -> payoff (Rakesh, 9 Nov: "explainable, short good explanation, good hooks")
+
+| # | Topic | Hook (<= 2 s) | How / why it explains | Confidence | Status |
+|---|---|---|---|---|---|
+| X1 | Why plane windows are round | "Square windows ripped planes apart." | 1950s Comet jets: corners concentrate stress -> cracks; round spreads it | high | proposed |
+| X2 | The tiny pocket in your jeans | "This tiny pocket was for a watch." | 1800s pocket watches, Levi's workwear; watches moved to wrists, the pocket stayed | high | proposed |
+| X3 | Why the save icon is a floppy disk | "Your save button is a 40-year-old disk." | what a floppy was, how it stored data, why the icon outlived it | high | proposed |
+| X4 | "OK" started as a joke | "OK is a 180-year-old spelling joke." | 1839 Boston paper, "oll korrect" fad, 1840 campaign spread it | high | proposed |
+| X5 | QR codes were made for car factories | "QR codes were invented for car parts." | 1994 Denso Wave, barcodes too slow; squares read from any angle | high | proposed |
+| X6 | Ketchup was sold as medicine | "Ketchup used to be medicine." | 1830s tomato pills, how the craze rose and crashed | medium-high (check sources) | proposed |
+| X7 | Clocks will stop adding leap seconds | "Clocks are about to stop adding seconds." | Earth's spin vs atomic clocks; vote to scrap leap seconds by 2035 (Future) | high | proposed |
+| X8 | Why pencils are yellow | "Yellow pencils were copying a luxury brand." | 1890s Koh-i-Noor pencil, yellow = premium graphite | medium (check) | proposed |
