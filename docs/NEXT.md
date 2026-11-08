@@ -12,10 +12,11 @@ Last updated: 5 Nov 2026
 - #11 "Your Keyboard Is 150 Years Old" (T10, picked by Rakesh) built and QA-passed (episodes/qwerty); for Sat 7 Nov 17:00 UK.
 - #12 "Ancient Rome Had a Pee Tax" (B5, brain-rot test) built, then REJECTED by Rakesh ('not good') - not uploaded; slot freed.
 - #13 "The Sandwich Is Named After a Real Earl (1762)" (T18) built and QA-passed (episodes/sandwich); for Sun 8 Nov 07:00 UK.
+- #14 "France Used the Guillotine Until 1977" (G1) built and QA-passed (episodes/guillotine-1977); for Sun 8 Nov 17:00 UK.
 - Open question for Rakesh: what was wrong with the brain-rot video (pace, voice, look, topic, or the whole format)?
 
 ## Waiting on Rakesh
-- The #7-#11 and #13 video links -> `python3 -m timesketch.publish episodes/guy-fawkes-guys --link <url>`
+- The #7-#11, #13 and #14 video links -> `python3 -m timesketch.publish episodes/guy-fawkes-guys --link <url>`
 - After 48 h (Sat 7 Nov): Studio exports (Advanced mode CSV, retention CSV, stayed-to-watch %) into `analytics/` -> /yt-retention + /yt-audit, fill row 7 of the results log in CLAUDE.md.
 
 ## Next

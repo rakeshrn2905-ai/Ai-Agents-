@@ -39,4 +39,4 @@ Status: `proposed` -> `picked` -> `built` -> `uploaded`. Facts are checked (2+ s
 | B7 | Russia had a beard tax | "Russia charged you for your beard." | high (Peter the Great, 1698) | proposed |
 | B8 | The Great Emu War, brain-rot cut | "Australia lost a war to emus." | high | proposed |
  7-day week, Oxford vs Aztecs, mammoths and pyramids, sharks vs trees, fax (old host
-version), lighters vs matches, 'guys' / Guy Fawkes, can opener, Cleopatra vs 1969, Year 2038, QWERTY, sandwich / Earl of Sandwich (pee tax built but rejected).
+version), lighters vs matches, 'guys' / Guy Fawkes, can opener, Cleopatra vs 1969, Year 2038, QWERTY, sandwich / Earl of Sandwich (pee tax built but rejected), guillotine 1977.

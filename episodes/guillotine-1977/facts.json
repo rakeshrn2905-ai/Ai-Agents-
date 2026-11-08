@@ -1,0 +1,18 @@
+{
+  "topic": "France used the guillotine until 1977 - the year Star Wars came out",
+  "pillar": "Which came first? / time collision",
+  "taste": "No people shown or named; the guillotine is a faceless cartoon object; no blood. Characters are 1977 objects (cassette, TV).",
+  "claims": [
+    {"claim": "The last execution by guillotine in France took place on 10 September 1977 at Baumettes Prison, Marseille.",
+     "sources": ["https://www.history.com/this-day-in-history/september-10/the-guillotine-falls-silent", "https://www.smithsonianmag.com/smart-news/guillotine-goes-on-display-in-marseille-where-the-execution-device-was-last-used-48-years-ago-180987505/", "https://en.wikipedia.org/wiki/Hamida_Djandoubi"], "status": "verified"},
+    {"claim": "Star Wars was released in 1977 (US 25 May 1977; first UK screenings 27 December 1977).",
+     "sources": ["https://starwars.com/news/star-wars-in-ihe-uk-1977-the-first-star-wars-christmas", "https://www.history.co.uk/this-day-in-history/25-may/first-star-wars-movie-released", "https://amazingstories.com/?p=76887"], "status": "verified"},
+    {"claim": "The guillotine was first used in France in April 1792, during the French Revolution.",
+     "sources": ["https://www.history.com/this-day-in-history/september-10/the-guillotine-falls-silent", "https://www.thelocal.fr/20220504/reader-question-when-did-france-stop-guillotining-people/"], "status": "verified"},
+    {"claim": "The last public guillotining in France was in 1939; after that, executions were carried out inside prisons.",
+     "sources": ["https://www.thelocal.fr/20220504/reader-question-when-did-france-stop-guillotining-people/", "https://www.history.com/this-day-in-history/september-10/the-guillotine-falls-silent"], "status": "verified"},
+    {"claim": "France abolished the death penalty in 1981.",
+     "sources": ["https://www.history.com/this-day-in-history/september-10/the-guillotine-falls-silent", "https://www.thelocal.fr/20220504/reader-question-when-did-france-stop-guillotining-people/"], "status": "verified"}
+  ],
+  "rejected": [{"claim": "Name/depict the last person executed.", "reason": "Taste - not needed for the point."}]
+}
