@@ -1,0 +1,190 @@
+{
+ "loop": true,
+ "cast": {},
+ "beats": [
+  {
+   "phrase": 0,
+   "scene": "ahook",
+   "camera": "punchout",
+   "title": "THIS ARMY FOUGHT WITH *BALLOONS*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "thud",
+     "at": 0.22,
+     "db": -4
+    },
+    {
+     "type": "pop",
+     "at": 0.5
+    }
+   ],
+   "focus": [
+    540,
+    900
+   ],
+   "zoom0": 1.15,
+   "shake": 0.22
+  },
+  {
+   "phrase": 1,
+   "scene": "artists",
+   "camera": "push",
+   "title": "AN ARMY OF *ARTISTS*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "scratch",
+     "at": 0.8
+    },
+    {
+     "type": "chime",
+     "at": 2.2
+    }
+   ]
+  },
+  {
+   "phrase": 2,
+   "scene": "inflate",
+   "camera": "push",
+   "title": "*INFLATABLE* TANKS",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "snare",
+     "at": 0.3,
+     "db": -6
+    },
+    {
+     "type": "pop",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "phrase": 3,
+   "scene": "sounds",
+   "camera": "push",
+   "title": "FAKE *SOUNDS*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "thud",
+     "at": 0.3,
+     "db": -5
+    },
+    {
+     "type": "pop",
+     "at": 0.9
+    },
+    {
+     "type": "thud",
+     "at": 1.5,
+     "db": -5
+    }
+   ]
+  },
+  {
+   "phrase": 4,
+   "scene": "radio",
+   "camera": "push",
+   "title": "FAKE *RADIO*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "tick",
+     "at": 0.35
+    },
+    {
+     "type": "tick",
+     "at": 1.1
+    }
+   ]
+  },
+  {
+   "phrase": 5,
+   "scene": "fool",
+   "camera": "drift",
+   "title": "FOOL THE *ENEMY*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "pop",
+     "at": 0.8
+    },
+    {
+     "type": "pop",
+     "at": 1.2
+    },
+    {
+     "type": "chime",
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "phrase": 6,
+   "scene": "secret",
+   "camera": "push",
+   "title": "SECRET UNTIL *1996*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "thud",
+     "at": 0.5,
+     "db": -3
+    },
+    {
+     "type": "tick",
+     "at": 1.2
+    },
+    {
+     "type": "chime",
+     "at": 2.3
+    }
+   ],
+   "shake": 0.5
+  },
+  {
+   "phrase": 7,
+   "scene": "payoff",
+   "camera": "pull",
+   "title": "GOLD MEDAL: *2024*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "chime",
+     "at": 0.5
+    },
+    {
+     "type": "pop",
+     "at": 1.0
+    }
+   ]
+  }
+ ]
+}

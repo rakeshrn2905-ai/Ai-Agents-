@@ -1,0 +1,27 @@
+{
+  "topic": "The WW2 Ghost Army fought with inflatable tanks, sound effects and fake radio",
+  "pillar": "Past: wild true story",
+  "taste": "No combat, no Nazi symbols; the enemy is only a pair of binoculars in a bush.",
+  "claims": [
+    {"claim": "The US Army's 23rd Headquarters Special Troops ('Ghost Army'), about 1,100 men, was a WW2 tactical deception unit.",
+     "sources": ["https://ghostarmy.org/about/history", "https://www.livescience.com/wwii-ghost-army.html", "https://www.smithsonianmag.com/history/how-the-ghost-army-of-wwii-used-art-to-deceive-the-nazis-180980336/"], "status": "verified"},
+    {"claim": "Many of its men were artists recruited from art schools; members included Bill Blass (later a fashion designer) and Ellsworth Kelly (later a famous painter).",
+     "sources": ["https://hyperallergic.com/the-artist-filled-shadow-army-of-world-war-ii", "https://www.nga.gov/stories/articles/ghost-armys-artists-war", "https://artistsnetwork.com/art-history/ellsworth-kelly-ghost-army"], "status": "verified"},
+    {"claim": "It used inflatable rubber tanks, jeeps and artillery.",
+     "sources": ["https://www.livescience.com/wwii-ghost-army.html", "https://interestingengineering.com/culture/the-us-ghost-army-took-military-deception-to-a-new-level-in-wwii"], "status": "verified"},
+    {"claim": "It played recorded sound effects of troops and vehicles, and sent fake radio traffic.",
+     "sources": ["https://www.livescience.com/wwii-ghost-army.html", "https://interestingengineering.com/culture/the-us-ghost-army-took-military-deception-to-a-new-level-in-wwii"], "status": "verified"},
+    {"claim": "Its job was to deceive the enemy about where real Allied units were.",
+     "sources": ["https://ghostarmy.org/about/history", "https://www.smithsonianmag.com/history/how-the-ghost-army-of-wwii-used-art-to-deceive-the-nazis-180980336/"], "status": "verified"},
+    {"claim": "The unit's mission was kept top secret until 1996.",
+     "sources": ["https://www.wwiimemorialfriends.org/blog/the-ghost-army-of-world-war-ii", "https://ghostarmy.org/about/history"], "status": "verified"},
+    {"claim": "The Ghost Army received the Congressional Gold Medal in 2024.",
+     "sources": ["https://www.kpbs.org/news/military/2024/03/20/with-fake-weapons-and-phony-uniforms-they-helped-win-wwii-now-theyre-finally-getting-medals", "https://ghostarmy.org/blog/ghost-army-80-year-journey-from-battlefield-deception-to-congressional-honor"], "status": "verified",
+     "note": "Not 2022."}
+  ],
+  "rejected": [
+    {"claim": "Sound effects could be heard 15 miles away.", "reason": "No source found."},
+    {"claim": "French civilians saw four soldiers lift a tank.", "reason": "Not verified in this check - not narrated."},
+    {"claim": "More than 20 operations / Operation Viersen.", "reason": "Not verified in this check."}
+  ]
+}

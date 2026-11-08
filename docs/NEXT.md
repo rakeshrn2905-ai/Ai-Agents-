@@ -1,6 +1,6 @@
 # Where we left off (update this at the end of every session)
 
-Last updated: 5 Nov 2026
+Last updated: 8 Nov 2026
 
 ## Done
 - Pipeline: Style 5 renderer (`lib/`), Kokoro voice, lo-fi mix, QA with retention gates, publisher (Chrome / Make / manual pack).
@@ -13,14 +13,15 @@ Last updated: 5 Nov 2026
 - #12 "Ancient Rome Had a Pee Tax" (B5, brain-rot test) built, then REJECTED by Rakesh ('not good') - not uploaded; slot freed.
 - #13 "The Sandwich Is Named After a Real Earl (1762)" (T18) built and QA-passed (episodes/sandwich); for Sun 8 Nov 07:00 UK.
 - #14 "France Used the Guillotine Until 1977" (G1) built and QA-passed (episodes/guillotine-1977); for Sun 8 Nov 17:00 UK.
+- #15 "The WW2 Army That Fought With Balloons" (Ghost Army, Rakesh's pick from the story list) built and QA-passed (episodes/ghost-army); for Mon 9 Nov 07:00 UK. Fact check: medal was 2024 (not 2022); '15 miles' sound range and the lifted-tank anecdote left out (not verified).
 - Open question for Rakesh: what was wrong with the brain-rot video (pace, voice, look, topic, or the whole format)?
 
 ## Waiting on Rakesh
-- The #7-#11, #13 and #14 video links -> `python3 -m timesketch.publish episodes/guy-fawkes-guys --link <url>`
+- The #7-#11 and #13-#15 video links -> `python3 -m timesketch.publish episodes/guy-fawkes-guys --link <url>`
 - After 48 h (Sat 7 Nov): Studio exports (Advanced mode CSV, retention CSV, stayed-to-watch %) into `analytics/` -> /yt-retention + /yt-audit, fill row 7 of the results log in CLAUDE.md.
 
 ## Next
-0. Waiting for Rakesh to pick the next topic from docs/TOPICS.md (workflow: Claude proposes, Rakesh picks, Claude builds).
+0. Waiting for Rakesh to pick the next topic from docs/TOPICS.md (story list S1-S8 is the freshest) (workflow: Claude proposes, Rakesh picks, Claude builds).
 1. Build agents: fact-checker, storyboarder, independent QA reviewer (+ scout, scriptwriter, analyst wrappers) in `.claude/agents/`.
 2. Next Short: the 2,000-year-old vending machine (Hero of Alexandria).
 4. vidIQ free credits reset 15 Nov: competitor scan with free (0-credit) calls only.
