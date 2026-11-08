@@ -70,6 +70,9 @@ function stressField(c, cx, cy, R, p, t, { lines = 7, flow = true, hot = false }
     }
   }
 }
+function morphHole(c, cx, cy, R, m) { // m: 0 square .. 1 round
+  box(c, cx - R, cy - R, 2 * R, 2 * R, '#9FD8F0', { r: lerp(6, R, m), lw: 10, k: 0 });
+}
 function hole(c, cx, cy, R, square) {
   if (square) box(c, cx - R, cy - R, 2 * R, 2 * R, '#9FD8F0', { r: 6, lw: 10, k: 0 });
   else ell(c, cx, cy, R, R, '#9FD8F0', { lw: 10, k: 0 });
@@ -138,9 +141,24 @@ export const SCENES = {
     for (let i = 1; i <= Math.ceil(n); i++) { const f = Math.min(1, n - (i - 1)); c.lineTo(lerp(pts[i - 1][0], pts[i][0], f), lerp(pts[i - 1][1], pts[i][1], f)); } c.stroke();
     c.restore();
     if (t > 0.2) burst(c, 690, 850, 90, (t - 0.2) % 0.6, 8, RED);
-    popWord(c, '1954', 300, 1300, clamp((t - 1.3) / 0.3), 130, PAL.gold);
   },
-  // 6: a curve lets the stress flow around - smooth lines, no hot spot
+  // 5a: 1954 - the Comet's own square window corner cracks
+  cometcrack(c, t, beat, ctx) {
+    c.drawImage(sky(), 0, 0);
+    const shake = t > 1.6 ? Math.sin(t * 40) * 4 : 0;
+    plane(c, 500 + shake, 1020 + Math.sin(t * 2.6) * 10, 0.92, { mood: t > 1.0 ? 'shock' : 'worried', T: ctx.T, name: 'COMET', crack: clamp((t - 0.4) / 1.2) });
+    label(c, 'CRACK AT THE CORNER', 500 - 138 * 0.92, 1020 - 16 * 0.92, 330, 760, clamp((t - 1.0) / 0.4), { size: 52 });
+  },
+  // 6: so windows were made round - the square morphs into a circle, red stress lines calm to blue
+  morph(c, t, beat, ctx) {
+    c.drawImage(panelBg(), 0, 0);
+    const m = easeInOut(clamp((t - 0.3) / 1.3)), p = lerp(10, 2, m);
+    stressField(c, 540, 1000, 155, p, t, { hot: m < 0.6 });
+    morphHole(c, 540, 1000, 155, m);
+    label(c, m < 0.6 ? 'SQUARE' : 'ROUND', 540 + 110, 1000 - 110, W - 150, 720, 1, { size: 56 });
+    if (m >= 1) burst(c, 540, 1000, 220, t - 1.6, 12, PAL.gold);
+  },
+  // (unused) a curve lets the stress flow around - smooth lines, no hot spot
   curve(c, t, beat, ctx) {
     c.drawImage(panelBg(), 0, 0);
     stressField(c, 540, 1000, 160, 2, t, { hot: false });

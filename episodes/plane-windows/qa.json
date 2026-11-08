@@ -17,7 +17,7 @@
       "check": "length 20-30 s",
       "pass": true,
       "hard": true,
-      "detail": "23.6s"
+      "detail": "26.0s"
     },
     {
       "check": "voice starts at 0.0 s",
@@ -41,7 +41,7 @@
       "check": "no beat over 5.6s",
       "pass": true,
       "hard": false,
-      "detail": "longest 4.8s (phrase 5)"
+      "detail": "longest 4.0s (phrase 7)"
     },
     {
       "check": "SFX on every beat",
@@ -71,7 +71,7 @@
       "check": "ending loops back to the hook",
       "pass": true,
       "hard": false,
-      "detail": "first/last difference 14.5"
+      "detail": "first/last difference 14.9"
     },
     {
       "check": "no black edges",
@@ -83,7 +83,7 @@
       "check": "voice 15-23 dB over music",
       "pass": true,
       "hard": true,
-      "detail": "19.8 dB"
+      "detail": "19.1 dB"
     },
     {
       "check": "no clipping",

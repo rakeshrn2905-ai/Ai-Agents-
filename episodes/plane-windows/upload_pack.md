@@ -9,7 +9,7 @@ Why Plane Windows Are Round (1954)
 ## Description
 Plane windows are round because square ones cracked.
 
-The de Havilland Comet, the world's first jet airliner (in service from 1952), had squarish windows. Every flight, the cabin is pressurised - pumped full of air - and the metal skin stretches, again and again. At a sharp corner that stress piles up in one spot, far more than engineers expected. Fatigue cracks grew, and in 1954 two Comets broke apart in flight. A curved window lets the stress flow smoothly around it, with no weak corner - which is why the window next to your seat has round corners.
+The de Havilland Comet, the world's first jet airliner (in service from 1952), had squarish windows. Every flight, the cabin is pressurised - pumped full of air - and the metal skin stretches, again and again. At a sharp corner that stress piles up in one spot, far more than engineers expected. In 1954 those square corners cracked, and two Comets broke apart mid-flight. So windows were made round: a curve lets the stress flow smoothly around it, with no weak corner. The redesigned Comet 4 (1958) had oval windows, and that's why the window next to your seat has round corners.
 
 Sources:
 - FAA Lessons Learned, de Havilland Comet 1: https://www.faa.gov/lessons_learned/transport_airplane/accidents/G-ALYV

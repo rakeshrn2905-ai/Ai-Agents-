@@ -46,6 +46,15 @@
     "https://www.faa.gov/lessons_learned/transport_airplane/accidents/G-ALYV"
    ],
    "status": "verified"
+  },
+  {
+   "claim": "After the inquiry the redesigned Comet (Comet 4, 1958) got oval/rounded windows and a thicker skin; airliners have used rounded windows since.",
+   "sources": [
+    "https://www.aeroxplorer.com/articles/airplane-windows-are-round-because-this-plane-kept-crashing.php",
+    "https://science.howstuffworks.com/transport/flight/modern/airplane-windows-round.htm",
+    "https://migflug.com/jetflights/de-havilland-comet-metal-fatigue-square-windows-investigation-1954/"
+   ],
+   "status": "verified"
   }
  ],
  "rejected": [
