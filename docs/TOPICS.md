@@ -39,17 +39,25 @@ Status: `proposed` -> `picked` -> `built` -> `uploaded`. Facts are checked (2+ s
 | B7 | Russia had a beard tax | "Russia charged you for your beard." | high (Peter the Great, 1698) | proposed |
 | B8 | The Great Emu War, brain-rot cut | "Australia lost a war to emus." | high | proposed |
  7-day week, Oxford vs Aztecs, mammoths and pyramids, sharks vs trees, fax (old host
-version), lighters vs matches, 'guys' / Guy Fawkes, can opener, Cleopatra vs 1969, Year 2038, QWERTY, sandwich / Earl of Sandwich (pee tax built but rejected), guillotine 1977, Ghost Army (inflatable tanks).
+version), lighters vs matches, 'guys' / Guy Fawkes, can opener, Cleopatra vs 1969, Year 2038, QWERTY, sandwich / Earl of Sandwich (pee tax built but rejected), guillotine 1977, Ghost Army (built, not uploaded), Mary Celeste.
 
 ## Story ideas (mind-blowing true stories, after Rakesh said the time-gap topics felt generic)
 
 | # | Topic | Hook | Confidence | Status |
 |---|---|---|---|---|
 | S1 | Ray cats: a serious 1980s plan to warn the future about nuclear waste with colour-changing cats | "Scientists wanted cats to guard nuclear waste." | high (1984 nuclear semiotics proposal; still to re-verify) | proposed |
-| S2 | The Ghost Army: artists with inflatable tanks | "This army fought with balloons." | high | built (#15, 9 Nov 07:00) |
+| S2 | The Ghost Army: artists with inflatable tanks | "This army fought with balloons." | high | built (#15), NOT uploaded - Rakesh wanted a ghost story, not balloons |
 | S3 | Victor Lustig sold the Eiffel Tower (twice) | "A man sold the Eiffel Tower." | medium-high (check sources for 'twice') | proposed |
 | S4 | The 1904 Olympic marathon (car ride, rat poison) | "The Olympic winner rode in a car." | high | proposed |
 | S5 | Stanislav Petrov ignored a nuclear alarm in 1983 | "One man ignored the end of the world." | high | proposed |
 | S6 | Violet Jessop survived the Titanic and its sister ships | "She survived the Titanic... and more." | high | proposed |
 | S7 | Future Library: books no one can read until 2114 | "You can't read these books until 2114." | high | proposed |
 | S8 | Roy Sullivan was hit by lightning 7 times | "Lightning hit him seven times." | high (Guinness) | proposed |
+
+## Real mysteries ('ghost' angle - Rakesh liked this direction)
+
+| # | Topic | Hook | Confidence | Status |
+|---|---|---|---|---|
+| M1 | Mary Celeste, 1872 | "This ship had no one on board." | high | built (#16, 9 Nov 07:00) |
+| M2 | Flannan Isles lighthouse keepers vanished, 1900 | "Three men vanished from this lighthouse." | high (re-verify details; many myths) | proposed |
+| M3 | Roanoke lost colony, 'CROATOAN' carved on a post (1590) | "100 people vanished and left one word." | high | proposed |

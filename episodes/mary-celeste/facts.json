@@ -1,0 +1,64 @@
+{
+ "topic": "The Mary Celeste: a ship found in 1872 with nobody on board",
+ "pillar": "Past: true mystery (the 'ghost' angle Rakesh wanted)",
+ "taste": "No bodies, no ghosts drawn as real spirits; the people simply fade from a portrait. Bright day sea, not a dark night scene.",
+ "claims": [
+  {
+   "claim": "In December 1872 the crew of the Dei Gratia found the Mary Celeste drifting in the Atlantic (about 400 miles east of the Azores) with nobody on board.",
+   "sources": [
+    "https://www.smithsonianmag.com/history/abandoned-ship-mary-celeste-174488104/",
+    "https://www.history.com/this-day-in-history/december-5/the-mystery-of-the-mary-celeste",
+    "https://www.britannica.com/topic/Mary-Celeste"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Her lifeboat was missing.",
+   "sources": [
+    "https://www.smithsonianmag.com/history/abandoned-ship-mary-celeste-174488104/",
+    "https://www.history.com/this-day-in-history/december-5/the-mystery-of-the-mary-celeste",
+    "https://www.smithsonianmag.com/smart-news/an-abandoned-merchant-ship-was-discovered-floating-in-the-atlantic-in-1872-the-mystery-of-its-missing-crew-was-never-solved-180985547/"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "About six months' supply of food and water was still on board.",
+   "sources": [
+    "https://www.smithsonianmag.com/history/abandoned-ship-mary-celeste-174488104/",
+    "https://www.americanheritage.com/mystery-mary-celeste",
+    "https://www.historyhit.com/what-happened-to-the-mary-celeste/"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Her cargo of 1,701 barrels of industrial alcohol was largely intact (only a few barrels empty).",
+   "sources": [
+    "https://www.smithsonianmag.com/history/abandoned-ship-mary-celeste-174488104/",
+    "https://www.history.com/this-day-in-history/december-5/the-mystery-of-the-mary-celeste"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Captain Benjamin Briggs, his wife, their two-year-old daughter and a crew of seven were never seen again.",
+   "sources": [
+    "https://www.britannica.com/topic/Mary-Celeste",
+    "https://www.historyhit.com/what-happened-to-the-mary-celeste/",
+    "https://www.smithsonianmag.com/history/abandoned-ship-mary-celeste-174488104/"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "The mystery has never been solved; theories (alcohol fumes, storm, mutiny) remain unproven.",
+   "sources": [
+    "https://www.smithsonianmag.com/smart-news/an-abandoned-merchant-ship-was-discovered-floating-in-the-atlantic-in-1872-the-mystery-of-its-missing-crew-was-never-solved-180985547/",
+    "https://www.history.com/this-day-in-history/december-5/the-mystery-of-the-mary-celeste",
+    "https://www.britannica.com/topic/Mary-Celeste"
+   ],
+   "status": "verified"
+  }
+ ],
+ "rejected": [
+  "Half-eaten breakfast / warm tea on the table - a myth popularised by Conan Doyle's 1884 story, not in the real reports.",
+  "Exact discovery date (sources split between 4 and 5 December) - script just says 1872."
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "loop": true,
+ "cast": {},
+ "beats": [
+  {
+   "phrase": 0,
+   "scene": "mhook",
+   "camera": "punchout",
+   "title": "NO ONE ON *BOARD*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "pop",
+     "at": 0.15
+    },
+    {
+     "type": "chime",
+     "at": 0.6
+    }
+   ],
+   "focus": [600, 1120],
+   "zoom0": 1.15
+  },
+  {
+   "phrase": 1,
+   "scene": "spotted",
+   "camera": "push",
+   "title": "FOUND: *1872*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "scratch",
+     "at": 0.6
+    },
+    {
+     "type": "pop",
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "phrase": 1,
+   "scene": "adrift",
+   "camera": "drift",
+   "title": "ADRIFT IN THE *ATLANTIC*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "tick",
+     "at": 0.9
+    }
+   ],
+   "offset": 2.75
+  },
+  {
+   "phrase": 2,
+   "scene": "lifeboat",
+   "camera": "push",
+   "title": "LIFEBOAT: *GONE*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "thud",
+     "at": 0.5,
+     "db": -4
+    }
+   ],
+   "shake": 0.5
+  },
+  {
+   "phrase": 3,
+   "scene": "galleyb",
+   "camera": "push",
+   "title": "FOOD FOR *6 MONTHS*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "pop",
+     "at": 0.4
+    },
+    {
+     "type": "chime",
+     "at": 0.7
+    }
+   ]
+  },
+  {
+   "phrase": 4,
+   "scene": "holdb",
+   "camera": "push",
+   "title": "CARGO: *UNTOUCHED*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "thud",
+     "at": 0.4,
+     "db": -6
+    },
+    {
+     "type": "pop",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "phrase": 5,
+   "scene": "portrait",
+   "camera": "push",
+   "title": "NEVER *SEEN AGAIN*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "tick",
+     "at": 0.6
+    },
+    {
+     "type": "tick",
+     "at": 1.2
+    },
+    {
+     "type": "chime",
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "phrase": 6,
+   "scene": "payoff",
+   "camera": "pull",
+   "title": "STILL *UNSOLVED*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "pop",
+     "at": 0.4
+    },
+    {
+     "type": "pop",
+     "at": 0.8
+    },
+    {
+     "type": "chime",
+     "at": 2.0
+    }
+   ]
+  }
+ ]
+}

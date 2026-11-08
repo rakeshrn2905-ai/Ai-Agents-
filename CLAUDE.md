@@ -112,7 +112,8 @@ python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to q
 | 12 | Ancient Rome Had a Pee Tax (brain-rot test) | BRAIN-ROT TEST: 10 beats in 20 s | 20.1 s | NOT UPLOADED - Rakesh: 'not good' | brain-rot pacing; rejected before upload (reason not yet given) |
 | 13 | The Sandwich Is Named After a Real Earl (8 Nov 07:00) | No host, Present pillar explainer | 22.2 s | (fill in after 48 h) | T18; myth-check angle ('legend says... but') |
 | 14 | France Used the Guillotine Until 1977 (8 Nov 17:00) | No host, time collision | 27.1 s | (fill in after 48 h) | 'shock' time-collision topic Claude proposed, Rakesh picked; split hook (1.4 s) + title carries the year |
-| 15 | The WW2 Army That Fought With Balloons (9 Nov 07:00) | No host, true story (Ghost Army) | 23.9 s | (fill in after 48 h) | first 'wild true story' (Rakesh: earlier topics too generic); odd picture in frame 1 (soldier lifting a whole tank) |
+| 15 | The WW2 Army That Fought With Balloons (Ghost Army) | No host, true story | 23.9 s | NOT UPLOADED - Rakesh expected a 'ghost' story, got balloons | lesson: the hook must deliver what the topic name promises |
+| 16 | The 1872 Ghost Ship Found With Nobody Aboard (9 Nov 07:00) | No host, true mystery (Mary Celeste) | 24.1 s | (fill in after 48 h) | first unsolved-mystery topic; 'ghost' angle Rakesh asked for; open loop never closed ('nobody knows') |
 
 Lessons: a slow first frame kills retention; a bright picture-first hook helps; the explainer format
 earned the first subscribers. Retired: hosts Tempo and Clio, voices Michael and Tock.
