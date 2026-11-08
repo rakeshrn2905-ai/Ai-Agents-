@@ -1,0 +1,56 @@
+{
+ "topic": "Why plane windows are round (de Havilland Comet, 1954)",
+ "pillar": "Present: everyday-thing explainer",
+ "taste": "Two Comet breakups in 1954 killed everyone aboard: show only a cartoon plane's metal cracking, never people, fire or a crash.",
+ "claims": [
+  {
+   "claim": "The de Havilland Comet was the first jet airliner (in service 1952) and had squarish windows.",
+   "sources": [
+    "https://www.faa.gov/lessons_learned/transport_airplane/accidents/G-ALYV",
+    "https://mentalfloss.com/article/84603/why-are-airplane-windows-round",
+    "https://science.howstuffworks.com/transport/flight/modern/airplane-windows-round.htm"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Pressurising the cabin on every flight (and releasing it after) loads the fuselage metal again and again (metal fatigue).",
+   "sources": [
+    "https://www.faa.gov/lessons_learned/transport_airplane/accidents/G-ALYV",
+    "https://science.howstuffworks.com/transport/flight/modern/airplane-windows-round.htm"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Stress concentrates at sharp window corners, much more than engineers expected.",
+   "sources": [
+    "https://www.faa.gov/lessons_learned/transport_airplane/accidents/G-ALYV",
+    "https://science.howstuffworks.com/transport/flight/modern/airplane-windows-round.htm",
+    "https://mentalfloss.com/article/84603/why-are-airplane-windows-round"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Fatigue cracks led to two Comets breaking apart in flight in 1954.",
+   "sources": [
+    "https://www.faa.gov/lessons_learned/transport_airplane/accidents/G-ALYV",
+    "https://mentalfloss.com/article/84603/why-are-airplane-windows-round",
+    "https://www.aeroxplorer.com/articles/airplane-windows-are-round-because-this-plane-kept-crashing.php"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Rounded/oval windows let stress flow around the opening with no corner peak, which is why airliner windows are round today.",
+   "sources": [
+    "https://science.howstuffworks.com/transport/flight/modern/airplane-windows-round.htm",
+    "https://mentalfloss.com/article/84603/why-are-airplane-windows-round",
+    "https://www.faa.gov/lessons_learned/transport_airplane/accidents/G-ALYV"
+   ],
+   "status": "verified"
+  }
+ ],
+ "rejected": [
+  "'70% of the stress at the corners' figure (no primary source)",
+  "exact crack origin (ADF window vs escape hatch - sources differ)",
+  "tank-test cycle numbers (sources differ)"
+ ]
+}

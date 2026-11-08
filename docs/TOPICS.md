@@ -66,7 +66,7 @@ version), lighters vs matches, 'guys' / Guy Fawkes, can opener, Cleopatra vs 196
 
 | # | Topic | Hook (<= 2 s) | How / why it explains | Confidence | Status |
 |---|---|---|---|---|---|
-| X1 | Why plane windows are round | "Square windows ripped planes apart." | 1950s Comet jets: corners concentrate stress -> cracks; round spreads it | high | proposed |
+| X1 | Why plane windows are round | "Square windows ripped planes apart." | 1950s Comet jets: corners concentrate stress -> cracks; round spreads it | high | built (#17, 9 Nov 17:00) |
 | X2 | The tiny pocket in your jeans | "This tiny pocket was for a watch." | 1800s pocket watches, Levi's workwear; watches moved to wrists, the pocket stayed | high | proposed |
 | X3 | Why the save icon is a floppy disk | "Your save button is a 40-year-old disk." | what a floppy was, how it stored data, why the icon outlived it | high | proposed |
 | X4 | "OK" started as a joke | "OK is a 180-year-old spelling joke." | 1839 Boston paper, "oll korrect" fad, 1840 campaign spread it | high | proposed |
