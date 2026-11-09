@@ -74,3 +74,11 @@ version), lighters vs matches, 'guys' / Guy Fawkes, can opener, Cleopatra vs 196
 | X6 | Ketchup was sold as medicine | "Ketchup used to be medicine." | 1830s tomato pills, how the craze rose and crashed | medium-high (check sources) | proposed |
 | X7 | Clocks will stop adding leap seconds | "Clocks are about to stop adding seconds." | Earth's spin vs atomic clocks; vote to scrap leap seconds by 2035 (Future) | high | proposed |
 | X8 | Why pencils are yellow | "Yellow pencils were copying a luxury brand." | 1890s Koh-i-Noor pencil, yellow = premium graphite | medium (check) | proposed |
+
+## From Studio Inspiration (9 Nov)
+
+| # | Topic | Hook | Confidence | Status |
+|---|---|---|---|---|
+| I1 | Treadmills began as prison punishment (Cubitt, 1818) | "Your treadmill was built to punish prisoners." | high | built (#18, 10 Nov 07:00) |
+| I2 | Nintendo is one year younger than Jack the Ripper (1888 vs Sept 1889) | "Nintendo is older than you think." | high once reworded (NOT 'while he was active') | proposed - taste care, no Nintendo logo/characters |
+| I3 | The chainsaw began as a childbirth tool (Aitken & Jeffray, c.1780-90s) | "The chainsaw was made for doctors." | medium-high (check) | proposed - taste care, no patient shown |

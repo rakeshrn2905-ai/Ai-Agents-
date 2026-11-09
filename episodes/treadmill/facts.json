@@ -1,0 +1,79 @@
+{
+ "topic": "Treadmills began as a prison punishment (William Cubitt's treadwheel, 1818)",
+ "pillar": "Present: everyday-thing origin (copies the #7 'Guys' shape: 'you' hook + real character + story)",
+ "taste": "No injuries; prisoners are friendly cartoon figures in plain grey, sweating at most. Ball and chain is a comic 'prison' symbol only.",
+ "claims": [
+  {
+   "claim": "In 1818 British engineer William Cubitt introduced the prison treadwheel (first at Bury St Edmunds and Brixton).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Penal_treadmill",
+    "https://www.mentalfloss.com/crime/treadmill-originated-prisons",
+    "https://daily.jstor.org/treadmills-were-meant-to-be-atonement-machines/"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Cubitt had seen prisoners idle and wanted to keep them busy ('habits of industry').",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Penal_treadmill",
+    "https://www.mentalfloss.com/crime/treadmill-originated-prisons"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "It was a large wheel with steps; prisoners kept stepping up as it turned, holding a rail.",
+   "sources": [
+    "https://www.mentalfloss.com/crime/treadmill-originated-prisons",
+    "https://qz.com/quartzy/1275773/treadmills-were-originally-designed-to-punish-prisoners",
+    "https://archive.blogs.harvard.edu/preserving/2015/03/01/treadmills-for-prisoners/"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Prisoners worked it for hours at a time.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Penal_treadmill",
+    "https://brewminate.com/the-penal-treadmill-in-victorian-england/",
+    "https://www.mentalfloss.com/crime/treadmill-originated-prisons"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Its power was often used to grind grain or pump water.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Penal_treadmill",
+    "https://www.mentalfloss.com/crime/treadmill-originated-prisons"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Some treadwheels powered nothing at all - pure punishment.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Penal_treadmill",
+    "https://qz.com/quartzy/1275773/treadmills-were-originally-designed-to-punish-prisoners"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Britain abolished penal treadwheels around 1900 (Prison Act 1898; last ones by 1902).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Penal_treadmill",
+    "https://brewminate.com/the-penal-treadmill-in-victorian-england/"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Today people use treadmills for exercise, e.g. paying for a gym.",
+   "sources": [
+    "https://qz.com/quartzy/1275773/treadmills-were-originally-designed-to-punish-prisoners",
+    "https://www.mentalfloss.com/crime/treadmill-originated-prisons"
+   ],
+   "status": "verified"
+  }
+ ],
+ "rejected": [
+  "'at least six hours a day' / 'eight hours' (sources differ) - script says 'for hours'",
+  "'killed one inmate a week' (unverified)",
+  "exact abolition year (1898 vs 1902) - script says 'around 1900'"
+ ]
+}

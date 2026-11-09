@@ -1,0 +1,96 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "check": "full decode",
+      "pass": true,
+      "hard": true,
+      "detail": "clean"
+    },
+    {
+      "check": "1080x1920 @ 30fps",
+      "pass": true,
+      "hard": true,
+      "detail": "1080x1920 30/1"
+    },
+    {
+      "check": "length 20-30 s",
+      "pass": true,
+      "hard": true,
+      "detail": "25.0s"
+    },
+    {
+      "check": "voice starts at 0.0 s",
+      "pass": true,
+      "hard": true,
+      "detail": "0.0s"
+    },
+    {
+      "check": "hook said within 2.3s",
+      "pass": true,
+      "hard": true,
+      "detail": "'Your treadmill was built to punish prisoners.' ends 2.15s"
+    },
+    {
+      "check": "title on screen from frame 1",
+      "pass": true,
+      "hard": true,
+      "detail": "BUILT FOR *PRISONERS*"
+    },
+    {
+      "check": "no beat over 5.6s",
+      "pass": true,
+      "hard": false,
+      "detail": "longest 4.1s (phrase 7)"
+    },
+    {
+      "check": "SFX on every beat",
+      "pass": true,
+      "hard": true,
+      "detail": "ok"
+    },
+    {
+      "check": "frame 1 bright (>= 140)",
+      "pass": true,
+      "hard": true,
+      "detail": "brightness 197"
+    },
+    {
+      "check": "frame 1 colourful (>= 90)",
+      "pass": true,
+      "hard": true,
+      "detail": "saturation 102"
+    },
+    {
+      "check": "motion in the first 0.5 s",
+      "pass": true,
+      "hard": true,
+      "detail": "change 21.3"
+    },
+    {
+      "check": "ending loops back to the hook",
+      "pass": true,
+      "hard": false,
+      "detail": "first/last difference 19.6"
+    },
+    {
+      "check": "no black edges",
+      "pass": true,
+      "hard": true,
+      "detail": "0 edge hits"
+    },
+    {
+      "check": "voice 15-23 dB over music",
+      "pass": true,
+      "hard": true,
+      "detail": "18.1 dB"
+    },
+    {
+      "check": "no clipping",
+      "pass": true,
+      "hard": true,
+      "detail": "peak -0.2 dBFS"
+    }
+  ],
+  "note": "Automated only. A human still watches the stills and listens once."
+}

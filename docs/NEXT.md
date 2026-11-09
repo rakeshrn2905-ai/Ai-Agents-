@@ -16,10 +16,11 @@ Last updated: 8 Nov 2026
 - #15 "The WW2 Army That Fought With Balloons" (Ghost Army, Rakesh's pick from the story list) built and QA-passed (episodes/ghost-army); NOT uploaded (Rakesh picked it for 'ghost', got balloons). Fact check: medal was 2024 (not 2022); '15 miles' sound range and the lifted-tank anecdote left out (not verified).
 - #16 "The 1872 Ghost Ship Found With Nobody Aboard" (Mary Celeste) built and QA-passed (episodes/mary-celeste); for Mon 9 Nov 07:00 UK. 'Half-eaten breakfast' left out (Conan Doyle myth).
 - #17 "Why Plane Windows Are Round (1954)" (X1) built and QA-passed (episodes/plane-windows); for Mon 9 Nov 17:00 UK. Mix needed BED_DB=-9 (audio/mix.py now reads BED_DB from the environment).
+- #18 "Treadmills Were Built to Punish Prisoners (1818)" built and QA-passed (episodes/treadmill); for Tue 10 Nov 07:00 UK (Studio Inspiration idea Rakesh picked). Nintendo/Ripper idea needs rewording ('one year after'); chainsaw idea is the backup.
 - Open question for Rakesh: what was wrong with the brain-rot video (pace, voice, look, topic, or the whole format)?
 
 ## Waiting on Rakesh
-- The #7-#11 and #13, #14, #16 and #17 video links -> `python3 -m timesketch.publish episodes/guy-fawkes-guys --link <url>`
+- The #7-#11 and #13, #14, #16-#18 video links; Studio 'stayed to watch' % for #7-#11 -> `python3 -m timesketch.publish episodes/guy-fawkes-guys --link <url>`
 - After 48 h (Sat 7 Nov): Studio exports (Advanced mode CSV, retention CSV, stayed-to-watch %) into `analytics/` -> /yt-retention + /yt-audit, fill row 7 of the results log in CLAUDE.md.
 
 ## Next
