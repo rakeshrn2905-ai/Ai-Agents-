@@ -82,3 +82,13 @@ version), lighters vs matches, 'guys' / Guy Fawkes, can opener, Cleopatra vs 196
 | I1 | Treadmills began as prison punishment (Cubitt, 1818) | "Your treadmill was built to punish prisoners." | high | built (#18, 10 Nov 07:00) |
 | I2 | Nintendo is one year younger than Jack the Ripper (1888 vs Sept 1889) | "Nintendo is older than you think." | high once reworded (NOT 'while he was active') | proposed - taste care, no Nintendo logo/characters |
 | I3 | The chainsaw began as a childbirth tool (Aitken & Jeffray, c.1780-90s) | "The chainsaw was made for doctors." | medium-high (check) | proposed - taste care, no patient shown |
+
+## Next picks in the #7 'Guys' shape ('you' hook about an everyday thing + a real person and his story) - 9 Nov
+
+| # | Topic | Hook | Character / story | Confidence | Status |
+|---|---|---|---|---|---|
+| P1 | Bluetooth is named after a Viking king | "Your Bluetooth is named after a Viking." | Harald 'Bluetooth' Gormsson (10th c.); the logo is his initials in runes | high | proposed |
+| P2 | We say 'hello' on the phone because of Edison | "You say hello because of Thomas Edison." | Edison pushed 'hello' (1877), Bell wanted 'ahoy' | high (check wording) | proposed |
+| P3 | QR codes came from a board game | "Your QR code came from a board game." | Masahiro Hara, Denso Wave 1994, inspired by Go stones | high | proposed |
+| P4 | The tiny jeans pocket (X2) | "That tiny pocket in your jeans was for a watch." | Levi Strauss & Jacob Davis, 1873 | high | proposed |
+| P5 | The chainsaw began as a childbirth tool (I3) | "The chainsaw was invented for doctors." | Aitken & Jeffray, Scotland c.1780-90s | medium-high | proposed - taste care |
