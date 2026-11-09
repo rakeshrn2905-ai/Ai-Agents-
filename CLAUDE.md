@@ -98,14 +98,14 @@ python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to q
 
 | # | Video | Format | Length | Stayed to watch | Change tested |
 |---|---|---|---|---|---|
-| 1 | Why a Week Has 7 Days | Host Tempo, slow opening | 26 s | 27.6% | |
-| 2 | Oxford Is Older Than the Aztec Empire | Host Clio, split screen | 17.6 s | 47% (~1.2k views) | |
-| 3 | Mammoths Saw the Pyramids | Host Clio | 17.8 s | 38% (~1.1k views) | |
+| 1 | Why a Week Has 7 Days | Host Tempo, slow opening | 26 s | 27.6% (1,331 views, 28% avg viewed) | |
+| 2 | Oxford Is Older Than the Aztec Empire | Host Clio, split screen | 17.6 s | 47% (1,782 views, 44% avg viewed) | |
+| 3 | Mammoths Saw the Pyramids | Host Clio | 17.8 s | 38% (1,388 views, 40% avg viewed) | |
 | 4 | Sharks Are Older Than Trees | Host Clio, split screen | 14.4 s | n/a | |
 | 5 | Fax (old style) | Host Clio | - | n/a | |
 | 6 | Lighters Came Before Matches | No host, hook -> how -> why | 28.8 s | 46%, +2 subs | first no-host explainer |
-| 7 | 'Guys' Comes From a 1605 Gunpowder Plot (5 Nov 07:00) | No host, hook -> how -> why | 24.4 s | (fill in after 48 h) | bright frame 1 + title at 0.0 s + 'you' hook + no hook caption |
-| 8 | Cans Came 40 Years Before Can Openers (5 Nov 17:00) | No host, hook -> how -> why | 23.3 s | (fill in after 48 h) | same frame-1 rules; 'which came first' topic (pairs with #6) |
+| 7 | 'Guys' Comes From a 1605 Gunpowder Plot (5 Nov 07:00) | No host, hook -> how -> why | 24.4 s | 1,351 views, **60% avg viewed** (best); stayed-to-watch still needed | bright frame 1 + title at 0.0 s + 'you' hook + no hook caption |
+| 8 | Cans Came 40 Years Before Can Openers (5 Nov 17:00) | No host, hook -> how -> why | 23.3 s | 1,348 views, 38% avg viewed; stayed-to-watch still needed | same frame-1 rules; 'which came first' topic (pairs with #6) |
 | 9 | Cleopatra Was Closer to 1969 Than the Pyramids (6 Nov 17:00) | No host, time gap | 26.4 s | (fill in after 48 h) | 90% push: punch-out frame 1, odd pair (Cleopatra + astronaut), split hook, question loop |
 | 10 | Some Clocks Will Hit 1901 in 2038 (7 Nov 07:00) | No host, Future pillar explainer | 27.8 s | (fill in after 48 h) | first Future-pillar video; same 90% push (punch-out, split hook, odd visual: computer in a 1901 top hat) |
 | 11 | Your Keyboard Is 150 Years Old (7 Nov 17:00) | No host, Present pillar explainer | 24.4 s | (fill in after 48 h) | first topic Rakesh picked (T10); 1.6 s 'Victorian' hook; odd pair keyboard + monocled typewriter |
@@ -116,7 +116,10 @@ python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to q
 | 16 | The 1872 Ghost Ship Found With Nobody Aboard (9 Nov 07:00) | No host, true mystery (Mary Celeste) | 24.1 s | (fill in after 48 h) | first unsolved-mystery topic; 'ghost' angle Rakesh asked for; open loop never closed ('nobody knows') |
 | 17 | Why Plane Windows Are Round (1954) (9 Nov 17:00) | No host, everyday explainer (X1) | 26.0 s | (fill in after 48 h) | Rakesh asked for clear explainers: animated stress-line cutaway (square vs round) as the 'how' |
 
-Lessons: a slow first frame kills retention; a bright picture-first hook helps; the explainer format
+Lessons: 'Guys' (#7) holds viewers 2x longer than any other Short (60% avg viewed vs 28-44%): a 'you' hook about something
+the viewer says/uses every day + a real character with a story. Timeline comparisons (Oxford, Mammoths) get views but
+lose people at ~7 s. Keep the #7 shape. (analytics/2026-11-08_studio_summary.md)
+a slow first frame kills retention; a bright picture-first hook helps; the explainer format
 earned the first subscribers. Retired: hosts Tempo and Clio, voices Michael and Tock.
 
 ## Setup (fresh machine or new session)
