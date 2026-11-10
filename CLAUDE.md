@@ -27,7 +27,7 @@ Target: 60%+ "stayed to watch" (baseline 46%, #6 Lighters Came Before Matches), 
 
 Shorts format: 20-30 s, 9:16 1080x1920 30 fps, ~55-65 words, hook (surprise in ~2 s, title on screen
 from 0.0 s, characters already moving) -> how (labelled cutaway) -> why -> payoff ->
-"DID YOU KNOW? COMMENT BELOW" -> visual loop back to the hook. One idea per 3-4 s beat, each with its
+spoken question to the viewer + "Subscribe for more" (also on screen via the payoff beat's `cta`) -> visual loop back to the hook. One idea per 3-4 s beat, each with its
 own visual + SFX. No on-screen host: Style 5 object characters + painted sets.
 
 ## 80% playbook ("stayed to watch" is decided in the first second)
@@ -44,7 +44,10 @@ own visual + SFX. No on-screen host: Style 5 object characters + painted sets.
 6. **Seamless loop:** the last frame looks like the first (QA checks it), so replays count.
 7. **Stop-the-scroll extras (from #9):** camera `punchout` (frame 1 starts tight and pulls back), an odd pairing in
    frame 1, a split hook whose sentence finishes after the swipe decision, and a closing question the hook answers.
-8. **Test ONE change per video** and log it in the results table below; keep what moves the number.
+8. **End on a question + subscribe (from #18: 0 comments):** the last line of the narration asks the viewer one direct,
+   easy-to-answer question about the topic, then says "Subscribe for more." Same question on screen (`cta`) and as the
+   pinned comment in the upload pack.
+9. **Test ONE change per video** and log it in the results table below; keep what moves the number.
    80% is top-tier for Shorts, so expect to climb towards it over several videos, not in one jump.
 
 ## Detail check (look at full-size frames from final.mp4, every beat, before handing over)
@@ -115,9 +118,11 @@ python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to q
 | 15 | The WW2 Army That Fought With Balloons (Ghost Army) | No host, true story | 23.9 s | NOT UPLOADED - Rakesh expected a 'ghost' story, got balloons | lesson: the hook must deliver what the topic name promises |
 | 16 | The 1872 Ghost Ship Found With Nobody Aboard (9 Nov 07:00) | No host, true mystery (Mary Celeste) | 24.1 s | (fill in after 48 h) | first unsolved-mystery topic; 'ghost' angle Rakesh asked for; open loop never closed ('nobody knows') |
 | 17 | Why Plane Windows Are Round (1954) (9 Nov 17:00) | No host, everyday explainer (X1) | 26.0 s | (fill in after 48 h) | Rakesh asked for clear explainers: animated stress-line cutaway (square vs round) as the 'how' |
-| 18 | Treadmills Were Built to Punish Prisoners (1818) (10 Nov 07:00) | No host, everyday origin + character (Cubitt) | 25.0 s | (fill in after 48 h) | copies the #7 'Guys' shape that held 60%: 'your ...' hook about an everyday thing + a real person and his story |
+| 18 | Treadmills Were Built to Punish Prisoners (1818) (10 Nov 07:00) | No host, everyday origin + character (Cubitt) | 25.0 s | **54.2% stayed to watch, 91.3% avg viewed** at 9 h (1,487 views, 752 engaged, 33 likes, +5 subs, 0 comments) - best so far | copies the #7 'Guys' shape that held 60%: 'your ...' hook about an everyday thing + a real person and his story |
 
-Lessons: 'Guys' (#7) holds viewers 2x longer than any other Short (60% avg viewed vs 28-44%): a 'you' hook about something
+Lessons: #18 treadmill confirmed the #7 shape: 54% stayed (typical 38-48%), 91% avg viewed, +5 subs in 9 h. Ironic origin of an
+everyday thing + real person + punchline ending. Weak spot: 0 comments -> every video now ends on a spoken question + subscribe.
+'Guys' (#7) holds viewers 2x longer than any other Short (60% avg viewed vs 28-44%): a 'you' hook about something
 the viewer says/uses every day + a real character with a story. Timeline comparisons (Oxford, Mammoths) get views but
 lose people at ~7 s. Keep the #7 shape. (analytics/2026-11-08_studio_summary.md)
 a slow first frame kills retention; a bright picture-first hook helps; the explainer format
