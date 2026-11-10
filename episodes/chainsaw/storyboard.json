@@ -1,0 +1,164 @@
+{
+ "loop": true,
+ "cast": {},
+ "beats": [
+  {
+   "phrase": 0,
+   "scene": "chook",
+   "camera": "punchout",
+   "title": "MADE FOR *CHILDBIRTH*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "thud",
+     "at": 0.25,
+     "db": -4
+    },
+    {
+     "type": "pop",
+     "at": 0.6
+    }
+   ],
+   "focus": [
+    430,
+    1050
+   ],
+   "zoom0": 1.15,
+   "shake": 0.25
+  },
+  {
+   "phrase": 1,
+   "scene": "doctors",
+   "camera": "push",
+   "title": "THE *1780s*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "tick",
+     "at": 0.8
+    },
+    {
+     "type": "pop",
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "phrase": 2,
+   "scene": "slow",
+   "camera": "push",
+   "title": "TOO *SLOW*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "tick",
+     "at": 0.5
+    },
+    {
+     "type": "tick",
+     "at": 1.3
+    },
+    {
+     "type": "tick",
+     "at": 2.1
+    }
+   ]
+  },
+  {
+   "phrase": 3,
+   "scene": "tool",
+   "camera": "xray",
+   "title": "A CHAIN WITH *TEETH*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "scratch",
+     "at": 0.3
+    },
+    {
+     "type": "pop",
+     "at": 0.8
+    },
+    {
+     "type": "pop",
+     "at": 2.0
+    }
+   ]
+  },
+  {
+   "phrase": 4,
+   "scene": "crank",
+   "camera": "push",
+   "title": "THEN A *CRANK*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "pop",
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "phrase": 5,
+   "scene": "redwood",
+   "camera": "push",
+   "title": "SCALED UP FOR *TREES*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "scratch",
+     "at": 0.4
+    },
+    {
+     "type": "chime",
+     "at": 1.0
+    }
+   ]
+  },
+  {
+   "phrase": 6,
+   "scene": "payoff",
+   "camera": "pull",
+   "title": "",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "pop",
+     "at": 0.4
+    },
+    {
+     "type": "chime",
+     "at": 1.6
+    }
+   ],
+   "cta": [
+    "WOULD YOU HAVE GUESSED?",
+    "COMMENT + SUBSCRIBE"
+   ],
+   "ctaAt": 0.4,
+   "ctaSize": 84,
+   "ctaGap": 70
+  }
+ ]
+}

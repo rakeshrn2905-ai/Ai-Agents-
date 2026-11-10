@@ -119,6 +119,7 @@ python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to q
 | 16 | The 1872 Ghost Ship Found With Nobody Aboard (9 Nov 07:00) | No host, true mystery (Mary Celeste) | 24.1 s | (fill in after 48 h) | first unsolved-mystery topic; 'ghost' angle Rakesh asked for; open loop never closed ('nobody knows') |
 | 17 | Why Plane Windows Are Round (1954) (9 Nov 17:00) | No host, everyday explainer (X1) | 26.0 s | (fill in after 48 h) | Rakesh asked for clear explainers: animated stress-line cutaway (square vs round) as the 'how' |
 | 18 | Treadmills Were Built to Punish Prisoners (1818) (10 Nov 07:00) | No host, everyday origin + character (Cubitt) | 25.0 s | **54.2% stayed to watch, 91.3% avg viewed** at 9 h (1,487 views, 752 engaged, 33 likes, +5 subs, 0 comments) - best so far | copies the #7 'Guys' shape that held 60%: 'your ...' hook about an everyday thing + a real person and his story |
+| 19 | Chainsaws Were Invented for Childbirth (1780s) (10 Nov 17:00) | No host, ironic everyday origin | 26.1 s | (fill in after 48 h) | first spoken question + 'subscribe for more' ending (on-screen question card, pinned comment) - target: comments > 0 |
 
 Lessons: #18 treadmill confirmed the #7 shape: 54% stayed (typical 38-48%), 91% avg viewed, +5 subs in 9 h. Ironic origin of an
 everyday thing + real person + punchline ending. Weak spot: 0 comments -> every video now ends on a spoken question + subscribe.

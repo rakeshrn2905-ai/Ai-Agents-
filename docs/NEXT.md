@@ -1,6 +1,6 @@
 # Where we left off (update this at the end of every session)
 
-Last updated: 8 Nov 2026
+Last updated: 10 Nov 2026
 
 ## Done
 - Pipeline: Style 5 renderer (`lib/`), Kokoro voice, lo-fi mix, QA with retention gates, publisher (Chrome / Make / manual pack).
@@ -17,6 +17,8 @@ Last updated: 8 Nov 2026
 - #16 "The 1872 Ghost Ship Found With Nobody Aboard" (Mary Celeste) built and QA-passed (episodes/mary-celeste); for Mon 9 Nov 07:00 UK. 'Half-eaten breakfast' left out (Conan Doyle myth).
 - #17 "Why Plane Windows Are Round (1954)" (X1) built and QA-passed (episodes/plane-windows); for Mon 9 Nov 17:00 UK. Mix needed BED_DB=-9 (audio/mix.py now reads BED_DB from the environment).
 - #18 "Treadmills Were Built to Punish Prisoners (1818)" built and QA-passed (episodes/treadmill); for Tue 10 Nov 07:00 UK (Studio Inspiration idea Rakesh picked). Nintendo/Ripper idea needs rewording ('one year after'); chainsaw idea is the backup.
+- #19 "Chainsaws Were Invented for Childbirth (1780s)" (P5) built and QA-passed (episodes/chainsaw); for Tue 10 Nov 17:00 UK. First video with the spoken question + subscribe ending (storyboard payoff beat `cta`).
+- #18 treadmill at 9 h: 54.2% stayed, 91.3% avg viewed, +5 subs, 0 comments (analytics/2026-11-10_treadmill_9h.md).
 - Open question for Rakesh: what was wrong with the brain-rot video (pace, voice, look, topic, or the whole format)?
 
 ## Waiting on Rakesh

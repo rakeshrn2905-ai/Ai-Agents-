@@ -1,0 +1,54 @@
+{
+ "topic": "The chainsaw was invented to help in difficult childbirth (Aitken & Jeffray, 1780s)",
+ "pillar": "Present: ironic everyday-origin series (the #18 shape)",
+ "taste": "No patient, no body, no blood, no operation shown. Only the two doctors, a clock, and the tool on a blueprint. Friendly cartoon.",
+ "claims": [
+  {
+   "claim": "Scottish doctors John Aitken and James Jeffray are credited with the first chain saw, in the 1780s.",
+   "sources": [
+    "https://www.mentalfloss.com/science/medicine/chainsaw-invented-to-assist-in-childbirth",
+    "https://www.scotsman.com/heritage-and-retro/retro/why-were-chainsaws-invented-how-tool-was-used-during-childbirth-and-the-scottish-surgeons-who-created-it-3031236",
+    "https://www.popsci.com/?p=76509"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "It was made for difficult childbirth: a procedure that needed bone cut, which was slow by knife.",
+   "sources": [
+    "https://www.mentalfloss.com/science/medicine/chainsaw-invented-to-assist-in-childbirth",
+    "https://www.scotsman.com/heritage-and-retro/retro/why-were-chainsaws-invented-how-tool-was-used-during-childbirth-and-the-scottish-surgeons-who-created-it-3031236",
+    "https://www.popsci.com/?p=76509"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "It was a fine chain with serrated teeth, pulled back and forth by two handles.",
+   "sources": [
+    "https://www.mentalfloss.com/science/medicine/chainsaw-invented-to-assist-in-childbirth",
+    "https://www.scotsman.com/heritage-and-retro/retro/why-were-chainsaws-invented-how-tool-was-used-during-childbirth-and-the-scottish-surgeons-who-created-it-3031236"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Later versions were fitted with a hand crank.",
+   "sources": [
+    "https://www.mentalfloss.com/science/medicine/chainsaw-invented-to-assist-in-childbirth",
+    "https://www.greenworkstools.com/blogs/greenworks-blog/history-of-the-chainsaw"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "In 1905 San Francisco logger Samuel Bens patented an 'endless chain saw' meant for giant redwoods.",
+   "sources": [
+    "https://www.greenworkstools.com/blogs/greenworks-blog/history-of-the-chainsaw",
+    "https://inventorsdigest.com/time-tested-hurricane-helper"
+   ],
+   "status": "verified"
+  }
+ ],
+ "rejected": [
+  "exact year (1783/1785/1790 differ) - script says 'the 1780s'",
+  "'common since 1597' (uncorroborated)",
+  "the medical term and any description of the operation - left out for taste"
+ ]
+}
