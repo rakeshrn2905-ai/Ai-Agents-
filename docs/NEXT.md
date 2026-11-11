@@ -1,6 +1,6 @@
 # Where we left off (update this at the end of every session)
 
-Last updated: 10 Nov 2026
+Last updated: 11 Nov 2026
 
 ## Done
 - Pipeline: Style 5 renderer (`lib/`), Kokoro voice, lo-fi mix, QA with retention gates, publisher (Chrome / Make / manual pack).
@@ -19,6 +19,7 @@ Last updated: 10 Nov 2026
 - #18 "Treadmills Were Built to Punish Prisoners (1818)" built and QA-passed (episodes/treadmill); for Tue 10 Nov 07:00 UK (Studio Inspiration idea Rakesh picked). Nintendo/Ripper idea needs rewording ('one year after'); chainsaw idea is the backup.
 - #19 "Chainsaws Were Invented for Childbirth (1780s)" (P5) built and QA-passed (episodes/chainsaw); for Tue 10 Nov 17:00 UK. First video with the spoken question + subscribe ending (storyboard payoff beat `cta`).
 - #18 treadmill at 9 h: 54.2% stayed, 91.3% avg viewed, +5 subs, 0 comments (analytics/2026-11-10_treadmill_9h.md).
+- #20 "Bluetooth Was Named After a Viking King (1990s)" (P1) built and QA-passed (episodes/bluetooth); for Wed 11 Nov 17:00 UK. All-human cast at Rakesh's request. He is also trying Higgsfield himself with a prompt pack from chat (rule 1 unchanged for our builds).
 - Open question for Rakesh: what was wrong with the brain-rot video (pace, voice, look, topic, or the whole format)?
 
 ## Waiting on Rakesh

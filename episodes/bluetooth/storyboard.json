@@ -1,0 +1,193 @@
+{
+ "loop": true,
+ "cast": {},
+ "beats": [
+  {
+   "phrase": 0,
+   "scene": "vhook",
+   "camera": "punchout",
+   "title": "NAMED AFTER A *VIKING*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "pop",
+     "at": 0.2
+    },
+    {
+     "type": "chime",
+     "at": 0.7
+    }
+   ],
+   "focus": [
+    430,
+    950
+   ],
+   "zoom0": 1.15
+  },
+  {
+   "phrase": 1,
+   "scene": "king",
+   "camera": "push",
+   "title": "KING HARALD *BLUETOOTH*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "thud",
+     "at": 0.3,
+     "db": -6
+    },
+    {
+     "type": "pop",
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "phrase": 2,
+   "scene": "unite",
+   "camera": "push",
+   "title": "HE *UNITED* THEM",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "pop",
+     "at": 0.2
+    },
+    {
+     "type": "pop",
+     "at": 0.5
+    },
+    {
+     "type": "chime",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "phrase": 3,
+   "scene": "engineer",
+   "camera": "push",
+   "title": "THE *1990s*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "scratch",
+     "at": 0.5
+    },
+    {
+     "type": "pop",
+     "at": 1.0
+    }
+   ]
+  },
+  {
+   "phrase": 4,
+   "scene": "link",
+   "camera": "xray",
+   "title": "UNITE *PHONES + PCs*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "tick",
+     "at": 0.6
+    },
+    {
+     "type": "tick",
+     "at": 1.2
+    },
+    {
+     "type": "pop",
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "phrase": 5,
+   "scene": "name",
+   "camera": "push",
+   "title": "HE BORROWED THE *NAME*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "pop",
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "phrase": 6,
+   "scene": "runes",
+   "camera": "push",
+   "title": "THE LOGO = HIS *INITIALS*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "pop",
+     "at": 0.4
+    },
+    {
+     "type": "pop",
+     "at": 0.8
+    },
+    {
+     "type": "thud",
+     "at": 2.5,
+     "db": -4
+    },
+    {
+     "type": "chime",
+     "at": 2.6
+    }
+   ],
+   "shake": 2.5
+  },
+  {
+   "phrase": 7,
+   "scene": "payoff",
+   "camera": "pull",
+   "title": "",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "pop",
+     "at": 0.4
+    },
+    {
+     "type": "chime",
+     "at": 1.6
+    }
+   ],
+   "cta": [
+    "WHAT'S ON YOURS?",
+    "COMMENT + SUBSCRIBE"
+   ],
+   "ctaAt": 0.4,
+   "ctaSize": 92,
+   "ctaGap": 30
+  }
+ ]
+}

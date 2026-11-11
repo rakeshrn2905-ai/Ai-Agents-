@@ -87,7 +87,7 @@ version), lighters vs matches, 'guys' / Guy Fawkes, can opener, Cleopatra vs 196
 
 | # | Topic | Hook | Character / story | Confidence | Status |
 |---|---|---|---|---|---|
-| P1 | Bluetooth is named after a Viking king | "Your Bluetooth is named after a Viking." | Harald 'Bluetooth' Gormsson (10th c.); the logo is his initials in runes | high | proposed |
+| P1 | Bluetooth is named after a Viking king | "Your Bluetooth is named after a Viking." | Harald 'Bluetooth' Gormsson (10th c.); the logo is his initials in runes | high | built (#20, 11 Nov 17:00) |
 | P2 | We say 'hello' on the phone because of Edison | "You say hello because of Thomas Edison." | Edison pushed 'hello' (1877), Bell wanted 'ahoy' | high (check wording) | proposed |
 | P3 | QR codes came from a board game | "Your QR code came from a board game." | Masahiro Hara, Denso Wave 1994, inspired by Go stones | high | proposed |
 | P4 | The tiny jeans pocket (X2) | "That tiny pocket in your jeans was for a watch." | Levi Strauss & Jacob Davis, 1873 | high | proposed |
