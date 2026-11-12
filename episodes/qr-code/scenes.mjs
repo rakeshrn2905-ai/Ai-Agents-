@@ -108,12 +108,21 @@ export const SCENES = {
     c.save(); c.globalAlpha = 0.5; c.fillStyle = '#E0453A'; c.fillRect(660, ty - 20, 200, 40); c.restore();
     for (let i = 0; i < 3; i++) popWord(c, 'BEEP', 560 + i * 150, 820 - i * 70, clamp((t - 0.3 - i * 0.45) / 0.25), 60, i === 1 ? PAL.gold : '#FFFFFF');
   },
-  // 3: playing Go at lunch - stones land on the grid one by one
+  // 3: at lunch he played a board game called Go - stones land on the grid one by one (labelled so viewers know what Go is)
   go(c, t, beat, ctx) {
     c.drawImage(canteen(), 0, 0);
-    code(c, 700, 1000, 540, { m: 0, shown: clamp(t / 2.6) });
-    human(c, { ...HARA, x: 230, y: GROUND, s: 0.85, t: ctx.T, mood: t > 2.4 ? 'grin' : 'neutral', armPose: t > 2.4 ? 'cheer' : 'think', look: [1, -0.5], blink: blinkAt(ctx.T, 4) });
-    label(c, 'BLACK + WHITE = DATA', 700 + 150, 1000 - 200, 640, 620, clamp((t - 2.8) / 0.4), { size: 50 });
+    code(c, 700, 1000, 540, { m: 0, shown: clamp(t / 3.6) });
+    human(c, { ...HARA, x: 230, y: GROUND, s: 0.85, t: ctx.T, mood: 'neutral', armPose: 'think', look: [1, -0.5], blink: blinkAt(ctx.T, 4) });
+    label(c, 'GO: A BOARD GAME', 700 - 150, 1000 - 270, 420, 610, clamp((t - 1.3) / 0.4), { size: 54 });
+    label(c, 'STONES', 700 + 190, 1000 - 150, W - 190, 640, clamp((t - 2.6) / 0.4), { size: 50 });
+  },
+  // 3b: he saw the pattern could hold data
+  idea(c, t, beat, ctx) {
+    c.drawImage(canteen(), 0, 0);
+    code(c, 700, 1000, 540, { m: 0 });
+    human(c, { ...HARA, x: 230, y: GROUND - Math.abs(Math.sin(t * 7)) * 18, s: 0.85, t: ctx.T, mood: 'grin', armPose: 'cheer', look: [1, -0.5], blink: 0 });
+    burst(c, 230, GROUND - 640 * 0.85, 120, t - 0.1, 10, PAL.gold);
+    label(c, 'BLACK + WHITE = DATA', 700 + 150, 1000 - 200, 640, 610, clamp((t - 0.2) / 0.3), { size: 50 });
   },
   // 4: three corner squares - stones become square modules, corners light up, the code spins and still reads
   corners(c, t, beat, ctx) {

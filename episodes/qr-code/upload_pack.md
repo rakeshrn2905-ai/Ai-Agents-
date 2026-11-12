@@ -9,7 +9,7 @@ QR Codes Came From a Board Game (1994)
 ## Description
 Your QR code came from a board game.
 
-In 1994, engineer Masahiro Hara at Denso Wave in Japan was trying to track car parts faster. Barcodes held too little information, so workers had to scan box after box. Playing Go on his lunch break, he realised that black and white stones on a grid could hold information. He added square position markers in three corners, so a scanner can find the code and read it quickly from any angle. Denso Wave kept the patent but chose not to enforce it, so anyone could use QR codes for free.
+In 1994, engineer Masahiro Hara at Denso Wave in Japan was trying to track car parts faster. Barcodes held too little information, so workers had to scan box after box. On his lunch break he played Go, an old board game where two players place black and white stones on a grid, and he realised that a pattern like that could hold information. He added square position markers in three corners, so a scanner can find the code and read it quickly from any angle. Denso Wave kept the patent but chose not to enforce it, so anyone could use QR codes for free.
 
 Sources:
 - IEEE Spectrum, How a board game and skyscrapers inspired the QR code: https://spectrum.ieee.org/how-a-board-game-and-skyscrapers-inspired-the-development-of-the-qr-code

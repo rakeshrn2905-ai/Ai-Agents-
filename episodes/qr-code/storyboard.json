@@ -67,7 +67,7 @@
      "at": 0.6
     }
    ],
-   "offset": 2.9
+   "offset": 2.6
   },
   {
    "phrase": 2,
@@ -97,7 +97,7 @@
    "phrase": 3,
    "scene": "go",
    "camera": "xray",
-   "title": "LUNCH BREAK: *GO*",
+   "title": "A BOARD GAME CALLED *GO*",
    "sfx": [
     {
      "type": "whoosh",
@@ -109,20 +109,37 @@
     },
     {
      "type": "tick",
-     "at": 1.2
+     "at": 1.3
     },
     {
      "type": "tick",
-     "at": 1.9
+     "at": 2.1
     },
     {
-     "type": "chime",
+     "type": "pop",
      "at": 2.6
     }
    ]
   },
   {
    "phrase": 4,
+   "scene": "idea",
+   "camera": "push",
+   "title": "THE PATTERN HOLDS *DATA*",
+   "transition": "cut",
+   "sfx": [
+    {
+     "type": "chime",
+     "at": 0.1
+    },
+    {
+     "type": "pop",
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "phrase": 5,
    "scene": "corners",
    "camera": "push",
    "title": "3 CORNER *SQUARES*",
@@ -146,7 +163,7 @@
    ]
   },
   {
-   "phrase": 5,
+   "phrase": 6,
    "scene": "free",
    "camera": "push",
    "title": "FREE FOR *EVERYONE*",
@@ -163,7 +180,7 @@
    ]
   },
   {
-   "phrase": 6,
+   "phrase": 7,
    "scene": "payoff",
    "camera": "pull",
    "title": "",

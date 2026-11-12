@@ -123,7 +123,8 @@ python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to q
 | 20 | Bluetooth Was Named After a Viking King (1990s) (11 Nov 17:00) | No host, ironic everyday origin, real people only | 28.6 s | (fill in after 48 h) | Rakesh: no object characters with faces - all human cast (Harald, Vikings, engineer); question + subscribe ending kept |
 | 21 | QR Codes Came From a Board Game (1994) (12 Nov 17:00) | No host, ironic everyday origin, human cast | 29.0 s | (fill in after 48 h) | frame 1 is the twist itself (a Go board laid out as a QR code being scanned); stones-to-squares morph as the 'how' |
 
-Lessons: #18 treadmill confirmed the #7 shape: 54% stayed (typical 38-48%), 91% avg viewed, +5 subs in 9 h. Ironic origin of an
+Lessons: name anything the viewer may not know (#21: 'playing Go' confused Rakesh -> 'a board game called Go' + on-screen label).
+#18 treadmill confirmed the #7 shape: 54% stayed (typical 38-48%), 91% avg viewed, +5 subs in 9 h. Ironic origin of an
 everyday thing + real person + punchline ending. Weak spot: 0 comments -> every video now ends on a spoken question + subscribe.
 'Guys' (#7) holds viewers 2x longer than any other Short (60% avg viewed vs 28-44%): a 'you' hook about something
 the viewer says/uses every day + a real character with a story. Timeline comparisons (Oxford, Mammoths) get views but
