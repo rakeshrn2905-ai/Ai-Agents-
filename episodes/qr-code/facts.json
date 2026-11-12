@@ -1,0 +1,56 @@
+{
+ "topic": "The QR code was inspired by the board game Go (Masahiro Hara, Denso Wave, 1994)",
+ "pillar": "Present: ironic everyday-origin series",
+ "taste": "Human cast (Hara, a factory worker); objects have no faces. The on-screen code is a random pattern, not a real scannable code.",
+ "claims": [
+  {
+   "claim": "The QR code was announced in 1994 by Denso Wave; engineer Masahiro Hara led its development to track car parts.",
+   "sources": [
+    "https://spectrum.ieee.org/how-a-board-game-and-skyscrapers-inspired-the-development-of-the-qr-code",
+    "https://www.qrcode.com/en/history/",
+    "https://www.mbtmag.com/home/news/21102320/creator-of-qr-code-reflects-25-years-later"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Barcodes held too little information, so workers had to scan many of them.",
+   "sources": [
+    "https://www.qrcode.com/en/history/",
+    "https://spectrum.ieee.org/how-a-board-game-and-skyscrapers-inspired-the-development-of-the-qr-code",
+    "https://open.prodir.com/en/2021/06/bars-cars-and-go-the-story-of-the-qr-code/"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Hara got the idea while playing Go at lunch: black and white stones on a grid can carry information.",
+   "sources": [
+    "https://spectrum.ieee.org/how-a-board-game-and-skyscrapers-inspired-the-development-of-the-qr-code",
+    "https://www.thestar.com.my/news/true-or-not/2025/11/25/quickcheck-was-the-invention-of-the-qr-code-inspired-by-a-board-game",
+    "https://open.prodir.com/en/2021/06/bars-cars-and-go-the-story-of-the-qr-code/"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Square position-detection patterns in three corners let a scanner find the code and read it fast from any angle.",
+   "sources": [
+    "https://www.qrcode.com/en/history/",
+    "https://spectrum.ieee.org/how-a-board-game-and-skyscrapers-inspired-the-development-of-the-qr-code"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Denso Wave kept the patent but chose not to enforce it, so anyone could use QR codes for free.",
+   "sources": [
+    "https://www.qrcode.com/en/history/",
+    "https://spectrum.ieee.org/how-a-board-game-and-skyscrapers-inspired-the-development-of-the-qr-code",
+    "https://open.prodir.com/en/2021/06/bars-cars-and-go-the-story-of-the-qr-code/"
+   ],
+   "status": "verified"
+  }
+ ],
+ "rejected": [
+  "'barcodes held only 20 characters' (not confirmed in sources found)",
+  "'built for Toyota' (Denso's own page frames it as general factory need)",
+  "'10 times faster' figure (left out to keep the script short)"
+ ]
+}

@@ -121,6 +121,7 @@ python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to q
 | 18 | Treadmills Were Built to Punish Prisoners (1818) (10 Nov 07:00) | No host, everyday origin + character (Cubitt) | 25.0 s | **54.2% stayed to watch, 91.3% avg viewed** at 9 h (1,487 views, 752 engaged, 33 likes, +5 subs, 0 comments) - best so far | copies the #7 'Guys' shape that held 60%: 'your ...' hook about an everyday thing + a real person and his story |
 | 19 | Chainsaws Were Invented for Childbirth (1780s) (10 Nov 17:00) | No host, ironic everyday origin | 26.1 s | (fill in after 48 h) | first spoken question + 'subscribe for more' ending (on-screen question card, pinned comment) - target: comments > 0 |
 | 20 | Bluetooth Was Named After a Viking King (1990s) (11 Nov 17:00) | No host, ironic everyday origin, real people only | 28.6 s | (fill in after 48 h) | Rakesh: no object characters with faces - all human cast (Harald, Vikings, engineer); question + subscribe ending kept |
+| 21 | QR Codes Came From a Board Game (1994) (12 Nov 17:00) | No host, ironic everyday origin, human cast | 29.0 s | (fill in after 48 h) | frame 1 is the twist itself (a Go board laid out as a QR code being scanned); stones-to-squares morph as the 'how' |
 
 Lessons: #18 treadmill confirmed the #7 shape: 54% stayed (typical 38-48%), 91% avg viewed, +5 subs in 9 h. Ironic origin of an
 everyday thing + real person + punchline ending. Weak spot: 0 comments -> every video now ends on a spoken question + subscribe.

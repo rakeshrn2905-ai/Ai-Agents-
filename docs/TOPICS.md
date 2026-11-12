@@ -102,4 +102,4 @@ version), lighters vs matches, 'guys' / Guy Fawkes, can opener, Cleopatra vs 196
 | D3 | High heels were made for men on horses | "High heels were invented for men." | Persian cavalry (stirrups), then Louis XIV's red heels | high (check details) | proposed |
 | D4 | Velcro came from a dog walk | "Your Velcro was invented by a dog walk." | George de Mestral, 1941, burrs in his dog's fur under a microscope | high | proposed |
 | D5 | 'Hello' on the phone came from Edison (P2) | "You say hello because of Thomas Edison." | Bell wanted 'ahoy', Edison pushed 'hello' (1877) | high | proposed |
-| D6 | QR codes came from a board game (P3) | "Your QR code came from a board game." | Masahiro Hara, Denso Wave, 1994, Go stones | high | proposed |
+| D6 | QR codes came from a board game (P3) | "Your QR code came from a board game." | Masahiro Hara, Denso Wave, 1994, Go stones | high | built (#21, 12 Nov 17:00) |

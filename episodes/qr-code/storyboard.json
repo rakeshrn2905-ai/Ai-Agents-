@@ -1,0 +1,193 @@
+{
+ "loop": true,
+ "cast": {},
+ "beats": [
+  {
+   "phrase": 0,
+   "scene": "qhook",
+   "camera": "punchout",
+   "title": "FROM A *BOARD GAME*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "tick",
+     "at": 0.2
+    },
+    {
+     "type": "chime",
+     "at": 0.5
+    }
+   ],
+   "focus": [
+    540,
+    1000
+   ],
+   "zoom0": 1.15
+  },
+  {
+   "phrase": 1,
+   "scene": "hara",
+   "camera": "push",
+   "title": "*1994*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "tick",
+     "at": 0.3
+    },
+    {
+     "type": "pop",
+     "at": 0.5
+    }
+   ]
+  },
+  {
+   "phrase": 1,
+   "scene": "problem",
+   "camera": "push",
+   "title": "A FACTORY *PROBLEM*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "thud",
+     "at": 0.4,
+     "db": -6
+    },
+    {
+     "type": "pop",
+     "at": 0.6
+    }
+   ],
+   "offset": 2.9
+  },
+  {
+   "phrase": 2,
+   "scene": "scan",
+   "camera": "push",
+   "title": "BOX AFTER *BOX*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "tick",
+     "at": 0.3
+    },
+    {
+     "type": "tick",
+     "at": 0.75
+    },
+    {
+     "type": "tick",
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "phrase": 3,
+   "scene": "go",
+   "camera": "xray",
+   "title": "LUNCH BREAK: *GO*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "tick",
+     "at": 0.5
+    },
+    {
+     "type": "tick",
+     "at": 1.2
+    },
+    {
+     "type": "tick",
+     "at": 1.9
+    },
+    {
+     "type": "chime",
+     "at": 2.6
+    }
+   ]
+  },
+  {
+   "phrase": 4,
+   "scene": "corners",
+   "camera": "push",
+   "title": "3 CORNER *SQUARES*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "pop",
+     "at": 0.7
+    },
+    {
+     "type": "scratch",
+     "at": 1.5
+    },
+    {
+     "type": "chime",
+     "at": 1.9
+    }
+   ]
+  },
+  {
+   "phrase": 5,
+   "scene": "free",
+   "camera": "push",
+   "title": "FREE FOR *EVERYONE*",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "thud",
+     "at": 0.4,
+     "db": -5
+    }
+   ]
+  },
+  {
+   "phrase": 6,
+   "scene": "payoff",
+   "camera": "pull",
+   "title": "",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0
+    },
+    {
+     "type": "pop",
+     "at": 0.4
+    },
+    {
+     "type": "chime",
+     "at": 1.6
+    }
+   ],
+   "cta": [
+    "LAST THING YOU SCANNED?",
+    "COMMENT + SUBSCRIBE"
+   ],
+   "ctaAt": 0.4,
+   "ctaSize": 84,
+   "ctaGap": 95
+  }
+ ]
+}
