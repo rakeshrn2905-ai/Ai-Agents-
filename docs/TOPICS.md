@@ -92,3 +92,14 @@ version), lighters vs matches, 'guys' / Guy Fawkes, can opener, Cleopatra vs 196
 | P3 | QR codes came from a board game | "Your QR code came from a board game." | Masahiro Hara, Denso Wave 1994, inspired by Go stones | high | proposed |
 | P4 | The tiny jeans pocket (X2) | "That tiny pocket in your jeans was for a watch." | Levi Strauss & Jacob Davis, 1873 | high | proposed |
 | P5 | The chainsaw began as a childbirth tool (I3) | "The chainsaw was invented for doctors." | Aitken & Jeffray, Scotland c.1780-90s | high | built (#19, 10 Nov 17:00) |
+
+## 12 Nov picks (ironic everyday-origin series: 'your' hook + real person + punchline + question/subscribe ending)
+
+| # | Topic | Hook | Person / story | Confidence | Status |
+|---|---|---|---|---|---|
+| D1 | Bubble wrap was invented as wallpaper | "Bubble wrap was meant to be wallpaper." | Alfred Fielding & Marc Chavannes, 1957; flopped, then IBM used it for packing | high | proposed |
+| D2 | Play-Doh was a wallpaper cleaner | "Play-Doh was made to clean walls." | Kutol soot cleaner; teacher Kay Zufall saw kids could model with it, 1950s | high | proposed |
+| D3 | High heels were made for men on horses | "High heels were invented for men." | Persian cavalry (stirrups), then Louis XIV's red heels | high (check details) | proposed |
+| D4 | Velcro came from a dog walk | "Your Velcro was invented by a dog walk." | George de Mestral, 1941, burrs in his dog's fur under a microscope | high | proposed |
+| D5 | 'Hello' on the phone came from Edison (P2) | "You say hello because of Thomas Edison." | Bell wanted 'ahoy', Edison pushed 'hello' (1877) | high | proposed |
+| D6 | QR codes came from a board game (P3) | "Your QR code came from a board game." | Masahiro Hara, Denso Wave, 1994, Go stones | high | proposed |
