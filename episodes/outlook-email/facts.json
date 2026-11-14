@@ -2,7 +2,7 @@
  "topic": "In the news: the Outlook outage (12 Nov 2026) -> email is 55 years old (Ray Tomlinson, 1971)",
  "pillar": "Present: current affairs, first 'In the news' video",
  "as_of": "2026-11-14",
- "taste": "Human cast; objects have no faces. No Microsoft logo or product screenshots - a generic envelope on a generic monitor. No blame or guesses about the cause.",
+ "taste": "Human cast; objects have no faces. The screen is drawn to look like an Outlook inbox (blue bar, envelope tile, mail list) for news context - our own drawing, not a screenshot or the official logo artwork. Cause is given only as 'Microsoft says'.",
  "claims": [
   {
    "claim": "On 12 November 2026 Microsoft's Outlook and other Microsoft 365 services went down for users around the world; Microsoft apologised and later said service was restored.",
@@ -38,12 +38,51 @@
     "https://www.computinghistory.org.uk/det/6116/First-e-mail-sent-by-Ray-Tomlinson/"
    ],
    "status": "verified"
+  },
+  {
+   "claim": "The outage also disrupted Teams and lasted for hours (into 13 November).",
+   "sources": [
+    "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/",
+    "https://www.techrepublic.com/article/news-microsoft-outlook-outage-130000-reports-2026/",
+    "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Microsoft's status updates: Exchange Online email servers failed automated health checks and dropped out of service.",
+   "sources": [
+    "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/",
+    "https://controlplane.com/blog/post/microsoft-365-outage-november-2026-cause"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Their load shifted to the remaining servers, which then became overloaded too (a cascade).",
+   "sources": [
+    "https://controlplane.com/blog/post/microsoft-365-outage-november-2026-cause",
+    "https://teamvoy.com/blog/microsoft-outlook-outage/",
+    "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Microsoft said there was no sign of malicious activity, and that traffic had not increased.",
+   "sources": [
+    "https://controlplane.com/blog/post/microsoft-365-outage-november-2026-cause",
+    "https://teamvoy.com/blog/microsoft-outlook-outage/",
+    "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/"
+   ],
+   "status": "verified"
   }
  ],
  "rejected": [
   "'millions affected' (only ~130,000 Downdetector reports are sourced; we give no number)",
   "the cause of the outage (Microsoft had published no final root cause)",
   "'QWERTYUIOP' as the first message (Tomlinson only said 'something like' it)",
-  "exact month in 1971 (sources differ)"
+  "exact month in 1971 (sources differ)",
+  "'spam rule update' as the root cause (one site only, its own record says N/A)",
+  "any link to the Patch Tuesday Outlook flaw (no source connects them)",
+  "'70 countries' (single user-edited source)",
+  "a final root cause - Microsoft's full post-incident report was not published as of 14 Nov; the video says 'Microsoft says'"
  ]
 }

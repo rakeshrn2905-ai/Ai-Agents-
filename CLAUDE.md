@@ -53,7 +53,8 @@ own visual + SFX. No on-screen host: Style 5 object characters + painted sets.
 ## Current affairs ("In the news") - added 14 Nov at Rakesh's request
 
 Same style, format and QA as every other Short. What changes:
-- **Shape:** this week's news as the hook -> the history/origin behind it -> what happens next -> question + subscribe.
+- **Shape:** this week's news as the hook -> what happened -> WHY it happened (the explainer, as 'X says' when the cause
+  is not final) -> a line of history -> question + subscribe. Draw the product so viewers recognise it (own drawing, no screenshots).
   It keeps the channel promise (Past · Present · Future) and the ironic-origin shape that works (#18).
 - **Only confirmed news:** each news claim needs 2+ sources, at least one a major outlet or the primary source
   (NASA, a government site, the company itself), dated this week. Nothing 'reported', 'rumoured' or still developing.
@@ -135,7 +136,7 @@ python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to q
 | 19 | Chainsaws Were Invented for Childbirth (1780s) (10 Nov 17:00) | No host, ironic everyday origin | 26.1 s | (fill in after 48 h) | first spoken question + 'subscribe for more' ending (on-screen question card, pinned comment) - target: comments > 0 |
 | 20 | Bluetooth Was Named After a Viking King (1990s) (11 Nov 17:00) | No host, ironic everyday origin, real people only | 28.6 s | (fill in after 48 h) | Rakesh: no object characters with faces - all human cast (Harald, Vikings, engineer); question + subscribe ending kept |
 | 21 | QR Codes Came From a Board Game (1994) (12 Nov 17:00) | No host, ironic everyday origin, human cast | 29.0 s | (fill in after 48 h) | frame 1 is the twist itself (a Go board laid out as a QR code being scanned); stones-to-squares morph as the 'how' |
-| 22 | Outlook Went Down. Email Is 55 Years Old. (14 Nov 17:00) | IN THE NEWS: news hook -> history behind it | 27.7 s | (fill in after 48 h) | first current-affairs video (Outlook outage of 12 Nov -> Ray Tomlinson, 1971); everything else unchanged |
+| 22 | Why Outlook Went Down Worldwide (12 Nov) (14 Nov 17:00) | IN THE NEWS: what happened -> why (cause explainer) -> one history line | 28.2 s | (fill in after 48 h) | first current-affairs video; Rakesh: make it look like the product and explain WHY it happened (server health-check domino effect) |
 
 Lessons: name anything the viewer may not know (#21: 'playing Go' confused Rakesh -> 'a board game called Go' + on-screen label).
 #18 treadmill confirmed the #7 shape: 54% stayed (typical 38-48%), 91% avg viewed, +5 subs in 9 h. Ironic origin of an

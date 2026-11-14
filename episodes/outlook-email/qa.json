@@ -17,7 +17,7 @@
       "check": "length 20-30 s",
       "pass": true,
       "hard": true,
-      "detail": "27.7s"
+      "detail": "28.2s"
     },
     {
       "check": "voice starts at 0.0 s",
@@ -41,7 +41,7 @@
       "check": "no beat over 5.6s",
       "pass": false,
       "hard": false,
-      "detail": "longest 6.2s (phrase 6)"
+      "detail": "longest 5.7s (phrase 3)"
     },
     {
       "check": "SFX on every beat",
@@ -53,25 +53,25 @@
       "check": "frame 1 bright (>= 140)",
       "pass": true,
       "hard": true,
-      "detail": "brightness 219"
+      "detail": "brightness 217"
     },
     {
       "check": "frame 1 colourful (>= 90)",
       "pass": true,
       "hard": true,
-      "detail": "saturation 120"
+      "detail": "saturation 121"
     },
     {
       "check": "motion in the first 0.5 s",
       "pass": true,
       "hard": true,
-      "detail": "change 17.7"
+      "detail": "change 22.3"
     },
     {
       "check": "ending loops back to the hook",
       "pass": true,
       "hard": false,
-      "detail": "first/last difference 16.1"
+      "detail": "first/last difference 14.6"
     },
     {
       "check": "no black edges",
@@ -83,13 +83,13 @@
       "check": "voice 15-23 dB over music",
       "pass": true,
       "hard": true,
-      "detail": "18.0 dB"
+      "detail": "19.3 dB"
     },
     {
       "check": "no clipping",
       "pass": true,
       "hard": true,
-      "detail": "peak -0.2 dBFS"
+      "detail": "peak -0.9 dBFS"
     }
   ],
   "note": "Automated only. A human still watches the stills and listens once."
