@@ -121,7 +121,7 @@ Avoided on purpose: the Ukraine and Iran stories, the New Orleans ship crash, th
 | # | What everyone is covering | Our angle (history behind it) | Confidence | Status |
 |---|---|---|---|---|
 | M1 | US midterms: Democrats win Congress (most-covered story of the month) | Why the parties are a donkey and an elephant (Thomas Nast cartoons, 1870s) - neutral, no results talk | high (check dates) | proposed |
-| M2 | Global Microsoft 365 / Outlook outage, 12 Nov (BBC) | Email is older than the internet as we know it: Ray Tomlinson picked the @ sign in 1971 | high | proposed |
+| M2 | Global Microsoft 365 / Outlook outage, 12 Nov (BBC) | Email is older than the internet as we know it: Ray Tomlinson picked the @ sign in 1971 | high | built (#22, 14 Nov 17:00) |
 | M3 | SpaceX Starship launch, 13 Nov (trending search) | Why catch a rocket: from throwing them away to landing them (= N4) | medium until verified | proposed |
 | M4 | Christmas songs already charting (UK trending chart) | Jingle Bells was not written as a Christmas song (James Pierpont, 1857) | medium - the 'Thanksgiving' claim is disputed, check | proposed |
 | M5 | Winter storm coverage | Why storms get human names (and who started it) | medium - check | proposed |

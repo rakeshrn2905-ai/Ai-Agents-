@@ -1,6 +1,6 @@
 # Where we left off (update this at the end of every session)
 
-Last updated: 12 Nov 2026
+Last updated: 14 Nov 2026
 
 ## Done
 - Pipeline: Style 5 renderer (`lib/`), Kokoro voice, lo-fi mix, QA with retention gates, publisher (Chrome / Make / manual pack).
@@ -21,6 +21,7 @@ Last updated: 12 Nov 2026
 - #18 treadmill at 9 h: 54.2% stayed, 91.3% avg viewed, +5 subs, 0 comments (analytics/2026-11-10_treadmill_9h.md).
 - #20 "Bluetooth Was Named After a Viking King (1990s)" (P1) built and QA-passed (episodes/bluetooth); for Wed 11 Nov 17:00 UK. All-human cast at Rakesh's request. He is also trying Higgsfield himself with a prompt pack from chat (rule 1 unchanged for our builds).
 - #21 "QR Codes Came From a Board Game (1994)" (D6) built and QA-passed (episodes/qr-code); for Thu 12 Nov 17:00 UK.
+- Current affairs started 14 Nov (rules in CLAUDE.md, 'Current affairs'). #22 "Outlook Went Down. Email Is 55 Years Old." built and QA-passed (episodes/outlook-email); for Sat 14 Nov 17:00 UK. News lists N1-N6 and M1-M5 in docs/TOPICS.md go stale within days - search again before proposing.
 - Open question for Rakesh: what was wrong with the brain-rot video (pace, voice, look, topic, or the whole format)?
 
 ## Waiting on Rakesh
