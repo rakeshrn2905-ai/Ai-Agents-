@@ -115,3 +115,13 @@ version), lighters vs matches, 'guys' / Guy Fawkes, can opener, Cleopatra vs 196
 | N5 | Hera spacecraft sends first clear views of the asteroid NASA hit in 2022 | DART: the first time humans moved a space rock | weeks | proposed |
 | N6 | US midterm elections (3 Nov) | why America votes on a Tuesday (1845 law, farmers and market day) - neutral, no results | evergreen | proposed |
 Avoided on purpose: the Ukraine and Iran stories, the New Orleans ship crash, the Brooklyn collapse, the Senegal boat (deaths / conflict), and the unconfirmed Nvidia CEO report.
+
+## Most-covered stories, week of 9-15 Nov 2026 (ranked by how many trackers list them; no exact search numbers available here)
+
+| # | What everyone is covering | Our angle (history behind it) | Confidence | Status |
+|---|---|---|---|---|
+| M1 | US midterms: Democrats win Congress (most-covered story of the month) | Why the parties are a donkey and an elephant (Thomas Nast cartoons, 1870s) - neutral, no results talk | high (check dates) | proposed |
+| M2 | Global Microsoft 365 / Outlook outage, 12 Nov (BBC) | Email is older than the internet as we know it: Ray Tomlinson picked the @ sign in 1971 | high | proposed |
+| M3 | SpaceX Starship launch, 13 Nov (trending search) | Why catch a rocket: from throwing them away to landing them (= N4) | medium until verified | proposed |
+| M4 | Christmas songs already charting (UK trending chart) | Jingle Bells was not written as a Christmas song (James Pierpont, 1857) | medium - the 'Thanksgiving' claim is disputed, check | proposed |
+| M5 | Winter storm coverage | Why storms get human names (and who started it) | medium - check | proposed |
