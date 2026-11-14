@@ -50,6 +50,19 @@ own visual + SFX. No on-screen host: Style 5 object characters + painted sets.
 9. **Test ONE change per video** and log it in the results table below; keep what moves the number.
    80% is top-tier for Shorts, so expect to climb towards it over several videos, not in one jump.
 
+## Current affairs ("In the news") - added 14 Nov at Rakesh's request
+
+Same style, format and QA as every other Short. What changes:
+- **Shape:** this week's news as the hook -> the history/origin behind it -> what happens next -> question + subscribe.
+  It keeps the channel promise (Past · Present · Future) and the ironic-origin shape that works (#18).
+- **Only confirmed news:** each news claim needs 2+ sources, at least one a major outlet or the primary source
+  (NASA, a government site, the company itself), dated this week. Nothing 'reported', 'rumoured' or still developing.
+- **Say the date:** the description starts with 'As of <date>'; avoid numbers that will change tomorrow.
+- **Stay neutral:** no party politics opinions, no predictions. For elections and conflicts, only neutral history angles.
+- **Not for entertainment:** no deaths, disasters, wars or crimes in progress as topics.
+- **Speed:** pick stories that stay true for a week or have a known date ahead (launches, anniversaries, sky events).
+  Build the day Rakesh picks; post in the next slot.
+
 ## Detail check (look at full-size frames from final.mp4, every beat, before handing over)
 
 - Limbs: legs never crossed (X), knees and elbows bend outward, elbows hang down; walking feet stay on their own side.

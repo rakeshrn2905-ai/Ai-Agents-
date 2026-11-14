@@ -103,3 +103,15 @@ version), lighters vs matches, 'guys' / Guy Fawkes, can opener, Cleopatra vs 196
 | D4 | Velcro came from a dog walk | "Your Velcro was invented by a dog walk." | George de Mestral, 1941, burrs in his dog's fur under a microscope | high | proposed |
 | D5 | 'Hello' on the phone came from Edison (P2) | "You say hello because of Thomas Edison." | Bell wanted 'ahoy', Edison pushed 'hello' (1877) | high | proposed |
 | D6 | QR codes came from a board game (P3) | "Your QR code came from a board game." | Masahiro Hara, Denso Wave, 1994, Go stones | high | built (#21, 12 Nov 17:00) |
+
+## In the news (week of 9-15 Nov 2026) - verify every item again before building
+
+| # | News hook | The history behind it | Shelf life | Status |
+|---|---|---|---|---|
+| N1 | Voyager 1 distance milestone, NASA event 17 Nov | launched 1977, the Golden Record, still talking to Earth | weeks (dated event) | proposed |
+| N2 | Supermoon on 24 Nov | 'supermoon' was coined by an astrologer in 1979, not by astronomers | until 24 Nov | proposed |
+| N3 | NASA studying a plan to save Hubble from falling back to Earth | launched 1990 with a flawed mirror, fixed by astronauts in 1993 | weeks | proposed |
+| N4 | Starship flew 13 Nov, skipped the booster catch | why catch a rocket at all: from throwing rockets away to landing them | days | proposed |
+| N5 | Hera spacecraft sends first clear views of the asteroid NASA hit in 2022 | DART: the first time humans moved a space rock | weeks | proposed |
+| N6 | US midterm elections (3 Nov) | why America votes on a Tuesday (1845 law, farmers and market day) - neutral, no results | evergreen | proposed |
+Avoided on purpose: the Ukraine and Iran stories, the New Orleans ship crash, the Brooklyn collapse, the Senegal boat (deaths / conflict), and the unconfirmed Nvidia CEO report.
