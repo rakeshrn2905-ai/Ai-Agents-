@@ -52,13 +52,19 @@ def run(ep: Path) -> dict:
                                    capture_output=True, text=True, check=True).stdout)
     st, dur = pr["streams"][0], float(pr["format"]["duration"])
     check("1080x1920 @ 30fps", (st["width"], st["height"], st["r_frame_rate"]) == (1080, 1920, "30/1"), f"{st['width']}x{st['height']} {st['r_frame_rate']}")
-    check("length 20-30 s", 20 <= dur <= 30.5, f"{dur:.1f}s")
+    beats_doc = json.loads((ep / "beats.json").read_text())
+    long3d = beats_doc.get("format") == "longform3d"   # one continuous 3D shot, one word on screen, 40-95 s
+    if long3d:
+        check("length 40-95 s (3D long form)", 40 <= dur <= 95, f"{dur:.1f}s")
+    else:
+        check("length 20-30 s", 20 <= dur <= 30.5, f"{dur:.1f}s")
 
     caps = json.loads((ep / "caps_raw.json").read_text())
-    beats = json.loads((ep / "beats.json").read_text())["beats"]
+    beats = beats_doc["beats"]
     check("voice starts at 0.0 s", caps[0]["start"] <= 0.05, f"{caps[0]['start']}s")
-    check(f"hook said within {HOOK_MAX_S}s", caps[0]["end"] <= HOOK_MAX_S, f"'{caps[0]['text']}' ends {caps[0]['end']:.2f}s")
-    check("title on screen from frame 1", bool(beats[0].get("title")) and beats[0].get("titleAt", 0) == 0, beats[0].get("title", "no title"))
+    if not long3d:  # the 3D format has no title card and opens mid-build instead of on a 2 s hook line
+        check(f"hook said within {HOOK_MAX_S}s", caps[0]["end"] <= HOOK_MAX_S, f"'{caps[0]['text']}' ends {caps[0]['end']:.2f}s")
+        check("title on screen from frame 1", bool(beats[0].get("title")) and beats[0].get("titleAt", 0) == 0, beats[0].get("title", "no title"))
     longest = max(beats, key=lambda b: b["end"] - b["start"])
     check(f"no beat over {MAX_BEAT_S}s", longest["end"] - longest["start"] <= MAX_BEAT_S,
           f"longest {longest['end'] - longest['start']:.1f}s (phrase {longest.get('phrase')})", hard=False)

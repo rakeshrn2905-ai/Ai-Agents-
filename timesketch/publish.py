@@ -62,8 +62,11 @@ def preflight(ep: Path, pkg: dict) -> list[str]:
         errs.append(f"resolution {p['w']}x{p['h']}, need 1080x1920")
     if abs(p["fps"] - 30) > 0.01:
         errs.append(f"{p['fps']:.2f} fps, need 30")
-    if not 20 <= p["dur"] <= 30.5:
-        errs.append(f"duration {p['dur']:.1f}s, rule is 20-30s")
+    bj = video.parent / "beats.json"
+    long3d = bj.exists() and json.loads(bj.read_text()).get("format") == "longform3d"
+    lo, hi = (40, 95) if long3d else (20, 30.5)
+    if not lo <= p["dur"] <= hi:
+        errs.append(f"duration {p['dur']:.1f}s, rule is {lo}-{hi:.0f}s")
     t = pkg.get("title", "")
     if not t:
         errs.append("package.json has no title")

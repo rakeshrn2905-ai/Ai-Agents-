@@ -1,0 +1,61 @@
+{
+ "topic": "3D build story: a garden fence that escalates into a stadium (new 'home engineering that spirals' format, after @hiddenhome.3d's style)",
+ "pillar": "3D test format",
+ "format": "longform3d: one continuous camera, one word on screen at a time, ~60 s. Only the fence-building opening is fact; everything after the football is a deliberate joke.",
+ "taste": "Our own world, models and story - nothing copied from the reference reels. Box people only, no faces.",
+ "claims": [
+  {
+   "claim": "A 6 ft fence post goes in a hole about 600 mm deep.",
+   "sources": [
+    "https://www.jacksons-fencing.co.uk/the-edit/how-deep-to-dig-fence-posts",
+    "https://www.wickes.co.uk/how-to-guides/garden-landscaping/install-a-fence",
+    "https://www.wynnstay.co.uk/blog/a-beginners-guide-on-how-to-install-a-fence-post"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "A little gravel at the bottom of the hole helps water drain away from the post.",
+   "sources": [
+    "https://www.wickes.co.uk/how-to-guides/garden-landscaping/install-a-fence",
+    "https://www.wynnstay.co.uk/blog/a-beginners-guide-on-how-to-install-a-fence-post"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Posts are set in fast-setting concrete (postcrete), which holds within minutes.",
+   "sources": [
+    "https://www.wickes.co.uk/how-to-guides/garden-landscaping/install-a-fence",
+    "https://www.wynnstay.co.uk/blog/a-beginners-guide-on-how-to-install-a-fence-post"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "A gravel board sits under the panel to keep the timber off the wet ground.",
+   "sources": [
+    "https://www.avsfencing.co.uk/blog/how-to-install-concrete-fence-posts-gravel-boards",
+    "https://www.homebuilding.co.uk/advice/how-to-build-a-fence"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "A standard fence panel is 1.83 m wide.",
+   "sources": [
+    "https://www.homebuilding.co.uk/advice/how-to-build-a-fence",
+    "https://www.wickes.co.uk/how-to-guides/garden-landscaping/install-a-fence"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "In England a fence can be up to 2 m high without planning permission where it is not next to a highway (exceptions: listed buildings, some conservation areas).",
+   "sources": [
+    "https://www.planningportal.co.uk/permission/common-projects/fences-gates-and-garden-walls/planning-permission",
+    "https://www.milton-keynes.gov.uk/planning-and-building/planning-applications-apply-pay-and-comment/do-i-need-planning-permission",
+    "https://www.homebuilding.co.uk/advice/how-to-build-a-fence"
+   ],
+   "status": "verified"
+  }
+ ],
+ "rejected": [
+  "'ten minutes' for the concrete (one guide only) - script says 'in minutes'"
+ ]
+}

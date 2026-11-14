@@ -22,6 +22,7 @@ Last updated: 14 Nov 2026
 - #20 "Bluetooth Was Named After a Viking King (1990s)" (P1) built and QA-passed (episodes/bluetooth); for Wed 11 Nov 17:00 UK. All-human cast at Rakesh's request. He is also trying Higgsfield himself with a prompt pack from chat (rule 1 unchanged for our builds).
 - #21 "QR Codes Came From a Board Game (1994)" (D6) built and QA-passed (episodes/qr-code); for Thu 12 Nov 17:00 UK.
 - Current affairs started 14 Nov (rules in CLAUDE.md, 'Current affairs'). #22 "Outlook Went Down. Email Is 55 Years Old." built and QA-passed (episodes/outlook-email); for Sat 14 Nov 17:00 UK. News lists N1-N6 and M1-M5 in docs/TOPICS.md go stale within days - search again before proposing.
+- 3D engine built 14 Nov (`lib3d/`, needs `npm install` for three). #23 "You Wanted a Fence. You Got a Stadium." (episodes/fence-stadium, 49 s) built and QA-passed for Sun 15 Nov 07:00 UK - Rakesh to judge the look against the @hiddenhome.3d reels. Known gaps vs theirs: flatter lighting, simpler models, 49 s not 85 s, plain first frame.
 - Open question for Rakesh: what was wrong with the brain-rot video (pace, voice, look, topic, or the whole format)?
 
 ## Waiting on Rakesh

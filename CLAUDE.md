@@ -64,6 +64,18 @@ Same style, format and QA as every other Short. What changes:
 - **Speed:** pick stories that stay true for a week or have a known date ahead (launches, anniversaries, sky events).
   Build the day Rakesh picks; post in the next slot.
 
+## 3D long form ("home engineering that spirals") - added 14 Nov after the @hiddenhome.3d reels Rakesh sent
+
+- **Engine:** `lib3d/render3d.mjs` (three.js in headless Chromium, software WebGL, ~3 frames/s at 1080x1920). The episode is one
+  file, `episodes/<slug>/scene3d.js`, exporting `setup()` -> `{scene, duration, frame(t)}`. Still every frame drawn in code (rule 1).
+  `node lib3d/render3d.mjs <ep> still <t...>` then `video 30`; voice, `audio/mix.py`, `scripts/mux.sh`, QA and publish as usual.
+  `beats.json` needs `"format": "longform3d"` (QA and the publisher then allow 40-95 s and skip the title/hook-length checks).
+- **Formula:** a real home build with true numbers (fact-checked, 2+ sources) -> a tiny everyday annoyance -> a fix that causes a
+  new problem, 3-4 times, each bigger -> an absurd megastructure -> "Congratulations..." punchline. Told to "you".
+- **Look:** a toy world on a cut-out block of ground (soil sides), one flying camera with no cuts, one word on screen at a time,
+  no title card. Only the opening build is fact; say in the description that the rest is a joke.
+- Our own world, models and stories. Never copy the reference account's scenes.
+
 ## Detail check (look at full-size frames from final.mp4, every beat, before handing over)
 
 - Limbs: legs never crossed (X), knees and elbows bend outward, elbows hang down; walking feet stay on their own side.
@@ -137,6 +149,7 @@ python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to q
 | 20 | Bluetooth Was Named After a Viking King (1990s) (11 Nov 17:00) | No host, ironic everyday origin, real people only | 28.6 s | (fill in after 48 h) | Rakesh: no object characters with faces - all human cast (Harald, Vikings, engineer); question + subscribe ending kept |
 | 21 | QR Codes Came From a Board Game (1994) (12 Nov 17:00) | No host, ironic everyday origin, human cast | 29.0 s | (fill in after 48 h) | frame 1 is the twist itself (a Go board laid out as a QR code being scanned); stones-to-squares morph as the 'how' |
 | 22 | Why Outlook Went Down Worldwide (12 Nov) (14 Nov 17:00) | IN THE NEWS: what happened -> why (cause explainer) -> one history line | 28.2 s | (fill in after 48 h) | first current-affairs video; Rakesh: make it look like the product and explain WHY it happened (server health-check domino effect) |
+| 23 | You Wanted a Fence. You Got a Stadium. (15 Nov 07:00) | 3D LONG FORM TEST: one continuous camera, one word on screen, real build -> absurd escalation | 49.4 s | (fill in after 48 h) | first 3D video, in the style of the @hiddenhome.3d reels Rakesh sent; new engine `lib3d/` |
 
 Lessons: name anything the viewer may not know (#21: 'playing Go' confused Rakesh -> 'a board game called Go' + on-screen label).
 #18 treadmill confirmed the #7 shape: 54% stayed (typical 38-48%), 91% avg viewed, +5 subs in 9 h. Ironic origin of an
