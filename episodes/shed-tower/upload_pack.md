@@ -4,14 +4,14 @@ Open studio.youtube.com (Time Sketch channel) -> Create -> Upload videos -> pick
   final.mp4 (sent with this pack; in the repo: episodes/shed-tower/final.mp4)
 
 ## Title
-You Wanted a Shed. It's Now 58 Metres Tall.
+Your Car Took the Garage. So You Built a Shed.
 
 ## Description
-You only wanted a garden shed.
+Your car takes up the whole garage, so the mower, the bikes and the tools need a shed.
 
-The first part is how a shed base really goes in: never straight on grass. Mark it out, dig out the turf, lay compacted hardcore, then sand, then level paving slabs. Treated timber bearers lift the floor off the slabs so air can flow underneath and the damp stays out.
+The first part is how a shed base really goes in: never straight on grass. Mark it out, lift the turf, lay compacted hardcore, then sand, then level paving slabs. Treated timber bearers lift the floor off the slabs so air can flow underneath and the damp stays out.
 
-Everything after the lawnmower is a joke. Please do not build a 58-metre shed.
+Everything after the lawnmower is a joke. Please do not build a six-storey shed.
 
 Shed base sources:
 - Homebuilding & Renovating, How to build a shed base: https://homebuilding.co.uk/advice/how-to-build-a-shed-base

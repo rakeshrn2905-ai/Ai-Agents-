@@ -17,7 +17,7 @@
       "check": "length 40-95 s (3D long form)",
       "pass": true,
       "hard": true,
-      "detail": "48.5s"
+      "detail": "74.3s"
     },
     {
       "check": "voice starts at 0.0 s",
@@ -29,7 +29,7 @@
       "check": "no beat over 5.6s",
       "pass": false,
       "hard": false,
-      "detail": "longest 7.6s (phrase 11)"
+      "detail": "longest 7.7s (phrase 15)"
     },
     {
       "check": "SFX on every beat",
@@ -41,25 +41,25 @@
       "check": "frame 1 bright (>= 140)",
       "pass": true,
       "hard": true,
-      "detail": "brightness 170"
+      "detail": "brightness 142"
     },
     {
       "check": "frame 1 colourful (>= 90)",
       "pass": true,
       "hard": true,
-      "detail": "saturation 180"
+      "detail": "saturation 122"
     },
     {
       "check": "motion in the first 0.5 s",
       "pass": true,
       "hard": true,
-      "detail": "change 11.6"
+      "detail": "change 13.2"
     },
     {
       "check": "ending loops back to the hook",
       "pass": false,
       "hard": false,
-      "detail": "first/last difference 71.9"
+      "detail": "first/last difference 57.3"
     },
     {
       "check": "no black edges",
@@ -71,13 +71,13 @@
       "check": "voice 15-23 dB over music",
       "pass": true,
       "hard": true,
-      "detail": "18.0 dB"
+      "detail": "18.8 dB"
     },
     {
       "check": "no clipping",
       "pass": true,
       "hard": true,
-      "detail": "peak -0.9 dBFS"
+      "detail": "peak -0.3 dBFS"
     }
   ],
   "note": "Automated only. A human still watches the stills and listens once."
