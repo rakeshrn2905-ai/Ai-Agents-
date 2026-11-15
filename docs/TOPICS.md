@@ -125,3 +125,11 @@ Avoided on purpose: the Ukraine and Iran stories, the New Orleans ship crash, th
 | M3 | SpaceX Starship launch, 13 Nov (trending search) | Why catch a rocket: from throwing them away to landing them (= N4) | medium until verified | proposed |
 | M4 | Christmas songs already charting (UK trending chart) | Jingle Bells was not written as a Christmas song (James Pierpont, 1857) | medium - the 'Thanksgiving' claim is disputed, check | proposed |
 | M5 | Winter storm coverage | Why storms get human names (and who started it) | medium - check | proposed |
+
+## 3D story chains (each step caused by the last, attached to it, never removed) - proposed 15 Nov, awaiting approval
+
+| # | Real build (fact part) | Chain | Punchline |
+|---|---|---|---|
+| 3D-1 | Garden shed: level base, timber frame, felt roof | too small for the mower -> extension -> bikes: second floor -> stairs take the space -> lift on the outside -> lift needs power: solar roof -> next door's tree shades it -> build above the tree -> 40 floors | "You still can't find the screwdriver." |
+| 3D-2 | Rotary washing line: socket set in concrete | rain -> roof over it -> no breeze under the roof -> fan -> fan needs power -> wind turbine on the roof -> turbine needs height -> tower -> the tower is now the windiest place in town | "Your socks are dry. They are also in the next county." |
+| 3D-3 | Patio: compacted sub-base, sand, slabs laid to a slight fall | rain on the barbecue -> pergola -> smoke trapped -> chimney -> smoke reaches next door's washing -> taller chimney -> chimney needs bracing -> it is now a power-station stack | "One sausage. Slightly burnt." |

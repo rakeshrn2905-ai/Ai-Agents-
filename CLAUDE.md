@@ -74,6 +74,8 @@ Same style, format and QA as every other Short. What changes:
   new problem, 3-4 times, each bigger -> an absurd megastructure -> "Congratulations..." punchline. Told to "you".
 - **Look:** a toy world on a cut-out block of ground (soil sides), one flying camera with no cuts, one word on screen at a time,
   no title card. Only the opening build is fact; say in the description that the rest is a joke.
+- **Continuity (from #23):** each fix must be caused by the last one, be physically attached to it, and stay on screen to the end.
+  Nothing disappears. The final shot must contain every earlier step. Rakesh approves the step chain before any build.
 - Our own world, models and stories. Never copy the reference account's scenes.
 
 ## Detail check (look at full-size frames from final.mp4, every beat, before handing over)
@@ -149,7 +151,7 @@ python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to q
 | 20 | Bluetooth Was Named After a Viking King (1990s) (11 Nov 17:00) | No host, ironic everyday origin, real people only | 28.6 s | (fill in after 48 h) | Rakesh: no object characters with faces - all human cast (Harald, Vikings, engineer); question + subscribe ending kept |
 | 21 | QR Codes Came From a Board Game (1994) (12 Nov 17:00) | No host, ironic everyday origin, human cast | 29.0 s | (fill in after 48 h) | frame 1 is the twist itself (a Go board laid out as a QR code being scanned); stones-to-squares morph as the 'how' |
 | 22 | Why Outlook Went Down Worldwide (12 Nov) (14 Nov 17:00) | IN THE NEWS: what happened -> why (cause explainer) -> one history line | 28.2 s | (fill in after 48 h) | first current-affairs video; Rakesh: make it look like the product and explain WHY it happened (server health-check domino effect) |
-| 23 | You Wanted a Fence. You Got a Stadium. (15 Nov 07:00) | 3D LONG FORM TEST: one continuous camera, one word on screen, real build -> absurd escalation | 49.4 s | (fill in after 48 h) | first 3D video, in the style of the @hiddenhome.3d reels Rakesh sent; new engine `lib3d/` |
+| 23 | You Wanted a Fence. You Got a Stadium. | 3D LONG FORM TEST: one continuous camera, one word on screen, real build -> absurd escalation | 49.4 s | NOT UPLOADED - Rakesh: no continuity (the dome vanished when the stadium appeared; steps did not add up) | first 3D video; new engine `lib3d/`. Lesson: every step must cause the next and stay on screen |
 
 Lessons: name anything the viewer may not know (#21: 'playing Go' confused Rakesh -> 'a board game called Go' + on-screen label).
 #18 treadmill confirmed the #7 shape: 54% stayed (typical 38-48%), 91% avg viewed, +5 subs in 9 h. Ironic origin of an
