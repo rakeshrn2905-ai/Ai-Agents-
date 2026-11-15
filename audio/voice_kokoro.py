@@ -15,7 +15,8 @@ import numpy as np
 import soundfile as sf
 
 VOICE, LANG, SPEED = "af_heart", "en-us", 1.0  # hard rule - do not change
-GAP_COMMA, GAP_FULL, OUTRO = 0.12, 0.30, 2.0
+# pauses only (speech speed stays 1.0); the 3D long form uses longer pauses: GAP_FULL=0.75 GAP_COMMA=0.2
+GAP_COMMA, GAP_FULL, OUTRO = float(os.getenv("GAP_COMMA", 0.12)), float(os.getenv("GAP_FULL", 0.30)), 2.0
 SR = 24000
 MODEL_DIR = Path(os.getenv("KOKORO_DIR", Path(__file__).resolve().parent.parent / "models" / "kokoro"))
 

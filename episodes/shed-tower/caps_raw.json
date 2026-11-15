@@ -1,62 +1,82 @@
 [
   {
-    "text": "You never put a shed straight on grass.",
+    "text": "Your car takes up the whole garage.",
     "start": 0.0,
-    "end": 1.784
+    "end": 1.822
   },
   {
-    "text": "First, a layer of hardcore, packed down hard, then sand, then paving slabs, perfectly level.",
-    "start": 2.084,
-    "end": 7.785
+    "text": "So the lawnmower, the bikes and the tools need somewhere else. A shed.",
+    "start": 2.572,
+    "end": 6.285
+  },
+  {
+    "text": "You never put a shed straight on grass. Mark it out, and lift the turf.",
+    "start": 7.035,
+    "end": 10.706
+  },
+  {
+    "text": "Lay hardcore, and pack it down hard. Then sand, then paving slabs, perfectly level.",
+    "start": 11.456,
+    "end": 16.669
   },
   {
     "text": "Timber bearers lift the floor off the slabs, so air flows underneath and the damp stays out.",
-    "start": 8.085,
-    "end": 13.011
+    "start": 17.419,
+    "end": 22.345
   },
   {
-    "text": "Then the walls, and a roof. Your shed is done.",
-    "start": 13.311,
-    "end": 15.704
+    "text": "Walls, a roof, and the tools go in.",
+    "start": 23.095,
+    "end": 25.19
   },
   {
-    "text": "But the lawnmower doesn't fit. So you add an extension.",
-    "start": 16.004,
-    "end": 18.984
+    "text": "But the lawnmower doesn't fit. So you build an extension on the side.",
+    "start": 25.94,
+    "end": 29.601
   },
   {
-    "text": "Then the bikes don't fit. So you add a second floor.",
-    "start": 19.284,
-    "end": 21.912
+    "text": "Then the bikes don't fit. So you add a room on top.",
+    "start": 30.351,
+    "end": 32.975
   },
   {
-    "text": "The stairs take up all the room. So you bolt a lift to the outside.",
-    "start": 22.212,
-    "end": 25.734
+    "text": "Then come the Christmas decorations. Another floor.",
+    "start": 33.725,
+    "end": 36.582
   },
   {
-    "text": "The lift needs power. So you cover the roof in solar panels.",
-    "start": 26.034,
-    "end": 29.552
+    "text": "Then the camping gear, and the paddling pool. Another floor.",
+    "start": 37.332,
+    "end": 40.442
   },
   {
-    "text": "But next door's tree shades the panels. So you build above the tree.",
-    "start": 29.852,
-    "end": 33.46
+    "text": "Carrying boxes up three flights of stairs is hard work. So you bolt a lift to the outside.",
+    "start": 41.192,
+    "end": 46.458
   },
   {
-    "text": "Higher means a longer lift. A longer lift needs more panels. More panels need more roof.",
-    "start": 33.76,
-    "end": 39.271
+    "text": "The lift needs power, so you put solar panels on the roof.",
+    "start": 47.208,
+    "end": 50.399
   },
   {
-    "text": "So you keep going.",
-    "start": 39.571,
-    "end": 40.64
+    "text": "But next door's tree throws a shadow right across the panels. No sun, no power. The lift stops.",
+    "start": 51.149,
+    "end": 57.026
   },
   {
-    "text": "Congratulations. You own the tallest shed in the country. And you still can't find the screwdriver.",
-    "start": 40.94,
-    "end": 46.518
+    "text": "So you raise the roof above the tree. Two more floors, and the panels are back in the sun.",
+    "start": 57.776,
+    "end": 62.76
+  },
+  {
+    "text": "And those two empty floors? They fill up too.",
+    "start": 63.51,
+    "end": 65.939
+  },
+  {
+    "text": "Congratulations. Your car still has the whole garage. And you still can't find the screwdriver.",
+    "start": 66.689,
+    "end": 72.337
   }
 ]
