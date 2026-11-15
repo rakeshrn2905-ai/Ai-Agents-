@@ -152,6 +152,7 @@ python3 -m timesketch.publish $E --make --dry-run  # then without --dry-run to q
 | 21 | QR Codes Came From a Board Game (1994) (12 Nov 17:00) | No host, ironic everyday origin, human cast | 29.0 s | (fill in after 48 h) | frame 1 is the twist itself (a Go board laid out as a QR code being scanned); stones-to-squares morph as the 'how' |
 | 22 | Why Outlook Went Down Worldwide (12 Nov) (14 Nov 17:00) | IN THE NEWS: what happened -> why (cause explainer) -> one history line | 28.2 s | (fill in after 48 h) | first current-affairs video; Rakesh: make it look like the product and explain WHY it happened (server health-check domino effect) |
 | 23 | You Wanted a Fence. You Got a Stadium. | 3D LONG FORM TEST: one continuous camera, one word on screen, real build -> absurd escalation | 49.4 s | NOT UPLOADED - Rakesh: no continuity (the dome vanished when the stadium appeared; steps did not add up) | first 3D video; new engine `lib3d/`. Lesson: every step must cause the next and stay on screen |
+| 24 | You Wanted a Shed. It's Now 58 Metres Tall. (15 Nov 17:00, pending Rakesh's OK) | 3D LONG FORM: one structure that only grows, every step caused by the last and kept on screen | 48.5 s | (fill in after 48 h) | continuity fix after #23 |
 
 Lessons: name anything the viewer may not know (#21: 'playing Go' confused Rakesh -> 'a board game called Go' + on-screen label).
 #18 treadmill confirmed the #7 shape: 54% stayed (typical 38-48%), 91% avg viewed, +5 subs in 9 h. Ironic origin of an

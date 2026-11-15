@@ -1,0 +1,39 @@
+{
+ "topic": "3D build story: a garden shed that keeps growing upward (continuity version)",
+ "pillar": "3D long form",
+ "format": "longform3d",
+ "taste": "One structure from first frame to last; every addition is attached and stays on screen. Our own world and story.",
+ "claims": [
+  {
+   "claim": "A shed should not sit directly on grass; it needs a solid, level base.",
+   "sources": [
+    "https://help.tigersheds.com/hc/en-gb/articles/5221227462559-Building-a-Shed-Base",
+    "https://homebuilding.co.uk/advice/how-to-build-a-shed-base",
+    "https://gardenbuildingsdirect.co.uk/resource/how-to-build-a-shed-base"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "A common base is compacted hardcore with sand on top, then paving slabs, checked with a spirit level.",
+   "sources": [
+    "https://homebuilding.co.uk/advice/how-to-build-a-shed-base",
+    "https://www.manomano.co.uk/advice/how-to-build-a-shed-base-10108",
+    "https://gardenbuildingsdirect.co.uk/resource/how-to-build-a-shed-base"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "Treated timber bearers lift the shed floor off the base so air can flow and damp is kept away.",
+   "sources": [
+    "https://gardenbuildingsdirect.co.uk/resource/how-to-build-a-shed-base",
+    "https://www.diy.com/ideas-advice/outdoor-garden/sheds/how-to-build-a-shed-base",
+    "https://homebuilding.co.uk/advice/how-to-build-a-shed-base"
+   ],
+   "status": "verified"
+  }
+ ],
+ "rejected": [
+  "felt roof details (not confirmed in sources found) - script just says 'a roof'",
+  "exact base depths (sources vary)"
+ ]
+}
