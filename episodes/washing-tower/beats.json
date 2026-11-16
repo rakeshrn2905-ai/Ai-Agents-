@@ -1,0 +1,301 @@
+{
+ "duration": 68.81,
+ "fps": 30,
+ "format": "longform3d",
+ "loop": false,
+ "cast": {},
+ "beats": [
+  {
+   "phrase": 0,
+   "scene": "3d",
+   "start": 0.0,
+   "end": 3.46,
+   "title": "",
+   "sfx": [
+    {
+     "type": "pop",
+     "at": 0.4
+    }
+   ]
+  },
+  {
+   "phrase": 1,
+   "scene": "3d",
+   "start": 3.46,
+   "end": 8.933,
+   "title": "",
+   "sfx": [
+    {
+     "type": "chime",
+     "at": 1.0
+    },
+    {
+     "type": "whoosh",
+     "at": 3.6
+    }
+   ]
+  },
+  {
+   "phrase": 2,
+   "scene": "3d",
+   "start": 8.933,
+   "end": 12.546,
+   "title": "",
+   "sfx": [
+    {
+     "type": "scratch",
+     "at": 0.3
+    },
+    {
+     "type": "thud",
+     "at": 1.8,
+     "db": -7
+    }
+   ]
+  },
+  {
+   "phrase": 3,
+   "scene": "3d",
+   "start": 12.546,
+   "end": 16.73,
+   "title": "",
+   "sfx": [
+    {
+     "type": "scratch",
+     "at": 0.4
+    },
+    {
+     "type": "tick",
+     "at": 1.9
+    },
+    {
+     "type": "tick",
+     "at": 2.4
+    }
+   ]
+  },
+  {
+   "phrase": 4,
+   "scene": "3d",
+   "start": 16.73,
+   "end": 21.937,
+   "title": "",
+   "sfx": [
+    {
+     "type": "thud",
+     "at": 0.5,
+     "db": -7
+    },
+    {
+     "type": "whoosh",
+     "at": 1.1
+    },
+    {
+     "type": "pop",
+     "at": 2.3
+    },
+    {
+     "type": "pop",
+     "at": 2.6
+    }
+   ]
+  },
+  {
+   "phrase": 5,
+   "scene": "3d",
+   "start": 21.937,
+   "end": 25.768,
+   "title": "",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.2
+    },
+    {
+     "type": "snare",
+     "at": 0.6,
+     "db": -10
+    },
+    {
+     "type": "snare",
+     "at": 1.0,
+     "db": -10
+    },
+    {
+     "type": "thud",
+     "at": 1.9,
+     "db": -5
+    }
+   ]
+  },
+  {
+   "phrase": 6,
+   "scene": "3d",
+   "start": 25.768,
+   "end": 30.637,
+   "title": "",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.8
+    },
+    {
+     "type": "pop",
+     "at": 2.3
+    },
+    {
+     "type": "whoosh",
+     "at": 2.7
+    }
+   ]
+  },
+  {
+   "phrase": 7,
+   "scene": "3d",
+   "start": 30.637,
+   "end": 37.695,
+   "title": "",
+   "sfx": [
+    {
+     "type": "tick",
+     "at": 1.0
+    },
+    {
+     "type": "tick",
+     "at": 1.8
+    },
+    {
+     "type": "pop",
+     "at": 3.5
+    },
+    {
+     "type": "chime",
+     "at": 4.3
+    }
+   ]
+  },
+  {
+   "phrase": 8,
+   "scene": "3d",
+   "start": 37.695,
+   "end": 42.892,
+   "title": "",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.5
+    },
+    {
+     "type": "whoosh",
+     "at": 2.2
+    }
+   ]
+  },
+  {
+   "phrase": 9,
+   "scene": "3d",
+   "start": 42.892,
+   "end": 45.458,
+   "title": "",
+   "sfx": [
+    {
+     "type": "thud",
+     "at": 0.3,
+     "db": -5
+    },
+    {
+     "type": "thud",
+     "at": 1.3,
+     "db": -5
+    },
+    {
+     "type": "thud",
+     "at": 2.3,
+     "db": -5
+    },
+    {
+     "type": "chime",
+     "at": 3.6
+    }
+   ]
+  },
+  {
+   "phrase": 10,
+   "scene": "3d",
+   "start": 45.458,
+   "end": 50.885,
+   "title": "",
+   "sfx": [
+    {
+     "type": "scratch",
+     "at": 1.6
+    },
+    {
+     "type": "pop",
+     "at": 2.9
+    }
+   ]
+  },
+  {
+   "phrase": 11,
+   "scene": "3d",
+   "start": 50.885,
+   "end": 55.052,
+   "title": "",
+   "sfx": [
+    {
+     "type": "whoosh",
+     "at": 0.6
+    },
+    {
+     "type": "whoosh",
+     "at": 1.0
+    },
+    {
+     "type": "thud",
+     "at": 2.3,
+     "db": -6
+    }
+   ]
+  },
+  {
+   "phrase": 12,
+   "scene": "3d",
+   "start": 55.052,
+   "end": 60.227,
+   "title": "",
+   "sfx": [
+    {
+     "type": "chime",
+     "at": 1.2
+    },
+    {
+     "type": "thud",
+     "at": 2.7,
+     "db": -4
+    },
+    {
+     "type": "pop",
+     "at": 3.7
+    }
+   ]
+  },
+  {
+   "phrase": 13,
+   "scene": "3d",
+   "start": 60.227,
+   "end": 68.81,
+   "title": "",
+   "sfx": [
+    {
+     "type": "chime",
+     "at": 0.1
+    },
+    {
+     "type": "pop",
+     "at": 4.6
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "topic": "3D build story: a rotary washing line that becomes a wind tower with a tumble dryer on top",
+ "pillar": "3D long form",
+ "format": "longform3d",
+ "taste": "One structure; every step has a spoken reason, is attached, and stays on screen. Our own world and story.",
+ "claims": [
+  {
+   "claim": "A rotary washing line stands in a ground socket set in a hole in the lawn.",
+   "sources": [
+    "https://build-construct.com/building/installing-a-rotary-washing-line-that-stands-firm-for-years/",
+    "https://www.lakeland.co.uk/blogs/inspiration/how-to-securely-put-up-your-new-rotary-airer",
+    "https://robertdyas.co.uk/laundry-utility/clothes-airers/rotary-airers"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "The socket is set in quick-setting concrete (e.g. Postcrete), which is approved for rotary washing lines.",
+   "sources": [
+    "https://media.wickes.co.uk/is/content/wickes/B3182_221100_TECH_0",
+    "https://build-construct.com/building/installing-a-rotary-washing-line-that-stands-firm-for-years/"
+   ],
+   "status": "verified"
+  },
+  {
+   "claim": "The socket is held level with a spirit level while the concrete sets.",
+   "sources": [
+    "https://robertdyas.co.uk/laundry-utility/clothes-airers/rotary-airers",
+    "https://build-construct.com/building/installing-a-rotary-washing-line-that-stands-firm-for-years/"
+   ],
+   "status": "verified"
+  }
+ ],
+ "rejected": [
+  "exact hole depth (UK sources give 35-45 cm) - script says 'dig a hole'",
+  "'72 hours before use' (one source) - not in script"
+ ]
+}
