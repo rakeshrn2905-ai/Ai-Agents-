@@ -49,7 +49,7 @@ export async function setup({ THREE, camera, ep }) {
 
   // ---------- your house with back door, a window showing the damp room ----------
   const HXc = 0, HZc = -9.5;
-  box(10, 6, 7, mat('#EADBC2'), HXc, 3, HZc); const roof = sh(new THREE.Mesh(new THREE.ConeGeometry(7.4, 2.8, 4), mat('#E0633A'))); roof.rotation.y = Math.PI / 4; roof.scale.set(1, 1, 0.7); roof.position.set(HXc, 7.4, HZc); scene.add(roof);
+  box(10, 6, 7, mat('#F4C04A'), HXc, 3, HZc); const roof = sh(new THREE.Mesh(new THREE.ConeGeometry(7.4, 2.8, 4), mat('#E0633A'))); roof.rotation.y = Math.PI / 4; roof.scale.set(1, 1, 0.7); roof.position.set(HXc, 7.4, HZc); scene.add(roof);
   const doorX = 2.6; box(1.1, 2.2, 0.1, mat('#3E7A4A'), doorX, 1.1, HZc + 3.52);
   // a glazed bay window in front of the wall: inside it a radiator covered in wet washing, the glass steamed up
   const WZ = HZc + 3.5, BAYD = 0.9;
@@ -143,7 +143,7 @@ export async function setup({ THREE, camera, ep }) {
 
   // ---------- camera: one continuous, slow flight ----------
   const K = [
-    [0, [-0.8, 2.3, HZc + 12.0], [-1.5, 2.1, HZc + 4.2]], [T[1] + 1.8, [1.2, 3.0, HZc + 14.0], [-1.0, 1.9, HZc + 4.2]],
+    [0, [-1.3, 1.95, HZc + 8.0], [-1.6, 1.8, HZc + 4.2]], [0.75, [-0.8, 2.3, HZc + 12.0], [-1.5, 2.1, HZc + 4.2]], [T[1] + 1.8, [1.2, 3.0, HZc + 14.0], [-1.0, 1.9, HZc + 4.2]],
     [T[1] + 4.4, [3.0, 3.6, 10.5], [0.2, 0.6, 3.6]], [T[2] + 1.6, [1.6, 1.2, 8.6], [0, -0.15, 5.6]],
     [T[3] + 3.0, [1.2, 0.9, 7.9], [0, -0.1, 5.7]], [T[4] + 2.8, [3.0, 2.2, 9.6], [0, 1.2, 5.6]],
     [T[5] + 2.6, [5.2, 4.2, 11.2], [0, 1.8, 5.4]], [T[6] + 3.6, [4.2, 3.0, 10.4], [-0.6, 1.6, 5.6]],
@@ -167,7 +167,7 @@ export async function setup({ THREE, camera, ep }) {
   function frame(t) {
     const lift = liftAt(t);
     // 0-1: damp room - steamy window, dripping sock
-    steamM.opacity = 0.6 * ease(ramp(t, 0.2, 1.2)); drips.forEach((d, k) => { const ph = (t * 0.8 + k * 0.23) % 1; d.position.set(-0.68 + k * 0.34, 0.4 - ph * 0.45, 0.12); });
+    steamM.opacity = 0.5 * ease(ramp(t, 0.4, 1.2)); drips.forEach((d, k) => { const ph = (t * 0.8 + k * 0.23) % 1; d.position.set(-0.68 + k * 0.34, 0.4 - ph * 0.45, 0.12); });
     // 2: dig the hole (turf + soil lifted out), drop in the socket
     const dig = ramp(t, T[2] + 0.2, 1.2); plug.visible = dig < 1; plug.position.set(PX + dig * dig * 1.2, -HD / 2 + Math.sin(dig * Math.PI) * 0.6, PZ - HR / 2 + 0.1); plug.rotation.z = -dig * 0.8;
     spoil.visible = t > T[2] + 0.8; spoil.scale.setScalar(spoil.visible ? ease(ramp(t, T[2] + 0.8, 0.8)) : 0.001);
