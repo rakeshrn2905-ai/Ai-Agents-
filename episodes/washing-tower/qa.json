@@ -1,5 +1,5 @@
 {
-  "pass": false,
+  "pass": true,
   "checks": [
     {
       "check": "full decode",
@@ -41,25 +41,25 @@
       "check": "frame 1 bright (>= 140)",
       "pass": true,
       "hard": true,
-      "detail": "brightness 161"
+      "detail": "brightness 160"
     },
     {
       "check": "frame 1 colourful (>= 90)",
-      "pass": false,
+      "pass": true,
       "hard": true,
-      "detail": "saturation 84"
+      "detail": "saturation 98"
     },
     {
       "check": "motion in the first 0.5 s",
-      "pass": false,
+      "pass": true,
       "hard": true,
-      "detail": "change 3.6"
+      "detail": "change 45.3"
     },
     {
       "check": "ending loops back to the hook",
       "pass": false,
       "hard": false,
-      "detail": "first/last difference 60.4"
+      "detail": "first/last difference 65.3"
     },
     {
       "check": "no black edges",
@@ -71,7 +71,7 @@
       "check": "voice 15-23 dB over music",
       "pass": true,
       "hard": true,
-      "detail": "17.0 dB"
+      "detail": "18.0 dB"
     },
     {
       "check": "no clipping",
